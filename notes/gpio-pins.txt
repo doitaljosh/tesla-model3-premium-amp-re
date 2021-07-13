@@ -1,0 +1,30 @@
+Tesla Model 3 Premium Amp reverse engineering
+
+PCA9538 GPIO expander pins:
+
+0 - FDA802 UnMuteHW
+1 - TDA7802 en
+2 - TDA7802 UnMuteHW
+3 - BoostTempInt
+4 - Orange LED
+5 - FDA802/25v0 boost en
+6 - Unused (tied to Va2b3v3)
+7 - AmpsTempInt
+
+Debug connector (J18):
+
+1.	A2B_RX0		8.	A2B_IRQ/IO0
+2.	GPIOExpInt	9.	BoostTempInt
+3.	AmpsTempInt	10.	GPIOExpResetn
+4.	GND		11.	GND
+5.	GND		12.	GND
+6.	A2B_RX1		13.	TDA7802_En
+7.	FDA802_UnMuteHW	14.	TDA7802_UnMuteHW
+
+Aardvark connector (J13):
+
+1.	SCL	6.	GND
+2.	SDA	7.	NC
+3.	NC	8.	NC
+4.	NC	9.	NC
+5.	NC	10.	GND

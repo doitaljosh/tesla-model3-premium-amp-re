@@ -1,0 +1,28 @@
+Premium amp external connectors:
+
+Low-end/power: (Sumitomo 6098-????)
+
+01. FrtRtWf_N	07. FrtLftWf_N
+02. FrtRtWf_P	08. FrtLftWf_P
+03. SubVc1_N	09. SubVc1_P
+04. SubVc2_P	10. SubVc2_N
+05. Vbat14v0	11. Vbat14v0
+06. GND		12. GND
+
+Mid range: (Sumitomo 6098-5713)
+
+01. RrLft_N	07. NC
+02. RrLft_P	08. NC
+03. RrRt_P	09. NC
+04. RrRt_N	10. NC
+05. RtPrcl_N	11. LftPrcl_N
+06. RtPrcl_P	12. LftPrcl_P
+
+A2B: (AMP 2177586-1)
+
+01. NC	03. NC
+	04. NC
+	05. NC
+	06. NC
+	07. A2B_N
+02. NC	08. A2B_P
