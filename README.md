@@ -3,10 +3,11 @@ Tesla Model 3 Premium Amp reverse engineering findings
 ## Datasheets:
 1. AD2428W A2B transceiver
 2. TDA7802 quad amp
-3. FDA802 quad amp
-4. PCA9538 I2C GPIO expander
-5. LM2901 quad comparator
-6. 24C04K 4 Kbit I2C EEPROM
+3. TDA7803a quad amp (Describes registers compatible with TDA7802)
+4. FDA802 quad amp
+5. PCA9538 I2C GPIO expander
+6. LM2901 quad comparator
+7. 24C04K 4 Kbit I2C EEPROM
 
 ## Notes:
 1. GPIO expander pin mapping
