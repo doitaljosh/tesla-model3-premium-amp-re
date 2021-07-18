@@ -47,7 +47,18 @@ power_on()
 
 mixpath()
 {
-	amixer -c tegrasndt210ref sset "$1" "$2" > /dev/null
+	case $BOARD in
+		jetson-nano)
+			CARD=tegrasndt210ref
+			;;
+		rpi)
+			CARD=sndrpihifiberry
+			;;
+		*)
+			;;
+	esac
+
+	amixer -c $CARD sset "$1" "$2" > /dev/null
 }
 
 amp1_init()
@@ -67,7 +78,6 @@ amp1_init()
 			amp1 0x00 0xaf
 			;;
 		*)
-			echo "Board not selected"
 			;;
 	esac
 }
@@ -89,7 +99,6 @@ amp2_init()
 			amp2 0x00 0xaf
 			;;
 		*)
-			echo "Board not selected"
 			;;
 	esac
 }
@@ -114,8 +123,8 @@ setup_codec()
 			echo "No codec config needed on RPi"
 			;;
 		*)
-			echo "Board not selected"
-esac
+			;;
+	esac
 }
 
 init()
