@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Experimental script to interface a Jetson nano to a hacked Model 3 amp
+BOARD=rpi # rpi, jetson-nano
 
 i2c_write_read_check()
 {
@@ -34,52 +34,108 @@ amp1() # tda7802
 	i2c 0x6c $1 $2
 }
 
-amp2() # fda2100
+amp2() # fda802
 {
 	i2c 0x6e $1 $2
 }
 
 power_on()
 {
-	expander 0x03 0x00
-	expander 0x01 0x32
+	expander 0x03 0xc8
+	expander 0x01 0x37
 }
 
 mixpath()
 {
-	amixer -c tegrasndt210ref sset "$1" "$2"
+	amixer -c tegrasndt210ref sset "$1" "$2" > /dev/null
+}
+
+amp1_init()
+{
+	amp1 0x05 0x01
+	amp1 0x01 0xc0
+        amp1 0x04 0x00
+	case $BOARD in
+		jetson-nano)
+			amp1 0x02 0x1d
+		        amp1 0x03 0x50
+			amp1 0x00 0xff
+			;;
+		rpi)
+			amp1 0x02 0x0d
+			amp1 0x03 0xc0
+			amp1 0x00 0xaf
+			;;
+		*)
+			echo "Board not selected"
+			;;
+	esac
+}
+
+amp2_init()
+{
+	amp2 0x05 0x01
+	amp2 0x01 0x00
+	amp2 0x04 0x00
+	case $BOARD in
+		jetson-nano)
+	        	amp2 0x02 0x1d
+	        	amp2 0x03 0x58
+			amp2 0x00 0xff
+			;;
+		rpi)
+			amp2 0x02 0x0d
+			amp2 0x03 0xc0
+			amp2 0x00 0xaf
+			;;
+		*)
+			echo "Board not selected"
+			;;
+	esac
+}
+
+setup_codec()
+{
+
+	case $BOARD in
+		jetson-nano)
+			mixpath "ADMAIF1 Mux" I2S4
+		        mixpath "I2S4 Mux" ADMAIF1
+		        mixpath "I2S4 codec frame mode" dsp-a
+		        mixpath "I2S4 codec master mode" None
+		        mixpath "I2S4 codec bit format" 32
+		        mixpath "I2S4 Sample Rate" 48000
+		        mixpath "I2S4 BCLK Ratio" 0
+		        mixpath "I2S4 fsync width" 127
+		        mixpath "ADMAIF1 Channels" 8
+		        mixpath "I2S4 Channels" 8
+			;;
+		rpi)
+			echo "No codec config needed on RPi"
+			;;
+		*)
+			echo "Board not selected"
+esac
 }
 
 init()
 {
+	echo "Powering up board"
 	power_on
 
 	sleep 1
 
-	amp1 0x00 0xff
-	amp1 0x01 0x00
-	amp1 0x02 0x1d
-	amp1 0x03 0x50
-	amp1 0x04 0x00
-	amp1 0x05 0x00
-	amp1 0x06 0x00
-	amp1 0x07 0x01
+	echo "Configuring amp 1"
+	amp1_init
+	echo "Configuring amp 2"
+	amp2_init
 
-	amp2 0x00 0xff
-	amp2 0x01 0x00
-	amp2 0x02 0x1d
-	amp2 0x03 0x58
-	amp2 0x04 0x00
-	amp2 0x05 0x00
-	amp2 0x06 0x00
-	amp2 0x07 0x01
+	sleep 1
 
-	mixpath "ADMAIF1 Mux" I2S4
-	mixpath "I2S4 codec frame mode" dsp-a
+	echo "Setting up codec"
+	setup_codec
 
-	mixpath "I2S4 fsync width" 255
-	mixpath "ADMAIF1 Channels" 8
-	mixpath "I2S4 Channels" 8
+	echo "Done"
 }
 
 init
