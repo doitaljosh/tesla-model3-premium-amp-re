@@ -1,6 +1,8 @@
 #!/bin/bash
 
-BOARD=rpi # rpi, jetson-nano
+NUM_AMPS=2
+AIF="ADMAIF1"
+I2S=4
 
 i2c_write_read_check()
 {
@@ -12,7 +14,7 @@ i2c_write_read_check()
         i2cset -y 1 $1 $2 $3    # write to i2c
         # read back to check
         local i2cread=$(i2cget -y 1 $1 $2)
-        [ "$3" = "$i2cread" ] && return 0 || echo "i2c read failure, returned: $i2cread"
+        [ "$3" = "$i2cread" ] && return 0 || echo "i2c read failure, $1 $2 returned: $i2cread"
     done
     echo "i2c write failure: $1 $2 $3"
     return 1
@@ -41,110 +43,103 @@ amp2() # fda802
 
 power_on()
 {
-	expander 0x03 0xc8
-	expander 0x01 0x37
+	expander 0x01 0x14
+	expander 0x03 0x88
+}
+
+enable_amp()
+{
+	if [[ "$NUM_AMPS" == 1 ]]; then
+		i2cset -y 1 0x70 0x01 0x16
+	else
+		i2cset -y 1 0x70 0x01 0x37
+	fi
 }
 
 mixpath()
 {
-	case $BOARD in
-		jetson-nano)
-			CARD=tegrasndt210ref
-			;;
-		rpi)
-			CARD=sndrpihifiberry
-			;;
-		*)
-			;;
-	esac
-
-	amixer -c $CARD sset "$1" "$2" > /dev/null
+	amixer -c tegrasndt210ref sset "$1" "$2" > /dev/null
 }
 
 amp1_init()
 {
-	amp1 0x05 0x01
-	amp1 0x01 0xc0
+	amp1 0x00 0x0f
+        amp1 0x01 0x00
+        amp1 0x02 0x18
+	amp1 0x03 0x49
         amp1 0x04 0x00
-	case $BOARD in
-		jetson-nano)
-			amp1 0x02 0x1d
-		        amp1 0x03 0x50
-			amp1 0x00 0xff
-			;;
-		rpi)
-			amp1 0x02 0x0d
-			amp1 0x03 0xc0
-			amp1 0x00 0xaf
-			;;
-		*)
-			;;
-	esac
+        amp1 0x05 0x01
 }
 
 amp2_init()
 {
-	amp2 0x05 0x01
-	amp2 0x01 0x00
-	amp2 0x04 0x00
-	case $BOARD in
-		jetson-nano)
-	        	amp2 0x02 0x1d
-	        	amp2 0x03 0x58
-			amp2 0x00 0xff
-			;;
-		rpi)
-			amp2 0x02 0x0d
-			amp2 0x03 0xc0
-			amp2 0x00 0xaf
-			;;
-		*)
-			;;
-	esac
+	amp2 0x00 0x5c
+        amp2 0x01 0x07
+        amp2 0x02 0x0f
+        amp2 0x03 0x00
+        amp2 0x04 0x00
+        amp2 0x05 0x11
+	amp2 0x06 0x11
+	amp2 0x07 0x11
+	amp2 0x08 0x11
+	amp2 0x09 0x00
+	amp2 0x0a 0x00
+	amp2 0x0b 0x00
+	amp2 0x0c 0x40
+	amp2 0x0d 0x00
+	amp2 0x0e 0x03
 }
 
 setup_codec()
 {
+	mixpath "$AIF Mux" I2S$I2S
+        mixpath "I2S$I2S Mux" $AIF
+        mixpath "I2S$I2S codec frame mode" dsp-a
+        mixpath "I2S$I2S codec master mode" None
+        mixpath "I2S$I2S codec bit format" 32
+        mixpath "I2S$I2S Sample Rate" 48000
+        mixpath "I2S$I2S BCLK Ratio" 50
 
-	case $BOARD in
-		jetson-nano)
-			mixpath "ADMAIF1 Mux" I2S4
-		        mixpath "I2S4 Mux" ADMAIF1
-		        mixpath "I2S4 codec frame mode" dsp-a
-		        mixpath "I2S4 codec master mode" None
-		        mixpath "I2S4 codec bit format" 32
-		        mixpath "I2S4 Sample Rate" 48000
-		        mixpath "I2S4 BCLK Ratio" 0
-		        mixpath "I2S4 fsync width" 127
-		        mixpath "ADMAIF1 Channels" 8
-		        mixpath "I2S4 Channels" 8
-			;;
-		rpi)
-			echo "No codec config needed on RPi"
-			;;
-		*)
-			;;
-	esac
+	if [[ "$NUM_AMPS" == 1 ]]; then
+		FS_WIDTH=127
+		CHANNELS=4
+	else
+		FS_WIDTH=255
+		CHANNELS=8
+	fi
+
+	mixpath "I2S$I2S fsync width" $FS_WIDTH
+#	mixpath "$AIF Channels" $CHANNELS
+        mixpath "I2S$I2S Channels" $CHANNELS
+
+	echo "Linked I2S$I2S to $AIF with $CHANNELS channels and FS width of $FS_WIDTH"
 }
 
 init()
 {
-	echo "Powering up board"
-	power_on
+	echo "Setting up codec"
+        setup_codec
+#	sleep 1
+        echo "Done"
 
-	sleep 1
+	echo "Powering up amp"
+	power_on
+	sleep 0.25
+	enable_amp
+
+	sleep 0.15
 
 	echo "Configuring amp 1"
 	amp1_init
-	echo "Configuring amp 2"
-	amp2_init
-
-	sleep 1
-
-	echo "Setting up codec"
-	setup_codec
-
 	echo "Done"
+
+	if [[ "$NUM_AMPS" == 1 ]]; then
+		echo "Not configured for two amps, only configuring one"
+	else
+		echo "Configuring amp 2"
+		amp2_init
+		echo "Done"
+	fi
 }
 
 init
