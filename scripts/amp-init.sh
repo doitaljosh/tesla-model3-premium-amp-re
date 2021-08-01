@@ -109,7 +109,7 @@ setup_codec()
 	fi
 
 	mixpath "I2S$I2S fsync width" $FS_WIDTH
-#	mixpath "$AIF Channels" $CHANNELS
+	mixpath "$AIF Channels" $CHANNELS
         mixpath "I2S$I2S Channels" $CHANNELS
 
 	echo "Linked I2S$I2S to $AIF with $CHANNELS channels and FS width of $FS_WIDTH"
