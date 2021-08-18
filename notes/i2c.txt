@@ -1,7 +1,6 @@
-I2C addresses:
+Peripheral I2C addresses:
 
 0x56 - 24C04K 4K EEPROM
-0x57 - AD2428W A2B transceiver
 0x6c - TDA7802 quad amp
 0x6e - FDA802 quad amp
 0x70 - PCA9538 GPIO expander
