@@ -52,7 +52,7 @@ Source:  [ Tesla Model 3 Stereo - Part 9: Summary and Lessons Learned](https://w
 ![Wiring](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/master/images/a2b-jetson-nano.png?raw=true)
 
 ### I2C/TDM test points:
-![Test points](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/master/images/i2c_tdm_pins.png?raw=true)
+![Test points](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/master/images/i2c_tdm_pins.jpg?raw=true)
 
 ### Top of board:
-![Top view](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/master/images/top.png?raw=true)
+![Top view](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/master/images/top.jpg?raw=true)
