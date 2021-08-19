@@ -1,25 +1,36 @@
 Tesla Model 3 Premium Amp reverse engineering
 
+AD2410 pins:
+
+IO0 - Unused
+IO1 - GPIO expander reset
+IO2 - Va2b5v5 enable
+IO3 - DTX0
+IO4 - Unused
+IO5 - GPIO expander interrupt
+IO6 - Used (unknown)
+IO7 - Unused
+
 PCA9538 GPIO expander pins:
 
-0 - FDA802 UnMuteHW
+0 - FDA2100 UnMuteHW
 1 - TDA7802 en
 2 - TDA7802 UnMuteHW
 3 - BoostTempInt
 4 - Orange LED
-5 - FDA802/25v0 boost en
+5 - FDA2100/25v0 boost en
 6 - Unused (tied to Va2b3v3)
 7 - AmpsTempInt
 
 Debug connector (J18):
 
-1.	A2B_RX0		8.	A2B_IRQ/IO0
+1.	A2B_RX0/IO5	8.	A2B_IRQ/IO0
 2.	GPIOExpInt	9.	BoostTempInt
 3.	AmpsTempInt	10.	GPIOExpResetn
 4.	GND		11.	GND
 5.	GND		12.	GND
-6.	A2B_RX1		13.	TDA7802_En
-7.	FDA802_UnMuteHW	14.	TDA7802_UnMuteHW
+6.	A2B_RX1/IO6	13.	TDA7802_En
+7.	FDA2100_UnMuteHW14.	TDA7802_UnMuteHW
 
 Aardvark connector (J13):
 
