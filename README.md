@@ -3,7 +3,7 @@ Tesla Model 3 Premium Amp reverse engineering and A2B demo for Jetson nano
 ## Status:
 As of now, the script must be ran while audio is playing. 
 Otherwise the A2B bus will drop since it needs a constant bit clock, 
-and DAPM causes the I2S interface goes to sleep when not active. The high power 
+and DAPM causes the I2S clock to suspend when not active. The high power 
 channels are working (FDA2100), but the lower power ones (TDA7802) 
 do not output any audio currently. (They worked yesterday, ugh.)
 I will keep debugging it, and hopefully fix these flukes.
