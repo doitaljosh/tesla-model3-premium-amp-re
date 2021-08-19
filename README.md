@@ -41,6 +41,7 @@ I will keep debugging it, and hopefully fix these flukes.
 
 ### Amplifier pinout:
 ![Amp connectors](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/master/images/amp-pinout.png?raw=true)
+*Source: * [ Tesla Model 3 Stereo - Part 9: Summary and Lessons Learned](https://www.travisllado.com/2019/05/tesla-model-3-stereo-part-9-summary-and.html)
 
 ### A2B board <-> Jetson Nano wiring:
 ![Wiring](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/master/images/a2b-jetson-nano.png?raw=true)
