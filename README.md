@@ -40,7 +40,7 @@ I will keep debugging it, and hopefully fix these flukes.
 - SigmaStudio project and register files
 
 ### Amplifier pinout:
-![Amp connectors](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/master/amp-pinout.png?raw=true)
+![Amp connectors](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/master/images/amp-pinout.png?raw=true)
 
 ### A2B board <-> Jetson Nano wiring:
-![Wiring](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/master/a2b-jetson-nano.png?raw=true)
+![Wiring](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/master/images/a2b-jetson-nano.png?raw=true)
