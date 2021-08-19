@@ -13,14 +13,14 @@ IO7 - Unused
 
 PCA9538 GPIO expander pins:
 
-0 - FDA2100 UnMuteHW
-1 - TDA7802 en
-2 - TDA7802 UnMuteHW
-3 - BoostTempInt
-4 - Orange LED
-5 - FDA2100/25v0 boost en
+0 - FDA2100 MuteHW (active low)
+1 - TDA7802 en (active high)
+2 - TDA7802 MuteHW (active low)
+3 - BoostTempInt (active high, boost converter over-temp interrupt)
+4 - Orange indicator LED
+5 - FDA2100/25v0 boost en (active high)
 6 - Unused (tied to Va2b3v3)
-7 - AmpsTempInt
+7 - AmpsTempInt (active high, amplifier over-temp interrupt)
 
 Debug connector (J18):
 
