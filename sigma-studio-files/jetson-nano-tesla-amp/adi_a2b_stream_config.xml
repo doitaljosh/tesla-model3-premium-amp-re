@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<Stream_Configuration>
+  <Version_Info>
+    <A2BDLL_Version Version="19.3.0" />
+    <A2BStackDLL_Version Version="19.3.0.0" />
+    <SigmaStudio_Version Version="Unknown" />
+  </Version_Info>
+  <Stream_Definition>
+    <Stream_Definition_Info Stream_ID="0" Stream_Name="Speakers" Sample_Rate="48" Data_Width="32" Num_Channels="8" />
+  </Stream_Definition>
+  <Stream_Assignment>
+    <Stream_Assignment_Info Stream_ID="0" Stream_Name="Speakers" Source_Name="AD242x Master Node0" Source_ID="-1" Dest_Count="1" Destination_Name_0="AD241x Slave Node0" Destination_ID_0="0" Routing_style="8" />
+  </Stream_Assignment>
+</Stream_Configuration>

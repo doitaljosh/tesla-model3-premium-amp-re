@@ -1,0 +1,1256 @@
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg8slew_mode
+Parameter Address = 95
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg8target
+Parameter Address = 94
+Parameter Value   = 0.000398099422454834
+Parameter Data :
+0x00, 0x00, 0x1A, 0x17, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg8slew_mode
+Parameter Address = 95
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg8target
+Parameter Address = 94
+Parameter Value   = 0.000398099422454834
+Parameter Data :
+0x00, 0x00, 0x1A, 0x17, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg8slew_mode
+Parameter Address = 95
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg8target
+Parameter Address = 94
+Parameter Value   = 0.000398099422454834
+Parameter Data :
+0x00, 0x00, 0x1A, 0x17, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg8slew_mode
+Parameter Address = 95
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg8target
+Parameter Address = 94
+Parameter Value   = 0.000398099422454834
+Parameter Data :
+0x00, 0x00, 0x1A, 0x17, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg8slew_mode
+Parameter Address = 95
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg8target
+Parameter Address = 94
+Parameter Value   = 0.000398099422454834
+Parameter Data :
+0x00, 0x00, 0x1A, 0x17, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg8slew_mode
+Parameter Address = 95
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg8target
+Parameter Address = 94
+Parameter Value   = 0.000398099422454834
+Parameter Data :
+0x00, 0x00, 0x1A, 0x17, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg8slew_mode
+Parameter Address = 95
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg8target
+Parameter Address = 94
+Parameter Value   = 0.000398099422454834
+Parameter Data :
+0x00, 0x00, 0x1A, 0x17, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg8slew_mode
+Parameter Address = 95
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg8target
+Parameter Address = 94
+Parameter Value   = 0.000398099422454834
+Parameter Data :
+0x00, 0x00, 0x1A, 0x17, 
+
+
+
+Cell Name         = Nx2-1
+Parameter Name    = stereomuxSigma300ns1index
+Parameter Address = 114
+Parameter Value   = 2
+Parameter Data :
+0x00, 0x00, 0x00, 0x02, 
+
+
+
+Cell Name         = Sweep1
+Parameter Name    = sweep_lookup_AlgS3001increment1
+Parameter Address = 24
+Parameter Data :
+0x00, 0x01, 0x99, 0x9A, 
+0x00, 0x6A, 0xAA, 0xAB, 
+0x01, 0x00, 0x00, 0x00, 
+0x00, 0x02, 0x00, 0x00, 
+0x00, 0x00, 0x01, 0x00, 
+
+
+
+Cell Name         = S Splitter1
+Parameter Name    = SingleCtrlSplitS3004gain
+Parameter Address = 113
+Parameter Value   = 1
+Parameter Data :
+0x01, 0x00, 0x00, 0x00, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001delaya
+Parameter Address = 38
+Parameter Value   = 504
+Parameter Data :
+0x00, 0x00, 0x01, 0xF8, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001delayb
+Parameter Address = 39
+Parameter Value   = 192
+Parameter Data :
+0x00, 0x00, 0x00, 0xC0, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001delayc
+Parameter Address = 40
+Parameter Value   = 480
+Parameter Data :
+0x00, 0x00, 0x01, 0xE0, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001delayd
+Parameter Address = 41
+Parameter Value   = 0
+Parameter Data :
+0x00, 0x00, 0x00, 0x00, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001delaye
+Parameter Address = 42
+Parameter Value   = 432
+Parameter Data :
+0x00, 0x00, 0x01, 0xB0, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001delayf
+Parameter Address = 43
+Parameter Value   = 48
+Parameter Data :
+0x00, 0x00, 0x00, 0x30, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001delaya2
+Parameter Address = 44
+Parameter Value   = 504
+Parameter Data :
+0x00, 0x00, 0x01, 0xF8, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001delay_rs
+Parameter Address = 45
+Parameter Value   = 528
+Parameter Data :
+0x00, 0x00, 0x02, 0x10, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001f3_a1
+Parameter Address = 47
+Parameter Value   = 0.974156856536865
+Parameter Data :
+0x00, 0xF9, 0x62, 0x58, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001f3_b0
+Parameter Address = 49
+Parameter Value   = 0.987078428268433
+Parameter Data :
+0x00, 0xFC, 0xB1, 0x2C, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001f3_b1
+Parameter Address = 48
+Parameter Value   = -0.987078428268433
+Parameter Data :
+0xFF, 0x03, 0x4E, 0xD4, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001f2_a1
+Parameter Address = 52
+Parameter Value   = 1.96298009157181
+Parameter Data :
+0x01, 0xF6, 0x85, 0xDD, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001f2_a2
+Parameter Address = 51
+Parameter Value   = -0.963652968406677
+Parameter Data :
+0xFF, 0x09, 0x4E, 0x0A, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001f2_b0
+Parameter Address = 55
+Parameter Value   = 0.981658279895782
+Parameter Data :
+0x00, 0xFB, 0x4D, 0xF5, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001f2_b1
+Parameter Address = 54
+Parameter Value   = -1.96331655979156
+Parameter Data :
+0xFE, 0x09, 0x64, 0x16, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001f2_b2
+Parameter Address = 53
+Parameter Value   = 0.981658279895782
+Parameter Data :
+0x00, 0xFB, 0x4D, 0xF5, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001f4_a1
+Parameter Address = 58
+Parameter Value   = 0.948964595794678
+Parameter Data :
+0x00, 0xF2, 0xEF, 0x58, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001f4_b0
+Parameter Address = 57
+Parameter Value   = 0.974482297897339
+Parameter Data :
+0x00, 0xF9, 0x77, 0xAC, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001f4_b1
+Parameter Address = 56
+Parameter Value   = -0.974482297897339
+Parameter Data :
+0xFF, 0x06, 0x88, 0x54, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001cntr1
+Parameter Address = 70
+Parameter Value   = 0.00171661376953125
+Parameter Data :
+0x00, 0x00, 0x70, 0x80, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001dec_val
+Parameter Address = 67
+Parameter Value   = 5.90085983276367E-05
+Parameter Data :
+0x00, 0x00, 0x03, 0xDE, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001one_by_root2
+Parameter Address = 66
+Parameter Value   = 0.707945823669434
+Parameter Data :
+0x00, 0xB5, 0x3B, 0xF0, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001cntr2
+Parameter Address = 72
+Parameter Value   = 6
+Parameter Data :
+0x00, 0x00, 0x00, 0x06, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001root
+Parameter Address = 68
+Parameter Value   = 2.82842707633972
+Parameter Data :
+0x02, 0xD4, 0x13, 0xCC, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001gain1
+Parameter Address = 61
+Parameter Value   = 1
+Parameter Data :
+0x01, 0x00, 0x00, 0x00, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001gain2
+Parameter Address = 62
+Parameter Value   = 0
+Parameter Data :
+0x00, 0x00, 0x00, 0x00, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001gain3
+Parameter Address = 63
+Parameter Value   = 0.158489346504211
+Parameter Data :
+0x00, 0x28, 0x92, 0xC2, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001gain4
+Parameter Address = 64
+Parameter Value   = 0.316277682781219
+Parameter Data :
+0x00, 0x50, 0xF7, 0x93, 
+
+
+
+Cell Name         = ADIsurround1
+Parameter Name    = ADIsurroundAlgS3001dil
+Parameter Address = 46
+Parameter Value   = 240
+Parameter Data :
+0x00, 0x00, 0x00, 0xF0, 
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B2_0
+Parameter Address = 83
+Parameter Value   = 0.000261664390563965
+Parameter Data :
+0x00 ,	0x00 ,	0x11 ,	0x26 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B1_0
+Parameter Address = 84
+Parameter Value   = 0.00052332878112793
+Parameter Data :
+0x00 ,	0x00 ,	0x22 ,	0x4C ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B0_0
+Parameter Address = 85
+Parameter Value   = 0.000261664390563965
+Parameter Data :
+0x00 ,	0x00 ,	0x11 ,	0x26 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1A2_0
+Parameter Address = 86
+Parameter Value   = -0.954774558544159
+Parameter Data :
+0xFF ,	0x0B ,	0x93 ,	0xE5 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1A1_0
+Parameter Address = 87
+Parameter Value   = 1.95372796058655
+Parameter Data :
+0x01 ,	0xF4 ,	0x27 ,	0x84 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B2_1
+Parameter Address = 88
+Parameter Value   = 0.000261664390563965
+Parameter Data :
+0x00 ,	0x00 ,	0x11 ,	0x26 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B1_1
+Parameter Address = 89
+Parameter Value   = 0.00052332878112793
+Parameter Data :
+0x00 ,	0x00 ,	0x22 ,	0x4C ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B0_1
+Parameter Address = 90
+Parameter Value   = 0.000261664390563965
+Parameter Data :
+0x00 ,	0x00 ,	0x11 ,	0x26 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1A2_1
+Parameter Address = 91
+Parameter Value   = -0.954774558544159
+Parameter Data :
+0xFF ,	0x0B ,	0x93 ,	0xE5 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1A1_1
+Parameter Address = 92
+Parameter Value   = 1.95372796058655
+Parameter Data :
+0x01 ,	0xF4 ,	0x27 ,	0x84 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B2_2
+Parameter Address = 24593
+Parameter Value   = 0.757076382637024
+Parameter Data :
+0x00 ,	0xC1 ,	0xCF ,	0xC2 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B1_2
+Parameter Address = 24594
+Parameter Value   = -1.51415276527405
+Parameter Data :
+0xFE ,	0x7C ,	0x60 ,	0x7C ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B0_2
+Parameter Address = 24595
+Parameter Value   = 0.757076382637024
+Parameter Data :
+0x00 ,	0xC1 ,	0xCF ,	0xC2 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1A2_2
+Parameter Address = 24596
+Parameter Value   = -0.574061930179596
+Parameter Data :
+0xFF ,	0x6D ,	0x0A ,	0x47 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1A1_2
+Parameter Address = 24597
+Parameter Value   = 1.4542436003685
+Parameter Data :
+0x01 ,	0x74 ,	0x49 ,	0x4F ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B2_3
+Parameter Address = 24598
+Parameter Value   = 0.757076382637024
+Parameter Data :
+0x00 ,	0xC1 ,	0xCF ,	0xC2 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B1_3
+Parameter Address = 24599
+Parameter Value   = -1.51415276527405
+Parameter Data :
+0xFE ,	0x7C ,	0x60 ,	0x7C ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B0_3
+Parameter Address = 24600
+Parameter Value   = 0.757076382637024
+Parameter Data :
+0x00 ,	0xC1 ,	0xCF ,	0xC2 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1A2_3
+Parameter Address = 24601
+Parameter Value   = -0.574061930179596
+Parameter Data :
+0xFF ,	0x6D ,	0x0A ,	0x47 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1A1_3
+Parameter Address = 24602
+Parameter Value   = 1.4542436003685
+Parameter Data :
+0x01 ,	0x74 ,	0x49 ,	0x4F ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1LowInvert
+Parameter Address = 116
+Parameter Value   = 1
+Parameter Data :
+0x01, 0x00, 0x00, 0x00, 
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B2_0
+Parameter Address = 73
+Parameter Value   = 0.000261664390563965
+Parameter Data :
+0x00 ,	0x00 ,	0x11 ,	0x26 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B1_0
+Parameter Address = 74
+Parameter Value   = 0.00052332878112793
+Parameter Data :
+0x00 ,	0x00 ,	0x22 ,	0x4C ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B0_0
+Parameter Address = 75
+Parameter Value   = 0.000261664390563965
+Parameter Data :
+0x00 ,	0x00 ,	0x11 ,	0x26 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2A2_0
+Parameter Address = 76
+Parameter Value   = -0.954774558544159
+Parameter Data :
+0xFF ,	0x0B ,	0x93 ,	0xE5 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2A1_0
+Parameter Address = 77
+Parameter Value   = 1.95372796058655
+Parameter Data :
+0x01 ,	0xF4 ,	0x27 ,	0x84 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B2_1
+Parameter Address = 78
+Parameter Value   = 0.000261664390563965
+Parameter Data :
+0x00 ,	0x00 ,	0x11 ,	0x26 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B1_1
+Parameter Address = 79
+Parameter Value   = 0.00052332878112793
+Parameter Data :
+0x00 ,	0x00 ,	0x22 ,	0x4C ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B0_1
+Parameter Address = 80
+Parameter Value   = 0.000261664390563965
+Parameter Data :
+0x00 ,	0x00 ,	0x11 ,	0x26 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2A2_1
+Parameter Address = 81
+Parameter Value   = -0.954774558544159
+Parameter Data :
+0xFF ,	0x0B ,	0x93 ,	0xE5 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2A1_1
+Parameter Address = 82
+Parameter Value   = 1.95372796058655
+Parameter Data :
+0x01 ,	0xF4 ,	0x27 ,	0x84 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B2_2
+Parameter Address = 24583
+Parameter Value   = 0.757076382637024
+Parameter Data :
+0x00 ,	0xC1 ,	0xCF ,	0xC2 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B1_2
+Parameter Address = 24584
+Parameter Value   = -1.51415276527405
+Parameter Data :
+0xFE ,	0x7C ,	0x60 ,	0x7C ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B0_2
+Parameter Address = 24585
+Parameter Value   = 0.757076382637024
+Parameter Data :
+0x00 ,	0xC1 ,	0xCF ,	0xC2 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2A2_2
+Parameter Address = 24586
+Parameter Value   = -0.574061930179596
+Parameter Data :
+0xFF ,	0x6D ,	0x0A ,	0x47 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2A1_2
+Parameter Address = 24587
+Parameter Value   = 1.4542436003685
+Parameter Data :
+0x01 ,	0x74 ,	0x49 ,	0x4F ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B2_3
+Parameter Address = 24588
+Parameter Value   = 0.757076382637024
+Parameter Data :
+0x00 ,	0xC1 ,	0xCF ,	0xC2 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B1_3
+Parameter Address = 24589
+Parameter Value   = -1.51415276527405
+Parameter Data :
+0xFE ,	0x7C ,	0x60 ,	0x7C ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B0_3
+Parameter Address = 24590
+Parameter Value   = 0.757076382637024
+Parameter Data :
+0x00 ,	0xC1 ,	0xCF ,	0xC2 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2A2_3
+Parameter Address = 24591
+Parameter Value   = -0.574061930179596
+Parameter Data :
+0xFF ,	0x6D ,	0x0A ,	0x47 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2A1_3
+Parameter Address = 24592
+Parameter Value   = 1.4542436003685
+Parameter Data :
+0x01 ,	0x74 ,	0x49 ,	0x4F ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2LowInvert
+Parameter Address = 115
+Parameter Value   = 1
+Parameter Data :
+0x01, 0x00, 0x00, 0x00, 
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B2_0
+Parameter Address = 83
+Parameter Value   = 0.000261664390563965
+Parameter Data :
+0x00 ,	0x00 ,	0x11 ,	0x26 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B1_0
+Parameter Address = 84
+Parameter Value   = 0.00052332878112793
+Parameter Data :
+0x00 ,	0x00 ,	0x22 ,	0x4C ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B0_0
+Parameter Address = 85
+Parameter Value   = 0.000261664390563965
+Parameter Data :
+0x00 ,	0x00 ,	0x11 ,	0x26 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1A2_0
+Parameter Address = 86
+Parameter Value   = -0.954774558544159
+Parameter Data :
+0xFF ,	0x0B ,	0x93 ,	0xE5 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1A1_0
+Parameter Address = 87
+Parameter Value   = 1.95372796058655
+Parameter Data :
+0x01 ,	0xF4 ,	0x27 ,	0x84 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B2_1
+Parameter Address = 88
+Parameter Value   = 0.000261664390563965
+Parameter Data :
+0x00 ,	0x00 ,	0x11 ,	0x26 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B1_1
+Parameter Address = 89
+Parameter Value   = 0.00052332878112793
+Parameter Data :
+0x00 ,	0x00 ,	0x22 ,	0x4C ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B0_1
+Parameter Address = 90
+Parameter Value   = 0.000261664390563965
+Parameter Data :
+0x00 ,	0x00 ,	0x11 ,	0x26 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1A2_1
+Parameter Address = 91
+Parameter Value   = -0.954774558544159
+Parameter Data :
+0xFF ,	0x0B ,	0x93 ,	0xE5 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1A1_1
+Parameter Address = 92
+Parameter Value   = 1.95372796058655
+Parameter Data :
+0x01 ,	0xF4 ,	0x27 ,	0x84 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B2_2
+Parameter Address = 24593
+Parameter Value   = 0.757076382637024
+Parameter Data :
+0x00 ,	0xC1 ,	0xCF ,	0xC2 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B1_2
+Parameter Address = 24594
+Parameter Value   = -1.51415276527405
+Parameter Data :
+0xFE ,	0x7C ,	0x60 ,	0x7C ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B0_2
+Parameter Address = 24595
+Parameter Value   = 0.757076382637024
+Parameter Data :
+0x00 ,	0xC1 ,	0xCF ,	0xC2 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1A2_2
+Parameter Address = 24596
+Parameter Value   = -0.574061930179596
+Parameter Data :
+0xFF ,	0x6D ,	0x0A ,	0x47 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1A1_2
+Parameter Address = 24597
+Parameter Value   = 1.4542436003685
+Parameter Data :
+0x01 ,	0x74 ,	0x49 ,	0x4F ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B2_3
+Parameter Address = 24598
+Parameter Value   = 0.757076382637024
+Parameter Data :
+0x00 ,	0xC1 ,	0xCF ,	0xC2 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B1_3
+Parameter Address = 24599
+Parameter Value   = -1.51415276527405
+Parameter Data :
+0xFE ,	0x7C ,	0x60 ,	0x7C ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1B0_3
+Parameter Address = 24600
+Parameter Value   = 0.757076382637024
+Parameter Data :
+0x00 ,	0xC1 ,	0xCF ,	0xC2 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1A2_3
+Parameter Address = 24601
+Parameter Value   = -0.574061930179596
+Parameter Data :
+0xFF ,	0x6D ,	0x0A ,	0x47 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1A1_3
+Parameter Address = 24602
+Parameter Value   = 1.4542436003685
+Parameter Data :
+0x01 ,	0x74 ,	0x49 ,	0x4F ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg1LowInvert
+Parameter Address = 116
+Parameter Value   = 1
+Parameter Data :
+0x01, 0x00, 0x00, 0x00, 
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B2_0
+Parameter Address = 73
+Parameter Value   = 0.000261664390563965
+Parameter Data :
+0x00 ,	0x00 ,	0x11 ,	0x26 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B1_0
+Parameter Address = 74
+Parameter Value   = 0.00052332878112793
+Parameter Data :
+0x00 ,	0x00 ,	0x22 ,	0x4C ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B0_0
+Parameter Address = 75
+Parameter Value   = 0.000261664390563965
+Parameter Data :
+0x00 ,	0x00 ,	0x11 ,	0x26 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2A2_0
+Parameter Address = 76
+Parameter Value   = -0.954774558544159
+Parameter Data :
+0xFF ,	0x0B ,	0x93 ,	0xE5 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2A1_0
+Parameter Address = 77
+Parameter Value   = 1.95372796058655
+Parameter Data :
+0x01 ,	0xF4 ,	0x27 ,	0x84 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B2_1
+Parameter Address = 78
+Parameter Value   = 0.000261664390563965
+Parameter Data :
+0x00 ,	0x00 ,	0x11 ,	0x26 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B1_1
+Parameter Address = 79
+Parameter Value   = 0.00052332878112793
+Parameter Data :
+0x00 ,	0x00 ,	0x22 ,	0x4C ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B0_1
+Parameter Address = 80
+Parameter Value   = 0.000261664390563965
+Parameter Data :
+0x00 ,	0x00 ,	0x11 ,	0x26 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2A2_1
+Parameter Address = 81
+Parameter Value   = -0.954774558544159
+Parameter Data :
+0xFF ,	0x0B ,	0x93 ,	0xE5 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2A1_1
+Parameter Address = 82
+Parameter Value   = 1.95372796058655
+Parameter Data :
+0x01 ,	0xF4 ,	0x27 ,	0x84 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B2_2
+Parameter Address = 24583
+Parameter Value   = 0.757076382637024
+Parameter Data :
+0x00 ,	0xC1 ,	0xCF ,	0xC2 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B1_2
+Parameter Address = 24584
+Parameter Value   = -1.51415276527405
+Parameter Data :
+0xFE ,	0x7C ,	0x60 ,	0x7C ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B0_2
+Parameter Address = 24585
+Parameter Value   = 0.757076382637024
+Parameter Data :
+0x00 ,	0xC1 ,	0xCF ,	0xC2 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2A2_2
+Parameter Address = 24586
+Parameter Value   = -0.574061930179596
+Parameter Data :
+0xFF ,	0x6D ,	0x0A ,	0x47 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2A1_2
+Parameter Address = 24587
+Parameter Value   = 1.4542436003685
+Parameter Data :
+0x01 ,	0x74 ,	0x49 ,	0x4F ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B2_3
+Parameter Address = 24588
+Parameter Value   = 0.757076382637024
+Parameter Data :
+0x00 ,	0xC1 ,	0xCF ,	0xC2 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B1_3
+Parameter Address = 24589
+Parameter Value   = -1.51415276527405
+Parameter Data :
+0xFE ,	0x7C ,	0x60 ,	0x7C ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2B0_3
+Parameter Address = 24590
+Parameter Value   = 0.757076382637024
+Parameter Data :
+0x00 ,	0xC1 ,	0xCF ,	0xC2 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2A2_3
+Parameter Address = 24591
+Parameter Value   = -0.574061930179596
+Parameter Data :
+0xFF ,	0x6D ,	0x0A ,	0x47 ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2A1_3
+Parameter Address = 24592
+Parameter Value   = 1.4542436003685
+Parameter Data :
+0x01 ,	0x74 ,	0x49 ,	0x4F ,	
+
+
+
+Cell Name         = Crossover1
+Parameter Name    = CrossoverFilter2WaySPS300SS4p6Alg2LowInvert
+Parameter Address = 115
+Parameter Value   = 1
+Parameter Data :
+0x01, 0x00, 0x00, 0x00, 
+
+
+
+Cell Name         = None - Framework
+Parameter Name    = __SafeLoad_Module__data_SafeLoad
+Parameter Address = 24576
+Parameter Data :
+0x00, 0x00, 0x00, 0x00, 
+0x00, 0x00, 0x00, 0x00, 
+0x00, 0x00, 0x00, 0x00, 
+0x00, 0x00, 0x00, 0x00, 
+0x00, 0x00, 0x00, 0x00, 
+
+
+
+Cell Name         = None - Framework
+Parameter Name    = __SafeLoad_Module__address_SafeLoad
+Parameter Address = 24581
+Parameter Value   = 0
+Parameter Data :
+0x00, 0x00, 0x00, 0x00, 
+
+
+
+Cell Name         = None - Framework
+Parameter Name    = __SafeLoad_Module__num_SafeLoad
+Parameter Address = 24582
+Parameter Value   = 0
+Parameter Data :
+0x00, 0x00, 0x00, 0x00, 
+
+
+
+Cell Name         = None - Framework
+Parameter Name    = NonModRamAlloc
+Parameter Address = 0
+Parameter Value   = 4096
+Parameter Data :
+0x00, 0x00, 0x10, 0x00, 
+
+
+
+Parameter data for: IC 3 (Hexadecimal format starting at parameter address 0)
+See also adau1452-ad2410-tesla-amp.hex file
+0x00 , 	0x00 , 	0x10 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+
+Parameter data for: IC 3 (Binary format starting at parameter address 0)
+00000000	00000000	00010000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+
+Parameter data for: IC 2 (Hexadecimal format starting at parameter address 0)
+See also adau1452-ad2410-tesla-amp.hex file
+
+Parameter data for: IC 2 (Binary format starting at parameter address 0)
+

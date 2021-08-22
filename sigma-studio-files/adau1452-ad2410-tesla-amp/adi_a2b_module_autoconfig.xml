@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<ROM>
+  <Version_Info>
+    <A2BDLL_Version Version="19.3.0" />
+    <A2BStackDLL_Version Version="19.3.0.0" />
+    <SigmaStudio_Version Version="Unknown" />
+  </Version_Info>
+  <page modetype="Mode 0">
+    <action instr="writeXbytes" addr_width="2" data_width="1" len="66" addr="0" i2caddr="105" AddrIncr="1" ParamName="Module Configuration block">AB AD 10 21 00 1C 00 B7 00 03 00 0B 08 00 00 0A 00 41 02 01 00 00 00 00 00 00 00 00 02 70 01 14 00 02 70 03 88 21 64 57 00 02 70 01 16 21 64 57 00 02 6C 00 0F 00 02 6C 01 00 00 02 6C 02 18 00</action>
+    <action instr="writeXbytes" addr_width="2" data_width="1" len="66" addr="64" i2caddr="105" AddrIncr="1" ParamName="Module Configuration block">02 6C 03 49 00 02 6C 04 00 00 02 6C 05 01 00 02 6E 00 5C 00 02 6E 01 07 00 02 6E 02 0F 00 02 6E 03 00 00 02 6E 04 00 00 02 6E 05 11 00 02 6E 06 11 00 02 6E 07 11 00 02 6E 08 11 00 02 6E 09 00</action>
+    <action instr="writeXbytes" addr_width="2" data_width="1" len="27" addr="128" i2caddr="105" AddrIncr="1" ParamName="Module Configuration block">00 02 6E 0A 00 00 02 6E 0B 00 00 02 6E 0C 40 00 02 6E 0D 00 00 02 6E 0E 03</action>
+  </page>
+</ROM>
