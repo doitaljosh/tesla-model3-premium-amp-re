@@ -1,153 +1,9 @@
-Cell Name         = MasterVolume
-Parameter Name    = HWGainADAU145XAlg8slew_mode
-Parameter Address = 95
-Parameter Value   = 8330
-Parameter Data :
-0x00, 0x00, 0x20, 0x8A, 
-
-
-
-Cell Name         = MasterVolume
-Parameter Name    = HWGainADAU145XAlg8target
-Parameter Address = 94
-Parameter Value   = 0.000398099422454834
-Parameter Data :
-0x00, 0x00, 0x1A, 0x17, 
-
-
-
-Cell Name         = MasterVolume
-Parameter Name    = HWGainADAU145XAlg8slew_mode
-Parameter Address = 95
-Parameter Value   = 8330
-Parameter Data :
-0x00, 0x00, 0x20, 0x8A, 
-
-
-
-Cell Name         = MasterVolume
-Parameter Name    = HWGainADAU145XAlg8target
-Parameter Address = 94
-Parameter Value   = 0.000398099422454834
-Parameter Data :
-0x00, 0x00, 0x1A, 0x17, 
-
-
-
-Cell Name         = MasterVolume
-Parameter Name    = HWGainADAU145XAlg8slew_mode
-Parameter Address = 95
-Parameter Value   = 8330
-Parameter Data :
-0x00, 0x00, 0x20, 0x8A, 
-
-
-
-Cell Name         = MasterVolume
-Parameter Name    = HWGainADAU145XAlg8target
-Parameter Address = 94
-Parameter Value   = 0.000398099422454834
-Parameter Data :
-0x00, 0x00, 0x1A, 0x17, 
-
-
-
-Cell Name         = MasterVolume
-Parameter Name    = HWGainADAU145XAlg8slew_mode
-Parameter Address = 95
-Parameter Value   = 8330
-Parameter Data :
-0x00, 0x00, 0x20, 0x8A, 
-
-
-
-Cell Name         = MasterVolume
-Parameter Name    = HWGainADAU145XAlg8target
-Parameter Address = 94
-Parameter Value   = 0.000398099422454834
-Parameter Data :
-0x00, 0x00, 0x1A, 0x17, 
-
-
-
-Cell Name         = MasterVolume
-Parameter Name    = HWGainADAU145XAlg8slew_mode
-Parameter Address = 95
-Parameter Value   = 8330
-Parameter Data :
-0x00, 0x00, 0x20, 0x8A, 
-
-
-
-Cell Name         = MasterVolume
-Parameter Name    = HWGainADAU145XAlg8target
-Parameter Address = 94
-Parameter Value   = 0.000398099422454834
-Parameter Data :
-0x00, 0x00, 0x1A, 0x17, 
-
-
-
-Cell Name         = MasterVolume
-Parameter Name    = HWGainADAU145XAlg8slew_mode
-Parameter Address = 95
-Parameter Value   = 8330
-Parameter Data :
-0x00, 0x00, 0x20, 0x8A, 
-
-
-
-Cell Name         = MasterVolume
-Parameter Name    = HWGainADAU145XAlg8target
-Parameter Address = 94
-Parameter Value   = 0.000398099422454834
-Parameter Data :
-0x00, 0x00, 0x1A, 0x17, 
-
-
-
-Cell Name         = MasterVolume
-Parameter Name    = HWGainADAU145XAlg8slew_mode
-Parameter Address = 95
-Parameter Value   = 8330
-Parameter Data :
-0x00, 0x00, 0x20, 0x8A, 
-
-
-
-Cell Name         = MasterVolume
-Parameter Name    = HWGainADAU145XAlg8target
-Parameter Address = 94
-Parameter Value   = 0.000398099422454834
-Parameter Data :
-0x00, 0x00, 0x1A, 0x17, 
-
-
-
-Cell Name         = MasterVolume
-Parameter Name    = HWGainADAU145XAlg8slew_mode
-Parameter Address = 95
-Parameter Value   = 8330
-Parameter Data :
-0x00, 0x00, 0x20, 0x8A, 
-
-
-
-Cell Name         = MasterVolume
-Parameter Name    = HWGainADAU145XAlg8target
-Parameter Address = 94
-Parameter Value   = 0.000398099422454834
-Parameter Data :
-0x00, 0x00, 0x1A, 0x17, 
-
-
-
 Cell Name         = Nx2-1
 Parameter Name    = stereomuxSigma300ns1index
 Parameter Address = 114
-Parameter Value   = 2
+Parameter Value   = 0
 Parameter Data :
-0x00, 0x00, 0x00, 0x02, 
+0x00, 0x00, 0x00, 0x00, 
 
 
 
@@ -155,8 +11,8 @@ Cell Name         = Sweep1
 Parameter Name    = sweep_lookup_AlgS3001increment1
 Parameter Address = 24
 Parameter Data :
-0x00, 0x01, 0x99, 0x9A, 
-0x00, 0x6A, 0xAA, 0xAB, 
+0x00, 0x01, 0x11, 0x11, 
+0x01, 0x00, 0x00, 0x00, 
 0x01, 0x00, 0x00, 0x00, 
 0x00, 0x02, 0x00, 0x00, 
 0x00, 0x00, 0x01, 0x00, 
@@ -1186,6 +1042,150 @@ Parameter Address = 115
 Parameter Value   = 1
 Parameter Data :
 0x01, 0x00, 0x00, 0x00, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg1slew_mode
+Parameter Address = 95
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg1target
+Parameter Address = 94
+Parameter Value   = 0.0398107171058655
+Parameter Data :
+0x00, 0x0A, 0x31, 0x09, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg1slew_mode
+Parameter Address = 95
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg1target
+Parameter Address = 94
+Parameter Value   = 0.0398107171058655
+Parameter Data :
+0x00, 0x0A, 0x31, 0x09, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg1slew_mode
+Parameter Address = 95
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg1target
+Parameter Address = 94
+Parameter Value   = 0.0398107171058655
+Parameter Data :
+0x00, 0x0A, 0x31, 0x09, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg1slew_mode
+Parameter Address = 95
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg1target
+Parameter Address = 94
+Parameter Value   = 0.0398107171058655
+Parameter Data :
+0x00, 0x0A, 0x31, 0x09, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg1slew_mode
+Parameter Address = 95
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg1target
+Parameter Address = 94
+Parameter Value   = 0.0398107171058655
+Parameter Data :
+0x00, 0x0A, 0x31, 0x09, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg1slew_mode
+Parameter Address = 95
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg1target
+Parameter Address = 94
+Parameter Value   = 0.0398107171058655
+Parameter Data :
+0x00, 0x0A, 0x31, 0x09, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg1slew_mode
+Parameter Address = 95
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg1target
+Parameter Address = 94
+Parameter Value   = 0.0398107171058655
+Parameter Data :
+0x00, 0x0A, 0x31, 0x09, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg1slew_mode
+Parameter Address = 95
+Parameter Value   = 8330
+Parameter Data :
+0x00, 0x00, 0x20, 0x8A, 
+
+
+
+Cell Name         = MasterVolume
+Parameter Name    = HWGainADAU145XAlg1target
+Parameter Address = 94
+Parameter Value   = 0.0398107171058655
+Parameter Data :
+0x00, 0x0A, 0x31, 0x09, 
 
 
 

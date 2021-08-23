@@ -1,0 +1,47 @@
+ADAU145X Assembler, Analog Devices Inc.
+Version: 4.6.0,1809  (built 12/23/2020)
+
+##### Compile Started: Sunday, August 22, 2021 8:56:07 PM #####
+ADAU145X Assembler, Analog Devices Inc.
+Version: 4.6.0,1809  (built 12/23/2020)
+
+##### Compile Started: Sunday, August 22, 2021 8:56:07 PM #####
+##### Compile succeeded:  0 errors, 0 warnings #####
+
+##### Summary #####
+DM0 RAM used:       00121    (of 20480)
+DM1 RAM used:       03507    (of 20480)
+PM  RAM used(Data): 00000    (of 8192)
+PM  RAM used(Inst): 00385    (of 8192) 332 instructions (32bit: 279  64bit: 53)
+Total PM used:      00385    (of 8192)
+
+--------------------------------------------------------------------------------------
+STREAM                        Inst      Inst      DM0     DM1     PM
+Instance                      (cycles)  (size)    
+--------------------------------------------------------------------------------------
+STACK                          -         -        16      0       0       
+ADIsurround1                  104       117       35      3440    0
+Crossover1                    52        76        34      38      0
+FRAMEWORK                     54        35        8       7       0
+MasterVolume                  25        29        3       8       0
+Sweep1                        28        28        13      1       0
+Nx2-1                         10        12        7       0       0
+S Splitter1                   6         6         1       2       0
+ADAU1452 IN3                  4         4         0       2       0
+DigMicIn1                     4         4         0       2       0
+Add1                          4         4         0       1       0
+SideLeftAdder                 4         4         0       1       0
+SideRightAdder                4         4         0       1       0
+LFE                           2         2         0       0       0
+FrontLeft                     2         2         0       0       0
+FrontRight                    2         2         0       0       0
+Center                        2         2         0       0       0
+SideLeft                      2         2         0       0       0
+SideRight                     2         2         0       0       0
+RearLeft                      2         2         0       0       0
+RearRight                     2         2         0       0       0
+--------------------------------------------------------------------------------------
+Total                         315       339       117     3503    0
+--------------------------------------------------------------------------------------
+(% Fs=48.0kHz)                6%        5%        1%      18%     0%
+
