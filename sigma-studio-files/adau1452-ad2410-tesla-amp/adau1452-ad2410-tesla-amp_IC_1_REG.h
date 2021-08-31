@@ -1,7 +1,7 @@
 /*
  * File:           C:\Users\doita\OneDrive\Documents\Analog Devices\SigmaStudio 4.6\Projects\adau1452-ad2410-tesla-amp\adau1452-ad2410-tesla-amp_IC_1_REG.h
  *
- * Created:        Sunday, August 22, 2021 8:38:45 PM
+ * Created:        Monday, August 30, 2021 10:33:02 PM
  * Description:    adau1452-ad2410-tesla-amp:IC 1 control register definitions.
  *
  * This software is distributed in the hope that it will be useful,
@@ -143,7 +143,7 @@
 /* ASRC_INPUT7  - Registers (IC 1) */
 #define REG_ASRC_INPUT7_IC_1_ADDR                 0xF107
 #define REG_ASRC_INPUT7_IC_1_BYTE                 2
-#define REG_ASRC_INPUT7_IC_1_VALUE                0x0
+#define REG_ASRC_INPUT7_IC_1_VALUE                0x3
 
 /* ASRC_OUT_RATE0  - Registers (IC 1) */
 #define REG_ASRC_OUT_RATE0_IC_1_ADDR              0xF140
@@ -183,7 +183,7 @@
 /* ASRC_OUT_RATE7  - Registers (IC 1) */
 #define REG_ASRC_OUT_RATE7_IC_1_ADDR              0xF147
 #define REG_ASRC_OUT_RATE7_IC_1_BYTE              2
-#define REG_ASRC_OUT_RATE7_IC_1_VALUE             0x0
+#define REG_ASRC_OUT_RATE7_IC_1_VALUE             0x1
 
 /* SOUT_SOURCE0  - Registers (IC 1) */
 #define REG_SOUT_SOURCE0_IC_1_ADDR                0xF180
@@ -1193,7 +1193,7 @@
 /* PROG_CNTR1  - Registers (IC 1) */
 #define REG_PROG_CNTR1_IC_1_ADDR                  0xF461
 #define REG_PROG_CNTR1_IC_1_BYTE                  0
-#define REG_PROG_CNTR1_IC_1_VALUE                 0x89
+#define REG_PROG_CNTR1_IC_1_VALUE                 0x1B4
 
 /* PROG_CNTR_CLEAR  - Registers (IC 1) */
 #define REG_PROG_CNTR_CLEAR_IC_1_ADDR             0xF462
@@ -1208,7 +1208,7 @@
 /* PROG_CNTR_LENGTH1  - Registers (IC 1) */
 #define REG_PROG_CNTR_LENGTH1_IC_1_ADDR           0xF464
 #define REG_PROG_CNTR_LENGTH1_IC_1_BYTE           0
-#define REG_PROG_CNTR_LENGTH1_IC_1_VALUE          0x121
+#define REG_PROG_CNTR_LENGTH1_IC_1_VALUE          0x119
 
 /* PROG_CNTR_MAXLENGTH0  - Registers (IC 1) */
 #define REG_PROG_CNTR_MAXLENGTH0_IC_1_ADDR        0xF465
@@ -1218,7 +1218,7 @@
 /* PROG_CNTR_MAXLENGTH1  - Registers (IC 1) */
 #define REG_PROG_CNTR_MAXLENGTH1_IC_1_ADDR        0xF466
 #define REG_PROG_CNTR_MAXLENGTH1_IC_1_BYTE        0
-#define REG_PROG_CNTR_MAXLENGTH1_IC_1_VALUE       0x15C0
+#define REG_PROG_CNTR_MAXLENGTH1_IC_1_VALUE       0xC32
 
 /* MP0_MODE  - Registers (IC 1) */
 #define REG_MP0_MODE_IC_1_ADDR                    0xF510
@@ -1443,7 +1443,7 @@
 /* ASRC_LOCK  - Registers (IC 1) */
 #define REG_ASRC_LOCK_IC_1_ADDR                   0xF580
 #define REG_ASRC_LOCK_IC_1_BYTE                   0
-#define REG_ASRC_LOCK_IC_1_VALUE                  0x0
+#define REG_ASRC_LOCK_IC_1_VALUE                  0x8
 
 /* ASRC_MUTE  - Registers (IC 1) */
 #define REG_ASRC_MUTE_IC_1_ADDR                   0xF581
@@ -1468,7 +1468,7 @@
 /* ASRC3_RATIO  - Registers (IC 1) */
 #define REG_ASRC3_RATIO_IC_1_ADDR                 0xF585
 #define REG_ASRC3_RATIO_IC_1_BYTE                 0
-#define REG_ASRC3_RATIO_IC_1_VALUE                0xFFFD
+#define REG_ASRC3_RATIO_IC_1_VALUE                0x1000
 
 /* ASRC4_RATIO  - Registers (IC 1) */
 #define REG_ASRC4_RATIO_IC_1_ADDR                 0xF586
@@ -1493,32 +1493,32 @@
 /* ADC_READ0  - Registers (IC 1) */
 #define REG_ADC_READ0_IC_1_ADDR                   0xF5A0
 #define REG_ADC_READ0_IC_1_BYTE                   0
-#define REG_ADC_READ0_IC_1_VALUE                  0x20
+#define REG_ADC_READ0_IC_1_VALUE                  0x21
 
 /* ADC_READ1  - Registers (IC 1) */
 #define REG_ADC_READ1_IC_1_ADDR                   0xF5A1
 #define REG_ADC_READ1_IC_1_BYTE                   0
-#define REG_ADC_READ1_IC_1_VALUE                  0x80
+#define REG_ADC_READ1_IC_1_VALUE                  0x59
 
 /* ADC_READ2  - Registers (IC 1) */
 #define REG_ADC_READ2_IC_1_ADDR                   0xF5A2
 #define REG_ADC_READ2_IC_1_BYTE                   0
-#define REG_ADC_READ2_IC_1_VALUE                  0xCC
+#define REG_ADC_READ2_IC_1_VALUE                  0xD3
 
 /* ADC_READ3  - Registers (IC 1) */
 #define REG_ADC_READ3_IC_1_ADDR                   0xF5A3
 #define REG_ADC_READ3_IC_1_BYTE                   0
-#define REG_ADC_READ3_IC_1_VALUE                  0xFD
+#define REG_ADC_READ3_IC_1_VALUE                  0xCE
 
 /* ADC_READ4  - Registers (IC 1) */
 #define REG_ADC_READ4_IC_1_ADDR                   0xF5A4
 #define REG_ADC_READ4_IC_1_BYTE                   0
-#define REG_ADC_READ4_IC_1_VALUE                  0x137
+#define REG_ADC_READ4_IC_1_VALUE                  0xE3
 
 /* ADC_READ5  - Registers (IC 1) */
 #define REG_ADC_READ5_IC_1_ADDR                   0xF5A5
 #define REG_ADC_READ5_IC_1_BYTE                   0
-#define REG_ADC_READ5_IC_1_VALUE                  0x152
+#define REG_ADC_READ5_IC_1_VALUE                  0x104
 
 /* SPDIF_LOCK_DET  - Registers (IC 1) */
 #define REG_SPDIF_LOCK_DET_IC_1_ADDR              0xF600
@@ -2923,7 +2923,7 @@
 #define R23_ASRC_INPUT6_ASRC_SIN_CHANNEL_IC_1_SHIFT 3
 
 /* ASRC_INPUT7 (IC 1) */
-#define R24_ASRC_INPUT7_ASRC_SOURCE_IC_1          0x0    /* 000b	[2:0] */
+#define R24_ASRC_INPUT7_ASRC_SOURCE_IC_1          0x3    /* 011b	[2:0] */
 #define R24_ASRC_INPUT7_ASRC_SIN_CHANNEL_IC_1     0x0    /* 00000b	[7:3] */
 #define R24_ASRC_INPUT7_ASRC_SOURCE_IC_1_MASK     0x7
 #define R24_ASRC_INPUT7_ASRC_SOURCE_IC_1_SHIFT    0
@@ -2966,7 +2966,7 @@
 #define R31_ASRC_OUT_RATE6_ASRC_RATE_IC_1_SHIFT   0
 
 /* ASRC_OUT_RATE7 (IC 1) */
-#define R32_ASRC_OUT_RATE7_ASRC_RATE_IC_1         0x0    /* 0000b	[3:0] */
+#define R32_ASRC_OUT_RATE7_ASRC_RATE_IC_1         0x1    /* 0001b	[3:0] */
 #define R32_ASRC_OUT_RATE7_ASRC_RATE_IC_1_MASK    0xF
 #define R32_ASRC_OUT_RATE7_ASRC_RATE_IC_1_SHIFT   0
 
@@ -5878,7 +5878,7 @@
 #define R233_PROG_CNTR0_PROG_CNTR_MSB_IC_1_SHIFT  0
 
 /* PROG_CNTR1 (IC 1) */
-#define R234_PROG_CNTR1_PROG_CNTR_LSB_IC_1        0x0089 /* 0000000010001001b	[15:0] */
+#define R234_PROG_CNTR1_PROG_CNTR_LSB_IC_1        0x01B4 /* 0000000110110100b	[15:0] */
 #define R234_PROG_CNTR1_PROG_CNTR_LSB_IC_1_MASK   0xFFFF
 #define R234_PROG_CNTR1_PROG_CNTR_LSB_IC_1_SHIFT  0
 
@@ -5893,7 +5893,7 @@
 #define R236_PROG_CNTR_LENGTH0_PROG_LENGTH_MSB_IC_1_SHIFT 0
 
 /* PROG_CNTR_LENGTH1 (IC 1) */
-#define R237_PROG_CNTR_LENGTH1_PROG_LENGTH_LSB_IC_1 0x0121 /* 0000000100100001b	[15:0] */
+#define R237_PROG_CNTR_LENGTH1_PROG_LENGTH_LSB_IC_1 0x0119 /* 0000000100011001b	[15:0] */
 #define R237_PROG_CNTR_LENGTH1_PROG_LENGTH_LSB_IC_1_MASK 0xFFFF
 #define R237_PROG_CNTR_LENGTH1_PROG_LENGTH_LSB_IC_1_SHIFT 0
 
@@ -5903,7 +5903,7 @@
 #define R238_PROG_CNTR_MAXLENGTH0_PROG_MAXLENGTH_MSB_IC_1_SHIFT 0
 
 /* PROG_CNTR_MAXLENGTH1 (IC 1) */
-#define R239_PROG_CNTR_MAXLENGTH1_PROG_MAXLENGTH_LSB_IC_1 0x15C0 /* 0001010111000000b	[15:0] */
+#define R239_PROG_CNTR_MAXLENGTH1_PROG_MAXLENGTH_LSB_IC_1 0x0C32 /* 0000110000110010b	[15:0] */
 #define R239_PROG_CNTR_MAXLENGTH1_PROG_MAXLENGTH_LSB_IC_1_MASK 0xFFFF
 #define R239_PROG_CNTR_MAXLENGTH1_PROG_MAXLENGTH_LSB_IC_1_SHIFT 0
 
@@ -6293,7 +6293,7 @@
 #define R284_ASRC_LOCK_ASRC0L_IC_1                0x0    /* 0b	[0] */
 #define R284_ASRC_LOCK_ASRC1L_IC_1                0x0    /* 0b	[1] */
 #define R284_ASRC_LOCK_ASRC2L_IC_1                0x0    /* 0b	[2] */
-#define R284_ASRC_LOCK_ASRC3L_IC_1                0x0    /* 0b	[3] */
+#define R284_ASRC_LOCK_ASRC3L_IC_1                0x1    /* 1b	[3] */
 #define R284_ASRC_LOCK_ASRC4L_IC_1                0x0    /* 0b	[4] */
 #define R284_ASRC_LOCK_ASRC5L_IC_1                0x0    /* 0b	[5] */
 #define R284_ASRC_LOCK_ASRC6L_IC_1                0x0    /* 0b	[6] */
@@ -6366,7 +6366,7 @@
 #define R288_ASRC2_RATIO_ASRC_RATIO_IC_1_SHIFT    0
 
 /* ASRC3_RATIO (IC 1) */
-#define R289_ASRC3_RATIO_ASRC_RATIO_IC_1          0xFFFD /* 1111111111111101b	[15:0] */
+#define R289_ASRC3_RATIO_ASRC_RATIO_IC_1          0x1000 /* 0001000000000000b	[15:0] */
 #define R289_ASRC3_RATIO_ASRC_RATIO_IC_1_MASK     0xFFFF
 #define R289_ASRC3_RATIO_ASRC_RATIO_IC_1_SHIFT    0
 
@@ -6391,32 +6391,32 @@
 #define R293_ASRC7_RATIO_ASRC_RATIO_IC_1_SHIFT    0
 
 /* ADC_READ0 (IC 1) */
-#define R294_ADC_READ0_ADC_VALUE_IC_1             0x0020 /* 0000000000100000b	[15:0] */
+#define R294_ADC_READ0_ADC_VALUE_IC_1             0x0021 /* 0000000000100001b	[15:0] */
 #define R294_ADC_READ0_ADC_VALUE_IC_1_MASK        0xFFFF
 #define R294_ADC_READ0_ADC_VALUE_IC_1_SHIFT       0
 
 /* ADC_READ1 (IC 1) */
-#define R295_ADC_READ1_ADC_VALUE_IC_1             0x0080 /* 0000000010000000b	[15:0] */
+#define R295_ADC_READ1_ADC_VALUE_IC_1             0x0059 /* 0000000001011001b	[15:0] */
 #define R295_ADC_READ1_ADC_VALUE_IC_1_MASK        0xFFFF
 #define R295_ADC_READ1_ADC_VALUE_IC_1_SHIFT       0
 
 /* ADC_READ2 (IC 1) */
-#define R296_ADC_READ2_ADC_VALUE_IC_1             0x00CC /* 0000000011001100b	[15:0] */
+#define R296_ADC_READ2_ADC_VALUE_IC_1             0x00D3 /* 0000000011010011b	[15:0] */
 #define R296_ADC_READ2_ADC_VALUE_IC_1_MASK        0xFFFF
 #define R296_ADC_READ2_ADC_VALUE_IC_1_SHIFT       0
 
 /* ADC_READ3 (IC 1) */
-#define R297_ADC_READ3_ADC_VALUE_IC_1             0x00FD /* 0000000011111101b	[15:0] */
+#define R297_ADC_READ3_ADC_VALUE_IC_1             0x00CE /* 0000000011001110b	[15:0] */
 #define R297_ADC_READ3_ADC_VALUE_IC_1_MASK        0xFFFF
 #define R297_ADC_READ3_ADC_VALUE_IC_1_SHIFT       0
 
 /* ADC_READ4 (IC 1) */
-#define R298_ADC_READ4_ADC_VALUE_IC_1             0x0137 /* 0000000100110111b	[15:0] */
+#define R298_ADC_READ4_ADC_VALUE_IC_1             0x00E3 /* 0000000011100011b	[15:0] */
 #define R298_ADC_READ4_ADC_VALUE_IC_1_MASK        0xFFFF
 #define R298_ADC_READ4_ADC_VALUE_IC_1_SHIFT       0
 
 /* ADC_READ5 (IC 1) */
-#define R299_ADC_READ5_ADC_VALUE_IC_1             0x0152 /* 0000000101010010b	[15:0] */
+#define R299_ADC_READ5_ADC_VALUE_IC_1             0x0104 /* 0000000100000100b	[15:0] */
 #define R299_ADC_READ5_ADC_VALUE_IC_1_MASK        0xFFFF
 #define R299_ADC_READ5_ADC_VALUE_IC_1_SHIFT       0
 

@@ -1,7 +1,7 @@
 /*
  * File:           C:\Users\doita\OneDrive\Documents\Analog Devices\SigmaStudio 4.6\Projects\adau1452-ad2410-tesla-amp\adau1452-ad2410-tesla-amp_IC_3.h
  *
- * Created:        Sunday, August 22, 2021 8:38:45 PM
+ * Created:        Monday, August 30, 2021 10:33:02 PM
  * Description:    adau1452-ad2410-tesla-amp:IC 3 program data.
  *
  * This software is distributed in the hope that it will be useful,
@@ -123,13 +123,13 @@ ADI_REG_TYPE R4_DELAY_IC_3_Default[R4_DELAY_IC_3_SIZE] = {
 /* Register Default - IC 3.Serial Port Control Registers */
 #define R5_SERIAL_PORT_CONTROL_REGISTERS_IC_3_SIZE 2
 ADI_REG_TYPE R5_SERIAL_PORT_CONTROL_REGISTERS_IC_3_Default[R5_SERIAL_PORT_CONTROL_REGISTERS_IC_3_SIZE] = {
-0x01, 0x00
+0x00, 0x00
 };
 
 /* Register Default - IC 3.ALC Control Registers */
 #define R6_ALC_CONTROL_REGISTERS_IC_3_SIZE 4
 ADI_REG_TYPE R6_ALC_CONTROL_REGISTERS_IC_3_Default[R6_ALC_CONTROL_REGISTERS_IC_3_SIZE] = {
-0xF8, 0x3A, 0x68, 0x31
+0xF8, 0x3B, 0x68, 0x31
 };
 
 /* Register Default - IC 3.Microphone Control Register */
@@ -140,19 +140,19 @@ ADI_REG_TYPE R7_MICCTRLREGISTER_IC_3_Default[REG_MICCTRLREGISTER_IC_3_BYTE] = {
 /* Register Default - IC 3.Record Input Signal Path Registers */
 #define R8_RECORD_INPUT_SIGNAL_PATH_REGISTERS_IC_3_SIZE 8
 ADI_REG_TYPE R8_RECORD_INPUT_SIGNAL_PATH_REGISTERS_IC_3_Default[R8_RECORD_INPUT_SIGNAL_PATH_REGISTERS_IC_3_SIZE] = {
-0x00, 0x5B, 0x07, 0x5B, 0x07, 0x6C, 0x6C, 0x00
+0x00, 0x01, 0x05, 0x01, 0x05, 0x6E, 0x6E, 0x00
 };
 
 /* Register Default - IC 3.ADC Control Registers */
 #define R9_ADC_CONTROL_REGISTERS_IC_3_SIZE 3
 ADI_REG_TYPE R9_ADC_CONTROL_REGISTERS_IC_3_Default[R9_ADC_CONTROL_REGISTERS_IC_3_SIZE] = {
-0x33, 0x2B, 0x29
+0x33, 0x3A, 0x00
 };
 
 /* Register Default - IC 3.Playback Output Signal Path Registers */
 #define R10_PLAYBACK_OUTPUT_SIGNAL_PATH_REGISTERS_IC_3_SIZE 14
 ADI_REG_TYPE R10_PLAYBACK_OUTPUT_SIGNAL_PATH_REGISTERS_IC_3_Default[R10_PLAYBACK_OUTPUT_SIGNAL_PATH_REGISTERS_IC_3_SIZE] = {
-0x11, 0x00, 0x11, 0x00, 0x03, 0x09, 0x01, 0xE5, 0xE5, 0xE6, 0xE6, 0xE7, 0x00, 0x03
+0x01, 0x00, 0x01, 0x00, 0x03, 0x09, 0x01, 0xE5, 0xE5, 0xE6, 0xE6, 0xE7, 0x00, 0x03
 };
 
 /* Register Default - IC 3.Converter Control Registers */

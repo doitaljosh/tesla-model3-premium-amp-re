@@ -1,7 +1,7 @@
 /*
  * File:           C:\Users\doita\OneDrive\Documents\Analog Devices\SigmaStudio 4.6\Projects\adau1452-ad2410-tesla-amp\adau1452-ad2410-tesla-amp_IC_2_PARAM.h
  *
- * Created:        Sunday, August 22, 2021 8:38:45 PM
+ * Created:        Monday, August 30, 2021 10:33:02 PM
  * Description:    adau1452-ad2410-tesla-amp:IC 2 parameter RAM definitions.
  *
  * This software is distributed in the hope that it will be useful,
