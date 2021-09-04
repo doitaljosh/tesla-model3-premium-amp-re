@@ -52,19 +52,19 @@
                 <Link pin="O_C8_A0_P6_out" dir="out" link="Link38" />
                 <Link pin="O_C8_A0_P7_out" dir="out" link="Link35" />
             </Algorithm>
-            <Algorithm name="CrossoverFilter2WaySPS300SS4p6Alg2" friendlyname="2-Way Crossover Filter - Single Precision " cell="Crossover1 " location="{X=652, Y=201} " Growth="0 " GrowthB="0">
+            <Algorithm name="CrossoverFilter2WaySPS300SS4p6Alg2" friendlyname="2-Way Crossover Filter - Single Precision " cell="Crossover1 " location="{X=753, Y=182} " Growth="0 " GrowthB="0">
                 <Link pin="I_C109_A1_P1_in" dir="in" link="Link34" />
-                <Link pin="O_C109_A1_P2_out" dir="out" link="Link24" />
+                <Link pin="O_C109_A1_P2_out" dir="out" link="Link25" />
                 <Link pin="O_C109_A1_P3_out" dir="out" link="Link21" />
             </Algorithm>
-            <Algorithm name="CrossoverFilter2WaySPS300SS4p6Alg1" friendlyname="2-Way Crossover Filter - Single Precision " cell="Crossover1 " location="{X=652, Y=201} " Growth="0 " GrowthB="0">
+            <Algorithm name="CrossoverFilter2WaySPS300SS4p6Alg1" friendlyname="2-Way Crossover Filter - Single Precision " cell="Crossover1 " location="{X=753, Y=182} " Growth="0 " GrowthB="0">
                 <Link pin="I_C109_A0_P1_in" dir="in" link="Link36" />
-                <Link pin="O_C109_A0_P2_out" dir="out" link="Link25" />
+                <Link pin="O_C109_A0_P2_out" dir="out" link="Link24" />
                 <Link pin="O_C109_A0_P3_out" dir="out" link="Link22" />
             </Algorithm>
-            <Algorithm name="Adder2ChannelAlg1" friendlyname="2 Channel Addition " cell="Add1 " location="{X=748, Y=329} " Growth="1 " GrowthB="0">
-                <Link pin="I_C204_A0_P1_in" dir="in" link="Link25" />
-                <Link pin="I_C204_A0_P2_in" dir="in" link="Link24" />
+            <Algorithm name="Adder2ChannelAlg1" friendlyname="2 Channel Addition " cell="Add1 " location="{X=946, Y=181} " Growth="1 " GrowthB="0">
+                <Link pin="I_C204_A0_P1_in" dir="in" link="Link24" />
+                <Link pin="I_C204_A0_P2_in" dir="in" link="Link25" />
                 <Link pin="O_C204_A0_P3_out" dir="out" link="Link23" />
             </Algorithm>
             <Algorithm name="HWGainADAU145XAlg1" friendlyname="Gain (HW slew) " cell="MasterVolume " location="{X=1038, Y=332.9017} " Growth="8 " GrowthB="0">
