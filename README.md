@@ -7,7 +7,7 @@ Tesla Model 3 Premium Amp reverse engineering and A2B demo for EVAL-AD2410WDZ or
 - For now, only left, right, center, and subwoofer channels work on the large connector.
 - Crackling on channels 2 and 3 has been fixed.
 
-# Status for Jetson Nano:
+## Status for Jetson Nano:
 - The A2B bus will drop as soon as the audio interface goes to sleep. DAPM needs to be disabled since the bus needs a constant clock.
 - The TDA7802 (channels 4-7) still does not play any audio. More reverse engineering will be required to fix this.
 - Crackling on channels 2 and 3 has been fixed.
@@ -20,6 +20,16 @@ Tesla Model 3 Premium Amp reverse engineering and A2B demo for EVAL-AD2410WDZ or
 - Volume control
 - EQ
 - Optimization for automotive environments
+
+### ADAU1452 routing:
+- DOUT3 -> ADAU1761 DACdata
+- ADAU1761 ADCdata -> DIN3
+- DOUT0 -> AD2425 RX0
+- DOUT1 -> AD2425 RX1
+- AD2425 TX0 -> DIN0
+- AD2425 TX1 -> DIN1
+- DOUT2 -> SDP-S DOUT
+- SDP-S DIN -> DIN2
 
 ### bin:
 - a2bapp-linux (When ran, this will set up the A2B bus when the Jetson nano, A2B master, and Tesla amp are connected.)
