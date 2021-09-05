@@ -6,7 +6,7 @@ and its licensors.
 * @file: adi_a2b_busconfig.c
 * @brief: This file contains A2B Schematic information
 * @version: $Revision$
-* @date: Sunday, September 5, 2021-6:48:34 PM
+* @date: Sunday, September 5, 2021-6:50:07 PM
 * BCF Version - 1.0.0
 * A2B DLL version- 19.3.0
 * A2B Stack DLL version- 19.3.0.0
@@ -32,8 +32,8 @@ static ADI_A2B_MASTER_NCD sMasterNode0;
 static ADI_A2B_SLAVE_NCD sChain0_SlaveNode0;
 static A2B_PERIPHERAL_DEVICE_CONFIG  Target_PeriConfig0;
 static A2B_PERIPHERAL_DEVICE_CONFIG  sChain0_Slave0_PeriConfig0;
-static ADI_A2B_PERI_CONFIG_UNIT  gaPeriCfg_0_70_Unit[5];
 static A2B_PERIPHERAL_DEVICE_CONFIG  sChain0_Slave0_PeriConfig1;
+static ADI_A2B_PERI_CONFIG_UNIT  gaPeriCfg_0_70_Unit[5];
 static A2B_PERIPHERAL_DEVICE_CONFIG  sChain0_Slave0_PeriConfig2;
 static ADI_A2B_PERI_CONFIG_UNIT  gaPeriCfg_0_6C_Unit[6];
 static A2B_PERIPHERAL_DEVICE_CONFIG  sChain0_Slave0_PeriConfig3;
@@ -61,19 +61,19 @@ ADI_A2B_BCD sBusDescription =
 		.nDiscoveryStartDelay     = 25,
 
 		/*  Enable/Disable  Line diagnostics (Post discovery) */ 
-		.bLineDiagnostics   = DISABLED,
+		.bLineDiagnostics   = ENABLED,
 
 		/*  Enable/Disable automatic discovery upon critical faults (during discovery process) */ 
-		.bAutoDiscCriticalFault = DISABLED,
+		.bAutoDiscCriticalFault = ENABLED,
 
 		/*  Number of automatic discovery attempts (during discovery process) */ 
 		.nAttemptsCriticalFault = 0,
 
 		/* Auto-rediscovery upon post discovery line fault */ 
-		.bAutoRediscOnFault = DISABLED,
+		.bAutoRediscOnFault = ENABLED,
 
 		/*! Interval (in milliseconds) between re-discovery attempt */ 
-		.nRediscInterval = 100,
+		.nRediscInterval = 50,
 
 		/*! Number of peripheral devices connected to Target */
 		.nNumPeriDevice = 1,
@@ -149,7 +149,7 @@ static ADI_A2B_MASTER_NCD sMasterNode0=
 	.nSrcNodeID			= 0xFFu ,
 
 	/*! Transceiver part number */
-	.ePartNum			= ADI_A2B_AD2428 ,
+	.ePartNum			= ADI_A2B_AD2425 ,
 
 	.sAuthSettings =
 	{
@@ -157,10 +157,10 @@ static ADI_A2B_MASTER_NCD sMasterNode0=
 		.nVendorID			= 0xADu ,
 
 		/*! Silicon version  - ADI */
-		.nVersionID			= 0x0u ,
+		.nVersionID			= 0x2u ,
 
 		/*! Product ID - AD24xx */
-		.nProductID			= 0x28u ,
+		.nProductID			= 0x25u ,
 
 		/*! Interface Capability - I2C */
 		.nCapability		= 0x1u ,
@@ -189,9 +189,6 @@ static ADI_A2B_MASTER_NCD sMasterNode0=
 
 		/*! Early frame sync status */
 		.bEarlySync			= DISABLED ,
-
-		/*! Serial RX on DTX1 Pin */
-		.bSerialRxOnDTx1			= DISABLED ,
 
 		/*! DTXn change BCLK edge */
 		.nBclkTxPolarity	= RAISING_EDGE ,
@@ -547,26 +544,11 @@ static ADI_A2B_MASTER_NCD sMasterNode0=
 		/*! PDM Control register  */
 		.nPDMCTL	= 0x0u ,
 
-		/*! PDM Control 2 register  */
-		.nPDMCTL2	= 0x0u ,
-
-		/*! PLL Control register  */
-		.nPLLCTL	= 0x0u ,
-
-		/*! LVDSA TX Control Register */
-		.nTXACTL	= 0x0u ,
-
-		/*! LVDSB TX Control Register */
-		.nTXBCTL	= 0x0u ,
-
-		/*! Control Register */
-		.nCONTROL	= 0x0u ,
-
 		/*! Test mode register */
 		.nTESTMODE	= 0x0u ,
 
 		/*! Error control register */
-		.nBECCTL	= 0x0u ,
+		.nBECCTL	= 0xEFu ,
 
 		/*! Error management register  */
 		.nERRMGMT	= 0x0u ,
@@ -724,10 +706,10 @@ static ADI_A2B_SLAVE_NCD sChain0_SlaveNode0=
 		.sPinMuxSettings =
 		{
 			/*! GPIO 0 Pin multiplexing */
-			.bGPIO0PinUsage	= A2B_GPIO_0_DISABLE ,
+			.bGPIO0PinUsage	= A2B_GPIO_0_OUTPUT ,
 
 			/*! GPIO 1 Pin multiplexing */
-			.bGPIO1PinUsage	= A2B_GPIO_1_DISABLE ,
+			.bGPIO1PinUsage	= A2B_GPIO_1_OUTPUT ,
 
 			/*! GPIO 2 Pin multiplexing */
 			.bGPIO2PinUsage	= A2B_GPIO_2_OUTPUT ,
@@ -875,7 +857,7 @@ static ADI_A2B_SLAVE_NCD sChain0_SlaveNode0=
 		.nTESTMODE	= 0x0u ,
 
 		/*! Error control register */
-		.nBECCTL	= 0x0u ,
+		.nBECCTL	= 0xEFu ,
 
 		/*! Error management register  */
 		.nERRMGMT	= 0x0u ,
@@ -919,7 +901,7 @@ static A2B_PERIPHERAL_DEVICE_CONFIG  Target_PeriConfig0=
 	 .bI2CInterfaceUse = ENABLED, 
 
 	/*7 bit I2C address */ 
-	.nI2Caddr = 0x50, 
+	.nI2Caddr = 0x70, 
 
 	/* Device type -audio source/sink/host  */ 
 	.eDeviceType = A2B_AUDIO_HOST, 
@@ -967,51 +949,6 @@ static A2B_PERIPHERAL_DEVICE_CONFIG  sChain0_Slave0_PeriConfig0=
 	 .bI2CInterfaceUse = ENABLED, 
 
 	/*7 bit I2C address */ 
-	.nI2Caddr = 0x70, 
-
-	/* Device type -audio source/sink/host  */ 
-	.eDeviceType = A2B_GENERIC_I2C_DEVICE, 
-
-	/* Tx0 Pin in use */
-	.bUseTx0 = DISABLED, 
-
-	/* Rx0 Pin in use */
-	.bUseRx0 = DISABLED, 
-
-	/* Tx1 Pin in use */
-	.bUseTx1 = DISABLED, 
-
-	/* Rx1 Pin in use */
-	.bUseRx1 = DISABLED, 
-
-	/* No of Tx0 channels  */ 
-	.nChTx0 = 0, 
-
-	/* No of Rx0 channels  */ 
-	.nChRx0 = 0, 
-
-	/* No of Tx1 channels  */ 
-	.nChTx1 = 0, 
-
-	/* No of Rx1 channels  */ 
-	.nChRx1 = 0, 
-
-	/* Number of configuration units  */ 
-	.nNumPeriConfigUnit = 5, 
-
-	/* Pointer to configuration units  */ 
-	.paPeriConfigUnit =  &gaPeriCfg_0_70_Unit[0] 
- };
-
-/* Peripheral - 1*/
-
-ADI_A2B_MEM_BCF_DATA
-static A2B_PERIPHERAL_DEVICE_CONFIG  sChain0_Slave0_PeriConfig1=
-{
-	/* I2C interface status  */ 
-	 .bI2CInterfaceUse = ENABLED, 
-
-	/*7 bit I2C address */ 
 	.nI2Caddr = 0x56, 
 
 	/* Device type -audio source/sink/host  */ 
@@ -1046,6 +983,51 @@ static A2B_PERIPHERAL_DEVICE_CONFIG  sChain0_Slave0_PeriConfig1=
 
 	/* Pointer to configuration units  */ 
 	.paPeriConfigUnit = NULL_PTR 
+ };
+
+/* Peripheral - 1*/
+
+ADI_A2B_MEM_BCF_DATA
+static A2B_PERIPHERAL_DEVICE_CONFIG  sChain0_Slave0_PeriConfig1=
+{
+	/* I2C interface status  */ 
+	 .bI2CInterfaceUse = ENABLED, 
+
+	/*7 bit I2C address */ 
+	.nI2Caddr = 0x70, 
+
+	/* Device type -audio source/sink/host  */ 
+	.eDeviceType = A2B_GENERIC_I2C_DEVICE, 
+
+	/* Tx0 Pin in use */
+	.bUseTx0 = DISABLED, 
+
+	/* Rx0 Pin in use */
+	.bUseRx0 = DISABLED, 
+
+	/* Tx1 Pin in use */
+	.bUseTx1 = DISABLED, 
+
+	/* Rx1 Pin in use */
+	.bUseRx1 = DISABLED, 
+
+	/* No of Tx0 channels  */ 
+	.nChTx0 = 0, 
+
+	/* No of Rx0 channels  */ 
+	.nChRx0 = 0, 
+
+	/* No of Tx1 channels  */ 
+	.nChTx1 = 0, 
+
+	/* No of Rx1 channels  */ 
+	.nChRx1 = 0, 
+
+	/* Number of configuration units  */ 
+	.nNumPeriConfigUnit = 5, 
+
+	/* Pointer to configuration units  */ 
+	.paPeriConfigUnit =  &gaPeriCfg_0_70_Unit[0] 
  };
 
 /* Peripheral - 2*/
@@ -1202,7 +1184,7 @@ static	uint8 gaPeriCfg_0_6C_2_Data[1] =
  ADI_A2B_MEM_PERI_CONFIG_DATA 
 static	uint8 gaPeriCfg_0_6C_3_Data[1] =
 {
-	0x59u	
+	0x51u	
 };
 
  ADI_A2B_MEM_PERI_CONFIG_DATA 
