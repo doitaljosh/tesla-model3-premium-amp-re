@@ -10,6 +10,7 @@ Tesla Model 3 Premium Amp reverse engineering and A2B demo for EVAL-AD2410WDZ or
 ## Status for Jetson Nano:
 - The A2B bus will drop as soon as the audio interface goes to sleep. DAPM needs to be disabled since the bus needs a constant clock.
 - The TDA7802 (channels 4-7) still does not play any audio. More reverse engineering will be required to fix this.
+- No DSP algorithms are used yet. Ecasound could possibly be used to accomplish surround sound.
 - Crackling on channels 2 and 3 has been fixed.
 
 ## Plans:
