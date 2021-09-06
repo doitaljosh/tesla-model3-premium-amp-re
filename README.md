@@ -64,7 +64,7 @@ Tesla Model 3 Premium Amp reverse engineering and A2B demo for EVAL-AD2410WDZ or
 - SigmaStudio project and register files for both Jetson nano and ADAU1452
 
 ### Amplifier pinout:
-![Amp connectors](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/master/images/amp-pinout.png?raw=true)
+![Amp connectors](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/jetson-nano/images/amp-pinout.png?raw=true)
 Source:  [ Tesla Model 3 Stereo - Part 9: Summary and Lessons Learned](https://www.travisllado.com/2019/05/tesla-model-3-stereo-part-9-summary-and.html)
 
 ### Amp connector part numbers:
@@ -73,10 +73,10 @@ Source:  [ Tesla Model 3 Stereo - Part 9: Summary and Lessons Learned](https://w
 - Low wattage: Sumitomo 6098-5713
 
 ### A2B board <-> Jetson Nano wiring:
-![Wiring](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/master/images/a2b-jetson-nano.png?raw=true)
+![Wiring](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/jetson-nano/images/a2b-jetson-nano.png?raw=true)
 
 ### I2C/TDM test points:
-![Test points](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/master/images/i2c_tdm_pins.jpg?raw=true)
+![Test points](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/jetson-nano/images/i2c_tdm_pins.jpg?raw=true)
 
 ### Top of board:
-![Top view](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/master/images/top.jpg?raw=true)
+![Top view](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/jetson-nano/images/top.jpg?raw=true)
