@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<ROM>
+  <page modetype="Mode 0">
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="0" i2caddr="110" AddrIncr="1" ParamName="FDA2100_IB0">71</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="1" i2caddr="110" AddrIncr="1" ParamName="FDA2100_IB1">07</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="2" i2caddr="110" AddrIncr="1" ParamName="FDA2100_IB2">0F</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="3" i2caddr="110" AddrIncr="1" ParamName="FDA2100_IB3">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="4" i2caddr="110" AddrIncr="1" ParamName="FDA2100_IB4">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="5" i2caddr="110" AddrIncr="1" ParamName="FDA2100_IB5">11</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="6" i2caddr="110" AddrIncr="1" ParamName="FDA2100_IB6">11</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="7" i2caddr="110" AddrIncr="1" ParamName="FDA2100_IB7">11</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="8" i2caddr="110" AddrIncr="1" ParamName="FDA2100_IB8">11</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="9" i2caddr="110" AddrIncr="1" ParamName="FDA2100_IB9">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="10" i2caddr="110" AddrIncr="1" ParamName="FDA2100_IB10">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="11" i2caddr="110" AddrIncr="1" ParamName="FDA2100_IB11">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="12" i2caddr="110" AddrIncr="1" ParamName="FDA2100_IB12">40</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="13" i2caddr="110" AddrIncr="1" ParamName="FDA2100_IB13">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="14" i2caddr="110" AddrIncr="1" ParamName="FDA2100_IB14">03</action>
+  </page>
+</ROM>

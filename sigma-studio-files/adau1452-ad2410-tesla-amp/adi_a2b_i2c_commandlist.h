@@ -6,7 +6,7 @@ and its licensors.
 * @brief: This file contains I2C command sequence to be followed for discovery 
 *         and configuration of A2B nodes for an A2B schematic
 * @version: $Revision$
-* @date: Sunday, September 5, 2021-6:50:18 PM
+* @date: Monday, September 6, 2021-1:15:11 PM
 * I2C Command File Version - 1.0.0
 * A2B DLL version- 19.3.0
 * A2B Stack DLL version- 19.3.0.0
@@ -190,12 +190,12 @@ static unsigned char gaConfig_AD241xSlaveNode0_SYNCOFFSET_Data8[1] =
 
 static unsigned char gaConfig_AD241xSlaveNode0_I2SGCFG_Data9[1] =
 {
-	0x02u	
+	0x01u	
 };
 
 static unsigned char gaConfig_AD241xSlaveNode0_I2SCFG_Data10[1] =
 {
-	0x01u	
+	0x03u	
 };
 
 static unsigned char gaConfig_AD241xSlaveNode0_I2SRATE_Data11[1] =
@@ -340,7 +340,7 @@ static unsigned char gaConfig_TDA7802_TDA7802IB2_Data2[1] =
 
 static unsigned char gaConfig_TDA7802_TDA7802IB3_Data3[1] =
 {
-	0x51u	
+	0x49u	
 };
 
 static unsigned char gaConfig_TDA7802_TDA7802IB4_Data4[1] =

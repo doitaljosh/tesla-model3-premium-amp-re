@@ -1,7 +1,7 @@
 /*
  * File:           C:\Users\doita\OneDrive\Documents\Analog Devices\SigmaStudio 4.6\Projects\tesla-model3-premium-amp-re\sigma-studio-files\adau1452-ad2410-tesla-amp\adau1452-ad2410-tesla-amp_IC_1_REG.h
  *
- * Created:        Saturday, September 4, 2021 7:07:15 PM
+ * Created:        Monday, September 6, 2021 3:23:53 PM
  * Description:    adau1452-ad2410-tesla-amp:IC 1 control register definitions.
  *
  * This software is distributed in the hope that it will be useful,
@@ -363,12 +363,12 @@
 /* SERIAL_BYTE_5_0  - Registers (IC 1) */
 #define REG_SERIAL_BYTE_5_0_IC_1_ADDR             0xF214
 #define REG_SERIAL_BYTE_5_0_IC_1_BYTE             2
-#define REG_SERIAL_BYTE_5_0_IC_1_VALUE            0x9000
+#define REG_SERIAL_BYTE_5_0_IC_1_VALUE            0x93C1
 
 /* SERIAL_BYTE_5_1  - Registers (IC 1) */
 #define REG_SERIAL_BYTE_5_1_IC_1_ADDR             0xF215
 #define REG_SERIAL_BYTE_5_1_IC_1_BYTE             2
-#define REG_SERIAL_BYTE_5_1_IC_1_VALUE            0x22
+#define REG_SERIAL_BYTE_5_1_IC_1_VALUE            0x2
 
 /* SERIAL_BYTE_6_0  - Registers (IC 1) */
 #define REG_SERIAL_BYTE_6_0_IC_1_ADDR             0xF218
@@ -3353,12 +3353,12 @@
 #define R67_SERIAL_BYTE_4_1_TRISTATE_IC_1_SHIFT   5
 
 /* SERIAL_BYTE_5_0 (IC 1) */
-#define R68_SERIAL_BYTE_5_0_TDM_MODE_IC_1         0x0    /* 000b	[2:0] */
+#define R68_SERIAL_BYTE_5_0_TDM_MODE_IC_1         0x1    /* 001b	[2:0] */
 #define R68_SERIAL_BYTE_5_0_DATA_FMT_IC_1         0x0    /* 00b	[4:3] */
-#define R68_SERIAL_BYTE_5_0_WORD_LEN_IC_1         0x0    /* 00b	[6:5] */
-#define R68_SERIAL_BYTE_5_0_BCLK_POL_IC_1         0x0    /* 0b	[7] */
-#define R68_SERIAL_BYTE_5_0_LRCLK_POL_IC_1        0x0    /* 0b	[8] */
-#define R68_SERIAL_BYTE_5_0_LRCLK_MODE_IC_1       0x0    /* 0b	[9] */
+#define R68_SERIAL_BYTE_5_0_WORD_LEN_IC_1         0x2    /* 10b	[6:5] */
+#define R68_SERIAL_BYTE_5_0_BCLK_POL_IC_1         0x1    /* 1b	[7] */
+#define R68_SERIAL_BYTE_5_0_LRCLK_POL_IC_1        0x1    /* 1b	[8] */
+#define R68_SERIAL_BYTE_5_0_LRCLK_MODE_IC_1       0x1    /* 1b	[9] */
 #define R68_SERIAL_BYTE_5_0_BCLK_SRC_IC_1         0x4    /* 100b	[12:10] */
 #define R68_SERIAL_BYTE_5_0_LRCLK_SRC_IC_1        0x4    /* 100b	[15:13] */
 #define R68_SERIAL_BYTE_5_0_TDM_MODE_IC_1_MASK    0x7
@@ -3381,7 +3381,7 @@
 /* SERIAL_BYTE_5_1 (IC 1) */
 #define R69_SERIAL_BYTE_5_1_FS_IC_1               0x2    /* 010b	[2:0] */
 #define R69_SERIAL_BYTE_5_1_CLK_DOMAIN_IC_1       0x0    /* 00b	[4:3] */
-#define R69_SERIAL_BYTE_5_1_TRISTATE_IC_1         0x1    /* 1b	[5] */
+#define R69_SERIAL_BYTE_5_1_TRISTATE_IC_1         0x0    /* 0b	[5] */
 #define R69_SERIAL_BYTE_5_1_FS_IC_1_MASK          0x7
 #define R69_SERIAL_BYTE_5_1_FS_IC_1_SHIFT         0
 #define R69_SERIAL_BYTE_5_1_CLK_DOMAIN_IC_1_MASK  0x18

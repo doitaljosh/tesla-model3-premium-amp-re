@@ -6,7 +6,7 @@ and its licensors.
 * @file: adi_a2b_busconfig.c
 * @brief: This file contains A2B Schematic information
 * @version: $Revision$
-* @date: Sunday, September 5, 2021-6:50:07 PM
+* @date: Monday, September 6, 2021-1:15:02 PM
 * BCF Version - 1.0.0
 * A2B DLL version- 19.3.0
 * A2B Stack DLL version- 19.3.0.0
@@ -615,7 +615,7 @@ static ADI_A2B_SLAVE_NCD sChain0_SlaveNode0=
 	.sI2SSettings =
 	{
 		/*! TDM mode  */
-		.nTDMMode		= A2B_TDM8 ,
+		.nTDMMode		= A2B_TDM4 ,
 
 		/*! TDM channel size  */
 		.nTDMChSize			= A2B_32BIT_TDM ,
@@ -718,7 +718,7 @@ static ADI_A2B_SLAVE_NCD sChain0_SlaveNode0=
 			.bGPIO3PinUsage	= A2B_GPIO_3_AS_DTX0 ,
 
 			/*! GPIO 4 Pin multiplexing */
-			.bGPIO4PinUsage	= A2B_GPIO_4_DISABLE ,
+			.bGPIO4PinUsage	= A2B_GPIO_4_AS_DTX1 ,
 
 			/*! GPIO 5 Pin multiplexing */
 			.bGPIO5PinUsage	= A2B_GPIO_5_INPUT ,
@@ -1048,25 +1048,25 @@ static A2B_PERIPHERAL_DEVICE_CONFIG  sChain0_Slave0_PeriConfig2=
 	.bUseTx0 = DISABLED, 
 
 	/* Rx0 Pin in use */
-	.bUseRx0 = ENABLED, 
+	.bUseRx0 = DISABLED, 
 
 	/* Tx1 Pin in use */
 	.bUseTx1 = DISABLED, 
 
 	/* Rx1 Pin in use */
-	.bUseRx1 = DISABLED, 
+	.bUseRx1 = ENABLED, 
 
 	/* No of Tx0 channels  */ 
 	.nChTx0 = 0, 
 
 	/* No of Rx0 channels  */ 
-	.nChRx0 = 4, 
+	.nChRx0 = 0, 
 
 	/* No of Tx1 channels  */ 
 	.nChTx1 = 0, 
 
 	/* No of Rx1 channels  */ 
-	.nChRx1 = 0, 
+	.nChRx1 = 4, 
 
 	/* Number of configuration units  */ 
 	.nNumPeriConfigUnit = 6, 
@@ -1184,7 +1184,7 @@ static	uint8 gaPeriCfg_0_6C_2_Data[1] =
  ADI_A2B_MEM_PERI_CONFIG_DATA 
 static	uint8 gaPeriCfg_0_6C_3_Data[1] =
 {
-	0x51u	
+	0x49u	
 };
 
  ADI_A2B_MEM_PERI_CONFIG_DATA 

@@ -1,16 +1,16 @@
 ADAU145X Assembler, Analog Devices Inc.
 Version: 4.6.0,1809  (built 12/23/2020)
 
-##### Compile Started: Sunday, September 5, 2021 6:49:46 PM #####
+##### Compile Started: Monday, September 6, 2021 3:26:40 PM #####
 ADAU145X Assembler, Analog Devices Inc.
 Version: 4.6.0,1809  (built 12/23/2020)
 
-##### Compile Started: Sunday, September 5, 2021 6:49:46 PM #####
+##### Compile Started: Monday, September 6, 2021 3:26:40 PM #####
 ##### Compile succeeded:  0 errors, 0 warnings #####
 
 ##### Summary #####
-DM0 RAM used:       00117    (of 20480)
-DM1 RAM used:       03495    (of 20480)
+DM0 RAM used:       00121    (of 20480)
+DM1 RAM used:       03505    (of 20480)
 PM  RAM used(Data): 00000    (of 8192)
 PM  RAM used(Inst): 00376    (of 8192) 324 instructions (32bit: 272  64bit: 52)
 Total PM used:      00376    (of 8192)
@@ -21,7 +21,7 @@ Instance                      (cycles)  (size)
 --------------------------------------------------------------------------------------
 STACK                          -         -        16      0       0       
 ADIsurround1                  104       117       35      3440    0
-Crossover1                    52        76        30      28      0
+Crossover1                    52        76        34      38      0
 FRAMEWORK                     54        35        8       7       0
 Sweep1                        28        28        13      1       0
 MasterVolume                  25        28        3       8       0
@@ -39,7 +39,7 @@ RightTwt                      2         2         0       0       0
 RearLeft                      2         2         0       0       0
 RearRight                     2         2         0       0       0
 --------------------------------------------------------------------------------------
-Total                         307       330       113     3491    0
+Total                         307       330       117     3501    0
 --------------------------------------------------------------------------------------
 (% Fs=48.0kHz)                5%        5%        1%      18%     0%
 

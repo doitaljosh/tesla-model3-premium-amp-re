@@ -1,0 +1,8 @@
+NonModRamAlloc	0
+dataLoadStart_SafeLoad	1
+dataLoad1_SafeLoad	2
+dataLoad2_SafeLoad	3
+dataLoad3_SafeLoad	4
+dataLoadEnd_SafeLoad	5
+addressLoad_SafeLoad	6
+numLoad_SafeLoad	7

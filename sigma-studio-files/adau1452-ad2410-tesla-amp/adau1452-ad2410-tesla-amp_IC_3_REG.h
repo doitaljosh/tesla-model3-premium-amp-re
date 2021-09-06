@@ -1,7 +1,7 @@
 /*
  * File:           C:\Users\doita\OneDrive\Documents\Analog Devices\SigmaStudio 4.6\Projects\tesla-model3-premium-amp-re\sigma-studio-files\adau1452-ad2410-tesla-amp\adau1452-ad2410-tesla-amp_IC_3_REG.h
  *
- * Created:        Saturday, September 4, 2021 7:07:15 PM
+ * Created:        Monday, September 6, 2021 3:23:53 PM
  * Description:    adau1452-ad2410-tesla-amp:IC 3 control register definitions.
  *
  * This software is distributed in the hope that it will be useful,
@@ -298,7 +298,7 @@
 /* Watchdog Register Value 1  - Registers (IC 3) */
 #define REG_WATCHDOG_REGISTER_VALUE_1_IC_3_ADDR   0x40D1
 #define REG_WATCHDOG_REGISTER_VALUE_1_IC_3_BYTE   1
-#define REG_WATCHDOG_REGISTER_VALUE_1_IC_3_VALUE  0x2
+#define REG_WATCHDOG_REGISTER_VALUE_1_IC_3_VALUE  0x0
 
 /* Watchdog Register Value 2  - Registers (IC 3) */
 #define REG_WATCHDOG_REGISTER_VALUE_2_IC_3_ADDR   0x40D2
@@ -328,7 +328,7 @@
 /* Sample Rate Setting  - Registers (IC 3) */
 #define REG_SAMPLE_RATE_SETTING_IC_3_ADDR         0x40EB
 #define REG_SAMPLE_RATE_SETTING_IC_3_BYTE         1
-#define REG_SAMPLE_RATE_SETTING_IC_3_VALUE        0x0
+#define REG_SAMPLE_RATE_SETTING_IC_3_VALUE        0x7F
 
 /* Routing Matrix Inputs  - Registers (IC 3) */
 #define REG_ROUTING_MATRIX_INPUTS_IC_3_ADDR       0x40F2
@@ -925,7 +925,7 @@
 #define R54_WATCHDOG_ENABLE_IC_3_SHIFT            0
 
 /* Watchdog Register Value 1 (IC 3) */
-#define R55_WATCHDOG_VALUE_1_IC_3                 0x02   /* 00000010b	[7:0] */
+#define R55_WATCHDOG_VALUE_1_IC_3                 0x00   /* 00000000b	[7:0] */
 #define R55_WATCHDOG_VALUE_1_IC_3_MASK            0xFF
 #define R55_WATCHDOG_VALUE_1_IC_3_SHIFT           0
 
@@ -955,7 +955,7 @@
 #define R60_NON_MODULO_2_IC_3_SHIFT               0
 
 /* Sample Rate Setting (IC 3) */
-#define R61_CORE_DSP_SAMPLING_RATE_IC_3           0x0    /* 0000b	[3:0] */
+#define R61_CORE_DSP_SAMPLING_RATE_IC_3           0xF    /* 1111b	[3:0] */
 #define R61_CORE_DSP_SAMPLING_RATE_IC_3_MASK      0xF
 #define R61_CORE_DSP_SAMPLING_RATE_IC_3_SHIFT     0
 
