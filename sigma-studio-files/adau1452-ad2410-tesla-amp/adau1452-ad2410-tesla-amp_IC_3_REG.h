@@ -1,7 +1,7 @@
 /*
  * File:           C:\Users\doita\OneDrive\Documents\Analog Devices\SigmaStudio 4.6\Projects\tesla-model3-premium-amp-re\sigma-studio-files\adau1452-ad2410-tesla-amp\adau1452-ad2410-tesla-amp_IC_3_REG.h
  *
- * Created:        Monday, September 6, 2021 3:23:53 PM
+ * Created:        Monday, September 6, 2021 5:15:11 PM
  * Description:    adau1452-ad2410-tesla-amp:IC 3 control register definitions.
  *
  * This software is distributed in the hope that it will be useful,
@@ -353,7 +353,7 @@
 /* DSP Run Register  - Registers (IC 3) */
 #define REG_DSP_RUN_REGISTER_IC_3_ADDR            0x40F6
 #define REG_DSP_RUN_REGISTER_IC_3_BYTE            1
-#define REG_DSP_RUN_REGISTER_IC_3_VALUE           0x1
+#define REG_DSP_RUN_REGISTER_IC_3_VALUE           0x0
 
 /* DSP Slew Modes  - Registers (IC 3) */
 #define REG_DSP_SLEW_MODES_IC_3_ADDR              0x40F7
@@ -989,7 +989,7 @@
 #define R65_DSP_ENABLE_IC_3_SHIFT                 0
 
 /* DSP Run Register (IC 3) */
-#define R66_DSP_RUN_IC_3                          0x1    /* 1b	[0] */
+#define R66_DSP_RUN_IC_3                          0x0    /* 0b	[0] */
 #define R66_DSP_RUN_IC_3_MASK                     0x1
 #define R66_DSP_RUN_IC_3_SHIFT                    0
 

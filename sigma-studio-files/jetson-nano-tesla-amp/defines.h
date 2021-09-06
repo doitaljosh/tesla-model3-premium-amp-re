@@ -1,7 +1,7 @@
 /*
  * File:           defines.h
  *
- * Created:        Sunday, September 5, 2021 6:48:18 PM
+ * Created:        Monday, September 6, 2021 5:14:01 PM
  * Description:    tesla-premium-amp-a2b IC default download data definitions.
  *
  * This software is distributed in the hope that it will be useful,

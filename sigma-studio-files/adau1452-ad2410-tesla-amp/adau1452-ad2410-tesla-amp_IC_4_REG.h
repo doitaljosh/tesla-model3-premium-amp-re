@@ -1,7 +1,7 @@
 /*
  * File:           C:\Users\doita\OneDrive\Documents\Analog Devices\SigmaStudio 4.6\Projects\tesla-model3-premium-amp-re\sigma-studio-files\adau1452-ad2410-tesla-amp\adau1452-ad2410-tesla-amp_IC_4_REG.h
  *
- * Created:        Monday, September 6, 2021 3:23:53 PM
+ * Created:        Monday, September 6, 2021 5:15:11 PM
  * Description:    adau1452-ad2410-tesla-amp:IC 4 control register definitions.
  *
  * This software is distributed in the hope that it will be useful,

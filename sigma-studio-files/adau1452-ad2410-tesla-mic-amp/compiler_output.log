@@ -1,19 +1,19 @@
 ADAU145X Assembler, Analog Devices Inc.
 Version: 4.6.0,1809  (built 12/23/2020)
 
-##### Compile Started: Monday, September 6, 2021 3:57:36 PM #####
+##### Compile Started: Monday, September 6, 2021 5:17:45 PM #####
 ADAU145X Assembler, Analog Devices Inc.
 Version: 4.6.0,1809  (built 12/23/2020)
 
-##### Compile Started: Monday, September 6, 2021 3:57:36 PM #####
+##### Compile Started: Monday, September 6, 2021 5:17:45 PM #####
 ##### Compile succeeded:  0 errors, 0 warnings #####
 
 ##### Summary #####
-DM0 RAM used:       00124    (of 20480)
-DM1 RAM used:       03502    (of 20480)
+DM0 RAM used:       00104    (of 20480)
+DM1 RAM used:       03499    (of 20480)
 PM  RAM used(Data): 00000    (of 8192)
-PM  RAM used(Inst): 00429    (of 8192) 372 instructions (32bit: 315  64bit: 57)
-Total PM used:      00429    (of 8192)
+PM  RAM used(Inst): 00391    (of 8192) 336 instructions (32bit: 281  64bit: 55)
+Total PM used:      00391    (of 8192)
 
 --------------------------------------------------------------------------------------
 STREAM                        Inst      Inst      DM0     DM1     PM
@@ -23,13 +23,11 @@ STACK                          -         -        16      0       0
 ADIsurround1                  104       117       35      3440    0
 Crossover1                    52        76        30      28      0
 FRAMEWORK                     54        35        8       7       0
-Sweep1                        28        28        13      1       0
 MasterVolume                  25        28        3       8       0
 BF1                           16        17        2       3       0
 BF2                           16        17        2       3       0
 Mic Volume                    10        13        3       2       0
-Nx2-1                         10        12        7       0       0
-S Splitter1                   6         6         1       2       0
+Nx2-1                         8         8         1       0       0
 Input1                        6         6         0       1       0
 ADAU1452 IN3                  4         4         0       2       0
 Add1                          4         4         0       1       0
@@ -44,7 +42,7 @@ RightTwt                      2         2         0       0       0
 RearLeft                      2         2         0       0       0
 RearRight                     2         2         0       0       0
 --------------------------------------------------------------------------------------
-Total                         355       383       120     3498    0
+Total                         319       345       100     3495    0
 --------------------------------------------------------------------------------------
 (% Fs=48.0kHz)                6%        5%        1%      18%     0%
 

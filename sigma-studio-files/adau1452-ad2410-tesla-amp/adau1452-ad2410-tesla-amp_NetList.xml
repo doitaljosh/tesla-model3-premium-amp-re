@@ -17,151 +17,129 @@
 <NetList>
     <IC name=" IC 1 " type="ADAU1452">
         <Schematic>
-            <Algorithm name="ICInput4ADAU145X1" friendlyname="ADAU145x Inputs 40-47 " cell="ADAU1452 IN3 " location="{X=27, Y=375} " Growth="8 " GrowthB="0">
-                <Link pin="O_C531_A0_P1_out" dir="out" link="Link0" />
-                <Link pin="O_C531_A0_P2_out" dir="out" link="Link1" />
+            <Algorithm name="ICInput4ADAU145X1" friendlyname="ADAU145x Inputs 40-47 " cell="ADAU1452 IN3 " location="{X=146, Y=241} " Growth="8 " GrowthB="0">
+                <Link pin="O_C531_A0_P1_out" dir="out" link="Link17" />
+                <Link pin="O_C531_A0_P2_out" dir="out" link="Link18" />
             </Algorithm>
-            <Algorithm name="sweep_lookup_AlgS3001" friendlyname="Frequency Sweep (lookup) " cell="Sweep1 " location="{X=28, Y=655} " Growth="0 " GrowthB="0">
-                <Link pin="O_C59_A0_P1_out" dir="out" link="Link19" />
+            <Algorithm name="ADIsurroundAlgS3001" friendlyname="ADIsurround " cell="ADIsurround1 " location="{X=289, Y=200} " Growth="0 " GrowthB="0">
+                <Link pin="I_C166_A0_P1_in" dir="in" link="Link17" />
+                <Link pin="I_C166_A0_P2_in" dir="in" link="Link18" />
+                <Link pin="O_C166_A0_P3_out" dir="out" link="Link31" />
+                <Link pin="O_C166_A0_P4_out" dir="out" link="Link30" />
+                <Link pin="O_C166_A0_P5_out" dir="out" link="Link29" />
+                <Link pin="O_C166_A0_P6_out" dir="out" link="Link28" />
+                <Link pin="O_C166_A0_P7_out" dir="out" link="Link27" />
             </Algorithm>
-            <Algorithm name="ICSigma300DigMicIn1" friendlyname="DigMic Input " cell="DigMicIn1 " location="{X=28, Y=539} " Growth="4 " GrowthB="0">
-                <Link pin="O_C58_A0_P1_out" dir="out" link="Link15" />
-                <Link pin="O_C58_A0_P2_out" dir="out" link="Link16" />
+            <Algorithm name="CrossoverFilter2WaySPS300SS4p6Alg2" friendlyname="2-Way Crossover Filter - Single Precision " cell="Crossover1 " location="{X=619, Y=4} " Growth="0 " GrowthB="0">
+                <Link pin="I_C109_A1_P1_in" dir="in" link="Link29" />
+                <Link pin="O_C109_A1_P2_out" dir="out" link="Link15" />
+                <Link pin="O_C109_A1_P3_out" dir="out" link="Link11" />
             </Algorithm>
-            <Algorithm name="SingleCtrlSplitS3004" friendlyname="Splitter Single " cell="S Splitter1 " location="{X=167, Y=661} " Growth="2 " GrowthB="0">
-                <Link pin="I_C61_A0_P1_in" dir="in" link="Link19" />
-                <Link pin="O_C61_A0_P2_out" dir="out" link="Link17" />
-                <Link pin="O_C61_A0_P3_out" dir="out" link="Link18" />
+            <Algorithm name="CrossoverFilter2WaySPS300SS4p6Alg1" friendlyname="2-Way Crossover Filter - Single Precision " cell="Crossover1 " location="{X=619, Y=4} " Growth="0 " GrowthB="0">
+                <Link pin="I_C109_A0_P1_in" dir="in" link="Link31" />
+                <Link pin="O_C109_A0_P2_out" dir="out" link="Link14" />
+                <Link pin="O_C109_A0_P3_out" dir="out" link="Link12" />
             </Algorithm>
-            <Algorithm name="stereomuxSigma300ns1" friendlyname="Stereo " cell="Nx2-1 " location="{X=248, Y=399} " Growth="3 " GrowthB="0">
-                <Link pin="I_C7_A0_P3_in" dir="in" link="Link0" />
-                <Link pin="I_C7_A0_P4_in" dir="in" link="Link1" />
-                <Link pin="I_C7_A0_P5_in" dir="in" link="Link15" />
-                <Link pin="I_C7_A0_P6_in" dir="in" link="Link16" />
-                <Link pin="I_C7_A0_P7_in" dir="in" link="Link17" />
-                <Link pin="I_C7_A0_P8_in" dir="in" link="Link18" />
-                <Link pin="O_C7_A0_P1_out" dir="out" link="Link12" />
-                <Link pin="O_C7_A0_P2_out" dir="out" link="Link11" />
+            <Algorithm name="Adder2ChannelAlg1" friendlyname="2 Channel Addition " cell="Add1 " location="{X=812, Y=3} " Growth="1 " GrowthB="0">
+                <Link pin="I_C204_A0_P1_in" dir="in" link="Link14" />
+                <Link pin="I_C204_A0_P2_in" dir="in" link="Link15" />
+                <Link pin="O_C204_A0_P3_out" dir="out" link="Link13" />
             </Algorithm>
-            <Algorithm name="ADIsurroundAlgS3001" friendlyname="ADIsurround " cell="ADIsurround1 " location="{X=423, Y=378} " Growth="0 " GrowthB="0">
-                <Link pin="I_C8_A0_P1_in" dir="in" link="Link12" />
-                <Link pin="I_C8_A0_P2_in" dir="in" link="Link11" />
-                <Link pin="O_C8_A0_P3_out" dir="out" link="Link36" />
-                <Link pin="O_C8_A0_P4_out" dir="out" link="Link37" />
-                <Link pin="O_C8_A0_P5_out" dir="out" link="Link34" />
-                <Link pin="O_C8_A0_P6_out" dir="out" link="Link38" />
-                <Link pin="O_C8_A0_P7_out" dir="out" link="Link35" />
+            <Algorithm name="HWGainADAU145XAlg1" friendlyname="Gain (HW slew) " cell="MasterVolume " location="{X=904, Y=154.9017} " Growth="8 " GrowthB="0">
+                <Link pin="I_C271_A0_P1_in" dir="in" link="Link31" />
+                <Link pin="I_C271_A0_P3_in" dir="in" link="Link29" />
+                <Link pin="I_C271_A0_P5_in" dir="in" link="Link30" />
+                <Link pin="I_C271_A0_P7_in" dir="in" link="Link13" />
+                <Link pin="I_C271_A0_P9_in" dir="in" link="Link12" />
+                <Link pin="I_C271_A0_P11_in" dir="in" link="Link11" />
+                <Link pin="I_C271_A0_P13_in" dir="in" link="Link28" />
+                <Link pin="I_C271_A0_P15_in" dir="in" link="Link27" />
+                <Link pin="O_C271_A0_P2_out" dir="out" link="Link19" />
+                <Link pin="O_C271_A0_P4_out" dir="out" link="Link20" />
+                <Link pin="O_C271_A0_P6_out" dir="out" link="Link21" />
+                <Link pin="O_C271_A0_P8_out" dir="out" link="Link22" />
+                <Link pin="O_C271_A0_P10_out" dir="out" link="Link23" />
+                <Link pin="O_C271_A0_P12_out" dir="out" link="Link24" />
+                <Link pin="O_C271_A0_P14_out" dir="out" link="Link25" />
+                <Link pin="O_C271_A0_P16_out" dir="out" link="Link26" />
             </Algorithm>
-            <Algorithm name="CrossoverFilter2WaySPS300SS4p6Alg2" friendlyname="2-Way Crossover Filter - Single Precision " cell="Crossover1 " location="{X=753, Y=182} " Growth="0 " GrowthB="0">
-                <Link pin="I_C109_A1_P1_in" dir="in" link="Link34" />
-                <Link pin="O_C109_A1_P2_out" dir="out" link="Link24" />
-                <Link pin="O_C109_A1_P3_out" dir="out" link="Link20" />
+            <Algorithm name="ICOutADAU145X1" friendlyname="Output " cell="FrontLeft " location="{X=1172, Y=83.72839} " Growth="1 " GrowthB="0">
+                <Link pin="I_C898_A0_P1_in" dir="in" link="Link19" />
             </Algorithm>
-            <Algorithm name="CrossoverFilter2WaySPS300SS4p6Alg1" friendlyname="2-Way Crossover Filter - Single Precision " cell="Crossover1 " location="{X=753, Y=182} " Growth="0 " GrowthB="0">
-                <Link pin="I_C109_A0_P1_in" dir="in" link="Link36" />
-                <Link pin="O_C109_A0_P2_out" dir="out" link="Link23" />
-                <Link pin="O_C109_A0_P3_out" dir="out" link="Link21" />
+            <Algorithm name="ICOutADAU145X2" friendlyname="Output " cell="FrontRight " location="{X=1172, Y=125.0864} " Growth="1 " GrowthB="0">
+                <Link pin="I_C900_A0_P1_in" dir="in" link="Link20" />
             </Algorithm>
-            <Algorithm name="Adder2ChannelAlg1" friendlyname="2 Channel Addition " cell="Add1 " location="{X=946, Y=181} " Growth="1 " GrowthB="0">
-                <Link pin="I_C204_A0_P1_in" dir="in" link="Link23" />
-                <Link pin="I_C204_A0_P2_in" dir="in" link="Link24" />
-                <Link pin="O_C204_A0_P3_out" dir="out" link="Link22" />
+            <Algorithm name="ICOutADAU145X3" friendlyname="Output " cell="Center " location="{X=1172, Y=166.4445} " Growth="1 " GrowthB="0">
+                <Link pin="I_C902_A0_P1_in" dir="in" link="Link21" />
             </Algorithm>
-            <Algorithm name="HWGainADAU145XAlg1" friendlyname="Gain (HW slew) " cell="MasterVolume " location="{X=1038, Y=332.9017} " Growth="8 " GrowthB="0">
-                <Link pin="I_C271_A0_P1_in" dir="in" link="Link36" />
-                <Link pin="I_C271_A0_P3_in" dir="in" link="Link34" />
-                <Link pin="I_C271_A0_P5_in" dir="in" link="Link37" />
-                <Link pin="I_C271_A0_P7_in" dir="in" link="Link22" />
-                <Link pin="I_C271_A0_P9_in" dir="in" link="Link21" />
-                <Link pin="I_C271_A0_P11_in" dir="in" link="Link20" />
-                <Link pin="I_C271_A0_P13_in" dir="in" link="Link38" />
-                <Link pin="I_C271_A0_P15_in" dir="in" link="Link35" />
-                <Link pin="O_C271_A0_P2_out" dir="out" link="Link26" />
-                <Link pin="O_C271_A0_P4_out" dir="out" link="Link27" />
-                <Link pin="O_C271_A0_P6_out" dir="out" link="Link28" />
-                <Link pin="O_C271_A0_P8_out" dir="out" link="Link29" />
-                <Link pin="O_C271_A0_P10_out" dir="out" link="Link30" />
-                <Link pin="O_C271_A0_P12_out" dir="out" link="Link31" />
-                <Link pin="O_C271_A0_P14_out" dir="out" link="Link32" />
-                <Link pin="O_C271_A0_P16_out" dir="out" link="Link33" />
+            <Algorithm name="ICOutADAU145X4" friendlyname="Output " cell="LFE " location="{X=1172, Y=207.8025} " Growth="1 " GrowthB="0">
+                <Link pin="I_C904_A0_P1_in" dir="in" link="Link22" />
             </Algorithm>
-            <Algorithm name="ICOutADAU145X1" friendlyname="Output " cell="FrontLeft " location="{X=1306, Y=261.7284} " Growth="1 " GrowthB="0">
-                <Link pin="I_C898_A0_P1_in" dir="in" link="Link26" />
+            <Algorithm name="ICOutADAU145X5" friendlyname="Output " cell="LeftTwt " location="{X=1172, Y=249.1605} " Growth="1 " GrowthB="0">
+                <Link pin="I_C906_A0_P1_in" dir="in" link="Link23" />
             </Algorithm>
-            <Algorithm name="ICOutADAU145X2" friendlyname="Output " cell="FrontRight " location="{X=1306, Y=303.0864} " Growth="1 " GrowthB="0">
-                <Link pin="I_C900_A0_P1_in" dir="in" link="Link27" />
+            <Algorithm name="ICOutADAU145X6" friendlyname="Output " cell="RightTwt " location="{X=1171, Y=291.7531} " Growth="1 " GrowthB="0">
+                <Link pin="I_C908_A0_P1_in" dir="in" link="Link24" />
             </Algorithm>
-            <Algorithm name="ICOutADAU145X3" friendlyname="Output " cell="Center " location="{X=1306, Y=344.4445} " Growth="1 " GrowthB="0">
-                <Link pin="I_C902_A0_P1_in" dir="in" link="Link28" />
+            <Algorithm name="ICOutADAU145X7" friendlyname="Output " cell="RearLeft " location="{X=1172, Y=336.8148} " Growth="1 " GrowthB="0">
+                <Link pin="I_C910_A0_P1_in" dir="in" link="Link25" />
             </Algorithm>
-            <Algorithm name="ICOutADAU145X4" friendlyname="Output " cell="LFE " location="{X=1306, Y=385.8025} " Growth="1 " GrowthB="0">
-                <Link pin="I_C904_A0_P1_in" dir="in" link="Link29" />
-            </Algorithm>
-            <Algorithm name="ICOutADAU145X5" friendlyname="Output " cell="LeftTwt " location="{X=1306, Y=427.1605} " Growth="1 " GrowthB="0">
-                <Link pin="I_C906_A0_P1_in" dir="in" link="Link30" />
-            </Algorithm>
-            <Algorithm name="ICOutADAU145X6" friendlyname="Output " cell="RightTwt " location="{X=1305, Y=469.7531} " Growth="1 " GrowthB="0">
-                <Link pin="I_C908_A0_P1_in" dir="in" link="Link31" />
-            </Algorithm>
-            <Algorithm name="ICOutADAU145X7" friendlyname="Output " cell="RearLeft " location="{X=1306, Y=514.8148} " Growth="1 " GrowthB="0">
-                <Link pin="I_C910_A0_P1_in" dir="in" link="Link32" />
-            </Algorithm>
-            <Algorithm name="ICOutADAU145X8" friendlyname="Output " cell="RearRight " location="{X=1306, Y=557.4074} " Growth="1 " GrowthB="0">
-                <Link pin="I_C912_A0_P1_in" dir="in" link="Link33" />
+            <Algorithm name="ICOutADAU145X8" friendlyname="Output " cell="RearRight " location="{X=1172, Y=379.4074} " Growth="1 " GrowthB="0">
+                <Link pin="I_C912_A0_P1_in" dir="in" link="Link26" />
             </Algorithm>
         </Schematic>
     </IC>
     <IC name=" IC 3 " type="DSPSigmaLP1">
         <Schematic>
-            <Algorithm name="ICSigma200In1" friendlyname="Analog+Digital Inputs " cell="Analog Input " location="{X=1450, Y=84} " Growth="10 " GrowthB="0">
-                <Link pin="O_C552_A0_P1_out" dir="out" link="Link13" />
-                <Link pin="O_C552_A0_P2_out" dir="out" link="Link14" />
+            <Algorithm name="ICSigma200In1" friendlyname="Analog+Digital Inputs " cell="Analog Input " location="{X=1137, Y=517} " Growth="10 " GrowthB="0">
+                <Link pin="O_C552_A0_P1_out" dir="out" link="Link9" />
+                <Link pin="O_C552_A0_P2_out" dir="out" link="Link10" />
             </Algorithm>
-            <Algorithm name="ICSigmaLP1Out1" friendlyname="1761 output " cell="ADAU1761 LOUT " location="{X=1757, Y=66} " Growth="0 " GrowthB="0">
-                <Link pin="I_C563_A0_P1_in" dir="in" link="Link13" />
+            <Algorithm name="ICSigmaLP1Out1" friendlyname="1761 output " cell="ADAU1761 LOUT " location="{X=1263, Y=501} " Growth="0 " GrowthB="0">
+                <Link pin="I_C563_A0_P1_in" dir="in" link="Link9" />
             </Algorithm>
-            <Algorithm name="ICSigmaLP1Out2" friendlyname="1761 output " cell="ADAU1761 ROUT " location="{X=1757, Y=109} " Growth="0 " GrowthB="0">
-                <Link pin="I_C565_A0_P1_in" dir="in" link="Link14" />
+            <Algorithm name="ICSigmaLP1Out2" friendlyname="1761 output " cell="ADAU1761 ROUT " location="{X=1263, Y=544} " Growth="0 " GrowthB="0">
+                <Link pin="I_C565_A0_P1_in" dir="in" link="Link10" />
             </Algorithm>
         </Schematic>
     </IC>
     <IC name=" IC 2 " type="AD2410">
         <Schematic>
-            <Algorithm name="a2b_tpnode_algo1" friendlyname="Processor Node " cell="Processor0 " location="{X=631, Y=1057} " Growth="0 " GrowthB="0">
-                <Link pin="O_C74_A0_P1_out" dir="out" link="Link4" />
-                <Link pin="O_C74_A0_P1_out" dir="out" link="Link5" />
+            <Algorithm name="a2b_tpnode_algo1" friendlyname="Processor Node " cell="Processor0 " location="{X=154, Y=687} " Growth="0 " GrowthB="0">
+                <Link pin="O_C74_A0_P1_out" dir="out" link="Link2" />
+                <Link pin="O_C74_A0_P1_out" dir="out" link="Link3" />
             </Algorithm>
-            <Algorithm name="a2b_pdnode_ahost_algo1" friendlyname="Audio Host peripheral node " cell="Audio Host0 " location="{X=620, Y=862} " Growth="0 " GrowthB="0">
-                <Link pin="I_C49_A0_P1_in" dir="in" link="Link4" />
-                <Link pin="O_C49_A0_P2_out" dir="out" link="Link3" />
+            <Algorithm name="a2b_pdnode_ahost_algo1" friendlyname="Audio Host peripheral node " cell="Audio Host0 " location="{X=143, Y=492} " Growth="0 " GrowthB="0">
+                <Link pin="I_C49_A0_P1_in" dir="in" link="Link2" />
+                <Link pin="O_C49_A0_P2_out" dir="out" link="Link1" />
             </Algorithm>
-            <Algorithm name="ad242x_mnode_algo1" friendlyname="AD242x Master Node " cell="AD242x Master Node0 " location="{X=888, Y=873} " Growth="0 " GrowthB="0">
-                <Link pin="I_C0_A0_P1_in" dir="in" link="Link5" />
-                <Link pin="I_C0_A0_P2_in" dir="in" link="Link3" />
-                <Link pin="O_C0_A0_P6_out" dir="out" link="Link2" />
+            <Algorithm name="ad242x_mnode_algo1" friendlyname="AD242x Master Node " cell="AD242x Master Node0 " location="{X=411, Y=503} " Growth="0 " GrowthB="0">
+                <Link pin="I_C0_A0_P1_in" dir="in" link="Link3" />
+                <Link pin="I_C0_A0_P2_in" dir="in" link="Link1" />
+                <Link pin="O_C0_A0_P6_out" dir="out" link="Link0" />
             </Algorithm>
-            <Algorithm name="a2b_snode_algo1" friendlyname="A2B Slave Node " cell="AD241x Slave Node0 " location="{X=1191, Y=868} " Growth="0 " GrowthB="0">
-                <Link pin="I_C34_A0_P1_in" dir="in" link="Link2" />
+            <Algorithm name="a2b_snode_algo1" friendlyname="A2B Slave Node " cell="AD241x Slave Node0 " location="{X=714, Y=498} " Growth="0 " GrowthB="0">
+                <Link pin="I_C34_A0_P1_in" dir="in" link="Link0" />
+                <Link pin="O_C34_A0_P2_out" dir="out" link="Link4" />
+                <Link pin="O_C34_A0_P2_out" dir="out" link="Link5" />
                 <Link pin="O_C34_A0_P2_out" dir="out" link="Link6" />
                 <Link pin="O_C34_A0_P2_out" dir="out" link="Link7" />
-                <Link pin="O_C34_A0_P2_out" dir="out" link="Link8" />
-                <Link pin="O_C34_A0_P2_out" dir="out" link="Link9" />
-                <Link pin="O_C34_A0_P5_out" dir="out" link="Link10" />
-                <Link pin="O_C34_A0_P6_out" dir="out" link="Link25" />
+                <Link pin="O_C34_A0_P5_out" dir="out" link="Link8" />
+                <Link pin="O_C34_A0_P6_out" dir="out" link="Link16" />
             </Algorithm>
-            <Algorithm name="a2b_pdnode_i2c_algo1" friendlyname="Generic I2C peripheral node " cell="EEPROM " location="{X=1391, Y=789} " Growth="0 " GrowthB="0">
-                <Link pin="I_C98_A0_P1_in" dir="in" link="Link6" />
+            <Algorithm name="a2b_pdnode_i2c_algo1" friendlyname="Generic I2C peripheral node " cell="EEPROM " location="{X=914, Y=419} " Growth="0 " GrowthB="0">
+                <Link pin="I_C98_A0_P1_in" dir="in" link="Link4" />
             </Algorithm>
-            <Algorithm name="a2b_pdnode_i2c_algo2" friendlyname="Generic I2C peripheral node " cell="GPIO Expander " location="{X=1391, Y=866} " Growth="0 " GrowthB="0">
-                <Link pin="I_C102_A0_P1_in" dir="in" link="Link7" />
+            <Algorithm name="a2b_pdnode_i2c_algo2" friendlyname="Generic I2C peripheral node " cell="GPIO Expander " location="{X=914, Y=496} " Growth="0 " GrowthB="0">
+                <Link pin="I_C102_A0_P1_in" dir="in" link="Link5" />
             </Algorithm>
-            <Algorithm name="a2b_pdnode_snk_algo1" friendlyname="Audio Sink peripheral node " cell="TDA7802 " location="{X=1388, Y=1053} " Growth="0 " GrowthB="0">
-                <Link pin="I_C106_A0_P1_in" dir="in" link="Link8" />
-                <Link pin="I_C106_A0_P3_in" dir="in" link="Link25" />
+            <Algorithm name="a2b_pdnode_snk_algo1" friendlyname="Audio Sink peripheral node " cell="TDA7802 " location="{X=911, Y=683} " Growth="0 " GrowthB="0">
+                <Link pin="I_C106_A0_P1_in" dir="in" link="Link6" />
+                <Link pin="I_C106_A0_P3_in" dir="in" link="Link16" />
             </Algorithm>
-            <Algorithm name="a2b_pdnode_snk_algo2" friendlyname="Audio Sink peripheral node " cell="FDA2100 " location="{X=1389, Y=943} " Growth="0 " GrowthB="0">
-                <Link pin="I_C126_A0_P1_in" dir="in" link="Link9" />
-                <Link pin="I_C126_A0_P2_in" dir="in" link="Link10" />
+            <Algorithm name="a2b_pdnode_snk_algo2" friendlyname="Audio Sink peripheral node " cell="FDA2100 " location="{X=912, Y=573} " Growth="0 " GrowthB="0">
+                <Link pin="I_C126_A0_P1_in" dir="in" link="Link7" />
+                <Link pin="I_C126_A0_P2_in" dir="in" link="Link8" />
             </Algorithm>
         </Schematic>
     </IC>

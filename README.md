@@ -2,14 +2,14 @@ Tesla Model 3 Premium Amp reverse engineering and A2B demo for EVAL-AD2410WDZ or
 
 ## Status for ADAU1452:
 - Analog audio input to the DSP works via the onboard ADAU1761 codec.
-- ADI surround algorithm and HPF/LPF provide center, rear, subwoofer, and tweeter outputs
-- The TDA7802 (channels 4-7) still does not play any audio. More reverse engineering will be required to fix this.
-- For now, only left, right, center, and subwoofer channels work on the large connector.
+- ADI surround algorithm and HPF/LPF provide rear, subwoofer, and tweeter outputs
+- ~~The TDA7802 (channels 4-7) still does not play any audio. More reverse engineering will be required to fix this.~~ Fixed
+- For now, only rear, tweeter and subwoofer channels play audio. Front and center channels need work.
 - Crackling on channels 2 and 3 has been fixed.
 
 # Status for Jetson Nano:
 - The A2B bus will drop as soon as the audio interface goes to sleep. DAPM needs to be disabled since the bus needs a constant clock.
-- The TDA7802 (channels 4-7) still does not play any audio. More reverse engineering will be required to fix this.
+- ~~The TDA7802 (channels 4-7) still does not play any audio. More reverse engineering will be required to fix this.~~ Fixed
 - Crackling on channels 2 and 3 has been fixed.
 
 ## Plans:

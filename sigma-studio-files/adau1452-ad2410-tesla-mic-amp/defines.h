@@ -1,7 +1,7 @@
 /*
  * File:           defines.h
  *
- * Created:        Monday, September 6, 2021 3:56:09 PM
+ * Created:        Monday, September 6, 2021 5:17:53 PM
  * Description:    adau1452-ad2410-tesla-mic-amp IC default download data definitions.
  *
  * This software is distributed in the hope that it will be useful,
@@ -19,7 +19,7 @@
 #ifndef __DEFINES_H__
 #define __DEFINES_H__
 
-#define BufferSize_IC_1     	16506
+#define BufferSize_IC_1     	16258
 #define NumTransactions_IC_1	71
 
 #define BufferSize_IC_3     	407

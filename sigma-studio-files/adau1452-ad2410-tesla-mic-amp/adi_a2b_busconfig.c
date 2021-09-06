@@ -6,7 +6,7 @@ and its licensors.
 * @file: adi_a2b_busconfig.c
 * @brief: This file contains A2B Schematic information
 * @version: $Revision$
-* @date: Monday, September 6, 2021-1:08:54 PM
+* @date: Monday, September 6, 2021-5:18:14 PM
 * BCF Version - 1.0.0
 * A2B DLL version- 19.3.0
 * A2B Stack DLL version- 19.3.0.0
@@ -1622,7 +1622,7 @@ static	ADI_A2B_PERI_CONFIG_UNIT gaPeriCfg_1_6C_Unit[6] =
  ADI_A2B_MEM_PERI_CONFIG_DATA 
 static	uint8 gaPeriCfg_1_6E_0_Data[1] =
 {
-	0x71u	
+	0x5Cu	
 };
 
  ADI_A2B_MEM_PERI_CONFIG_DATA 

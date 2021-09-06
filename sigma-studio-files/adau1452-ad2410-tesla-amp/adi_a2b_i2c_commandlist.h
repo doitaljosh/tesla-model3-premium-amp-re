@@ -6,7 +6,7 @@ and its licensors.
 * @brief: This file contains I2C command sequence to be followed for discovery 
 *         and configuration of A2B nodes for an A2B schematic
 * @version: $Revision$
-* @date: Monday, September 6, 2021-1:15:11 PM
+* @date: Monday, September 6, 2021-5:15:25 PM
 * I2C Command File Version - 1.0.0
 * A2B DLL version- 19.3.0
 * A2B Stack DLL version- 19.3.0.0
@@ -55,7 +55,7 @@ typedef struct
 #define DELAY   ((unsigned char) 0x02u)
 #define INVALID ((unsigned char) 0xffu)
 
-#define CONFIG_LEN (113) 
+#define CONFIG_LEN (117) 
 
 
 static unsigned char gaConfig_AD242xMasterNode0_CONTROL_Data0[1] =
@@ -230,7 +230,7 @@ static unsigned char gaConfig_AD241xSlaveNode0_GPIOOEN_Data16[1] =
 
 static unsigned char gaConfig_AD241xSlaveNode0_GPIOIEN_Data17[1] =
 {
-	0x20u	
+	0x00u	
 };
 
 static unsigned char gaConfig_AD241xSlaveNode0_PINTEN_Data18[1] =
@@ -370,7 +370,7 @@ static unsigned char gaConfig_AD242xMasterNode0_NODEADREnable_Data22[1] =
 
 static unsigned char gaConfig_FDA2100_FDA2100IB0_Data0[1] =
 {
-	0x71u	
+	0x5Cu	
 };
 
 static unsigned char gaConfig_FDA2100_FDA2100IB1_Data1[1] =
@@ -473,152 +473,172 @@ static unsigned char gaConfig_AD242xMasterNode0_PDMCTL_Data28[1] =
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_ERRMGMT_Data29[1] =
+static unsigned char gaConfig_AD242xMasterNode0_PDMCTL2_Data29[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_GPIODAT_Data30[1] =
+static unsigned char gaConfig_AD242xMasterNode0_ERRMGMT_Data30[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_GPIOOEN_Data31[1] =
+static unsigned char gaConfig_AD242xMasterNode0_GPIODAT_Data31[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_GPIOIEN_Data32[1] =
+static unsigned char gaConfig_AD242xMasterNode0_GPIOOEN_Data32[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_PINTEN_Data33[1] =
+static unsigned char gaConfig_AD242xMasterNode0_GPIOIEN_Data33[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_PINTINV_Data34[1] =
+static unsigned char gaConfig_AD242xMasterNode0_PINTEN_Data34[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_PINCFG_Data35[1] =
+static unsigned char gaConfig_AD242xMasterNode0_PINTINV_Data35[1] =
+{
+	0x00u	
+};
+
+static unsigned char gaConfig_AD242xMasterNode0_PINCFG_Data36[1] =
 {
 	0x01u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_TESTMODE_Data36[1] =
+static unsigned char gaConfig_AD242xMasterNode0_TESTMODE_Data37[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_CLK1CFG_Data37[1] =
+static unsigned char gaConfig_AD242xMasterNode0_CLK1CFG_Data38[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_CLK2CFG_Data38[1] =
+static unsigned char gaConfig_AD242xMasterNode0_CLK2CFG_Data39[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_GPIOD0MSK_Data39[1] =
+static unsigned char gaConfig_AD242xMasterNode0_GPIOD0MSK_Data40[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_GPIOD1MSK_Data40[1] =
+static unsigned char gaConfig_AD242xMasterNode0_GPIOD1MSK_Data41[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_GPIOD2MSK_Data41[1] =
+static unsigned char gaConfig_AD242xMasterNode0_GPIOD2MSK_Data42[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_GPIOD3MSK_Data42[1] =
+static unsigned char gaConfig_AD242xMasterNode0_GPIOD3MSK_Data43[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_GPIOD4MSK_Data43[1] =
+static unsigned char gaConfig_AD242xMasterNode0_GPIOD4MSK_Data44[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_GPIOD5MSK_Data44[1] =
+static unsigned char gaConfig_AD242xMasterNode0_GPIOD5MSK_Data45[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_GPIOD6MSK_Data45[1] =
+static unsigned char gaConfig_AD242xMasterNode0_GPIOD6MSK_Data46[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_GPIOD7MSK_Data46[1] =
+static unsigned char gaConfig_AD242xMasterNode0_GPIOD7MSK_Data47[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_GPIODINV_Data47[1] =
+static unsigned char gaConfig_AD242xMasterNode0_GPIODINV_Data48[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_GPIODEN_Data48[1] =
+static unsigned char gaConfig_AD242xMasterNode0_GPIODEN_Data49[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_I2SRRCTL_Data49[1] =
+static unsigned char gaConfig_AD242xMasterNode0_I2SRRCTL_Data50[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_BECCTL_Data50[1] =
+static unsigned char gaConfig_AD242xMasterNode0_TXACTL_Data51[1] =
+{
+	0x00u	
+};
+
+static unsigned char gaConfig_AD242xMasterNode0_TXBCTL_Data52[1] =
+{
+	0x00u	
+};
+
+static unsigned char gaConfig_AD242xMasterNode0_BECCTL_Data53[1] =
 {
 	0xEFu	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_DNSLOTS_Data51[1] =
+static unsigned char gaConfig_AD242xMasterNode0_DNSLOTS_Data54[1] =
 {
 	0x08u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_UPSLOTS_Data52[1] =
+static unsigned char gaConfig_AD242xMasterNode0_UPSLOTS_Data55[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_SWCTL_Data53[1] =
+static unsigned char gaConfig_AD242xMasterNode0_SWCTL_Data56[1] =
 {
 	0x01u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_NODEADR_Data54[1] =
+static unsigned char gaConfig_AD242xMasterNode0_PLLCTL_Data57[1] =
 {
 	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_SLOTFMT_Data55[1] =
+static unsigned char gaConfig_AD242xMasterNode0_NODEADR_Data58[1] =
+{
+	0x00u	
+};
+
+static unsigned char gaConfig_AD242xMasterNode0_SLOTFMT_Data59[1] =
 {
 	0x66u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_DATCTL_Data56[1] =
+static unsigned char gaConfig_AD242xMasterNode0_DATCTL_Data60[1] =
 {
 	0x03u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_I2SRRATE_Data57[1] =
+static unsigned char gaConfig_AD242xMasterNode0_I2SRRATE_Data61[1] =
 {
-	0x01u	
+	0x00u	
 };
 
-static unsigned char gaConfig_AD242xMasterNode0_CONTROL_Data58[1] =
+static unsigned char gaConfig_AD242xMasterNode0_CONTROL_Data62[1] =
 {
 	0x01u	
 };
@@ -742,36 +762,40 @@ ADI_A2B_DISCOVERY_CONFIG gaA2BConfig[CONFIG_LEN] =
 	{0x68u,	WRITE,	0x01u,	0x00000044u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_I2STXOFFSET_Data26[0]},	/* I2STXOFFSET */
 	{0x68u,	WRITE,	0x01u,	0x00000045u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_I2SRXOFFSET_Data27[0]},	/* I2SRXOFFSET */
 	{0x68u,	WRITE,	0x01u,	0x00000047u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_PDMCTL_Data28[0]},	/* PDMCTL */
-	{0x68u,	WRITE,	0x01u,	0x00000048u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_ERRMGMT_Data29[0]},	/* ERRMGMT */
-	{0x68u,	WRITE,	0x01u,	0x0000004Au,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIODAT_Data30[0]},	/* GPIODAT */
-	{0x68u,	WRITE,	0x01u,	0x0000004Du,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIOOEN_Data31[0]},	/* GPIOOEN */
-	{0x68u,	WRITE,	0x01u,	0x0000004Eu,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIOIEN_Data32[0]},	/* GPIOIEN */
-	{0x68u,	WRITE,	0x01u,	0x00000050u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_PINTEN_Data33[0]},	/* PINTEN */
-	{0x68u,	WRITE,	0x01u,	0x00000051u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_PINTINV_Data34[0]},	/* PINTINV */
-	{0x68u,	WRITE,	0x01u,	0x00000052u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_PINCFG_Data35[0]},	/* PINCFG */
-	{0x68u,	WRITE,	0x01u,	0x00000020u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_TESTMODE_Data36[0]},	/* TESTMODE */
-	{0x68u,	WRITE,	0x01u,	0x00000059u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_CLK1CFG_Data37[0]},	/* CLK1CFG */
-	{0x68u,	WRITE,	0x01u,	0x0000005Au,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_CLK2CFG_Data38[0]},	/* CLK2CFG */
-	{0x68u,	WRITE,	0x01u,	0x00000081u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIOD0MSK_Data39[0]},	/* GPIOD0MSK */
-	{0x68u,	WRITE,	0x01u,	0x00000082u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIOD1MSK_Data40[0]},	/* GPIOD1MSK */
-	{0x68u,	WRITE,	0x01u,	0x00000083u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIOD2MSK_Data41[0]},	/* GPIOD2MSK */
-	{0x68u,	WRITE,	0x01u,	0x00000084u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIOD3MSK_Data42[0]},	/* GPIOD3MSK */
-	{0x68u,	WRITE,	0x01u,	0x00000085u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIOD4MSK_Data43[0]},	/* GPIOD4MSK */
-	{0x68u,	WRITE,	0x01u,	0x00000086u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIOD5MSK_Data44[0]},	/* GPIOD5MSK */
-	{0x68u,	WRITE,	0x01u,	0x00000087u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIOD6MSK_Data45[0]},	/* GPIOD6MSK */
-	{0x68u,	WRITE,	0x01u,	0x00000088u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIOD7MSK_Data46[0]},	/* GPIOD7MSK */
-	{0x68u,	WRITE,	0x01u,	0x0000008Au,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIODINV_Data47[0]},	/* GPIODINV */
-	{0x68u,	WRITE,	0x01u,	0x00000080u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIODEN_Data48[0]},	/* GPIODEN */
-	{0x68u,	WRITE,	0x01u,	0x00000057u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_I2SRRCTL_Data49[0]},	/* I2SRRCTL */
-	{0x68u,	WRITE,	0x01u,	0x0000001Eu,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_BECCTL_Data50[0]},	/* BECCTL */
-	{0x68u,	WRITE,	0x01u,	0x0000000Du,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_DNSLOTS_Data51[0]},	/* DNSLOTS */
-	{0x68u,	WRITE,	0x01u,	0x0000000Eu,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_UPSLOTS_Data52[0]},	/* UPSLOTS */
-	{0x68u,	WRITE,	0x01u,	0x00000009u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_SWCTL_Data53[0]},	/* SWCTL */
-	{0x68u,	WRITE,	0x01u,	0x00000001u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_NODEADR_Data54[0]},	/* NODEADR */
-	{0x68u,	WRITE,	0x01u,	0x00000010u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_SLOTFMT_Data55[0]},	/* SLOTFMT */
-	{0x68u,	WRITE,	0x01u,	0x00000011u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_DATCTL_Data56[0]},	/* DATCTL */
-	{0x68u,	WRITE,	0x01u,	0x00000056u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_I2SRRATE_Data57[0]},	/* I2SRRATE */
-	{0x68u,	WRITE,	0x01u,	0x00000012u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_CONTROL_Data58[0]},	/* CONTROL */
+	{0x68u,	WRITE,	0x01u,	0x0000005Du,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_PDMCTL2_Data29[0]},	/* PDMCTL2 */
+	{0x68u,	WRITE,	0x01u,	0x00000048u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_ERRMGMT_Data30[0]},	/* ERRMGMT */
+	{0x68u,	WRITE,	0x01u,	0x0000004Au,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIODAT_Data31[0]},	/* GPIODAT */
+	{0x68u,	WRITE,	0x01u,	0x0000004Du,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIOOEN_Data32[0]},	/* GPIOOEN */
+	{0x68u,	WRITE,	0x01u,	0x0000004Eu,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIOIEN_Data33[0]},	/* GPIOIEN */
+	{0x68u,	WRITE,	0x01u,	0x00000050u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_PINTEN_Data34[0]},	/* PINTEN */
+	{0x68u,	WRITE,	0x01u,	0x00000051u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_PINTINV_Data35[0]},	/* PINTINV */
+	{0x68u,	WRITE,	0x01u,	0x00000052u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_PINCFG_Data36[0]},	/* PINCFG */
+	{0x68u,	WRITE,	0x01u,	0x00000020u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_TESTMODE_Data37[0]},	/* TESTMODE */
+	{0x68u,	WRITE,	0x01u,	0x00000059u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_CLK1CFG_Data38[0]},	/* CLK1CFG */
+	{0x68u,	WRITE,	0x01u,	0x0000005Au,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_CLK2CFG_Data39[0]},	/* CLK2CFG */
+	{0x68u,	WRITE,	0x01u,	0x00000081u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIOD0MSK_Data40[0]},	/* GPIOD0MSK */
+	{0x68u,	WRITE,	0x01u,	0x00000082u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIOD1MSK_Data41[0]},	/* GPIOD1MSK */
+	{0x68u,	WRITE,	0x01u,	0x00000083u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIOD2MSK_Data42[0]},	/* GPIOD2MSK */
+	{0x68u,	WRITE,	0x01u,	0x00000084u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIOD3MSK_Data43[0]},	/* GPIOD3MSK */
+	{0x68u,	WRITE,	0x01u,	0x00000085u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIOD4MSK_Data44[0]},	/* GPIOD4MSK */
+	{0x68u,	WRITE,	0x01u,	0x00000086u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIOD5MSK_Data45[0]},	/* GPIOD5MSK */
+	{0x68u,	WRITE,	0x01u,	0x00000087u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIOD6MSK_Data46[0]},	/* GPIOD6MSK */
+	{0x68u,	WRITE,	0x01u,	0x00000088u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIOD7MSK_Data47[0]},	/* GPIOD7MSK */
+	{0x68u,	WRITE,	0x01u,	0x0000008Au,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIODINV_Data48[0]},	/* GPIODINV */
+	{0x68u,	WRITE,	0x01u,	0x00000080u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_GPIODEN_Data49[0]},	/* GPIODEN */
+	{0x68u,	WRITE,	0x01u,	0x00000057u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_I2SRRCTL_Data50[0]},	/* I2SRRCTL */
+	{0x68u,	WRITE,	0x01u,	0x0000002Eu,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_TXACTL_Data51[0]},	/* TXACTL */
+	{0x68u,	WRITE,	0x01u,	0x00000030u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_TXBCTL_Data52[0]},	/* TXBCTL */
+	{0x68u,	WRITE,	0x01u,	0x0000001Eu,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_BECCTL_Data53[0]},	/* BECCTL */
+	{0x68u,	WRITE,	0x01u,	0x0000000Du,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_DNSLOTS_Data54[0]},	/* DNSLOTS */
+	{0x68u,	WRITE,	0x01u,	0x0000000Eu,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_UPSLOTS_Data55[0]},	/* UPSLOTS */
+	{0x68u,	WRITE,	0x01u,	0x00000009u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_SWCTL_Data56[0]},	/* SWCTL */
+	{0x68u,	WRITE,	0x01u,	0x00000040u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_PLLCTL_Data57[0]},	/* PLLCTL */
+	{0x68u,	WRITE,	0x01u,	0x00000001u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_NODEADR_Data58[0]},	/* NODEADR */
+	{0x68u,	WRITE,	0x01u,	0x00000010u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_SLOTFMT_Data59[0]},	/* SLOTFMT */
+	{0x68u,	WRITE,	0x01u,	0x00000011u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_DATCTL_Data60[0]},	/* DATCTL */
+	{0x68u,	WRITE,	0x01u,	0x00000056u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_I2SRRATE_Data61[0]},	/* I2SRRATE */
+	{0x68u,	WRITE,	0x01u,	0x00000012u,	0x01u,	0x0001u,	&gaConfig_AD242xMasterNode0_CONTROL_Data62[0]},	/* CONTROL */
 };
 
 #endif /* _ADI_A2B_I2C_LIST_H_ */
