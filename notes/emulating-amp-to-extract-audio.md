@@ -10,64 +10,64 @@ to combine the chopped up audio signals into a full-spectrum stereo
 stream to be sent to (a) DAC(s) or SPDIF TX. Two 32-bit 48kHz TDM4 streams
 are output on TX0/TX1 for a total of eight channels.
 
-##Channel configuration:
+## Channel configuration:
 
-###TX0:
+### TX0:
 
 0. Right Subwoofer (subsonic)
 1. Left Subwoofer (subsonic)
 2. Right front woofer (low)
 3. Left front woofer (low)
 
-###TX1:
+### TX1:
 
 4. Right rear (low/mid)
 5. Left rear (low/mid)
 6. Right parcel (mid/high)
 7. Left parcel (mid/high)
 
-##Stage 1: 
+## Stage 1: 
 
-###Emulate EEPROM
-| Slave: | Register: | Value: | Note:            |
-| ---------------------------------------------- |
-| 0x56   | 0x00      | 0x00   | Must store value |
-| 0x56   | 0x01      | 0x54   | Must store value |
-| 0x56   | 0x02      | 0x46   | Must store value |
-| 0x56   | 0x03      | 0x05   | Must store value |
-| 0x56   | 0x04      | 0x00   | Must store value |
-| 0x56   | 0x05      | 0x00   | Must store value |
-| 0x56   | 0x06      | 0x00   | Must store value |
-| 0x56   | 0x07      | 0x62   | Must store value |
+### Emulate EEPROM
+| Slave: | Register: | Value: | Note: |
+| -------|-----------|--------|------ |
+| 0x56 | 0x00 | 0x00 | Must store value |
+| 0x56 | 0x01 | 0x54 | Must store value |
+| 0x56 | 0x02 | 0x46 | Must store value |
+| 0x56 | 0x03 | 0x05 | Must store value |
+| 0x56 | 0x04 | 0x00 | Must store value |
+| 0x56 | 0x05 | 0x00 | Must store value |
+| 0x56 | 0x06 | 0x00 | Must store value |
+| 0x56 | 0x07 | 0x62 | Must store value |
 
-###Emulate GPIO expander
+### Emulate GPIO expander
 
-| Slave: | Register: | Value: | Note:            |
-| ---------------------------------------------- |
+| Slave: | Register: | Value: | Note: |
+| -------|-----------|--------|------ |
 | 0x70   | 0x01      | 0x88   | Must be writable |
 | 0x70   | 0x03      | 0x14   | Must be writable |
 
-##Stage 2:
+## Stage 2:
 Input a high signal to IO5 of the transceiver
 
-##Stage 3:
+## Stage 3:
 Keep IO5 high until IO2 and IO6 are brought high.
 
-##Stage 4:
-| Slave: | Register: | Value: | Note:            |
-| ---------------------------------------------- |
+## Stage 4:
+| Slave: | Register: | Value: | Note: |
+| -------|-----------|--------|------ |
 | 0x70   | 0x03      | 0x16   | Must be writable |
 
-##Stage 5:
+## Stage 5:
 Wait a few ms then bring IO5 high
 
-##Stage 6:
+## Stage 6:
 Emulate amplifier registers:
 
-###TDA7802
+### TDA7802
 
-| Slave: | Register: | Value: | Note:            |
-| ---------------------------------------------- |
+| Slave: | Register: | Value: | Note: |
+| -------|-----------|--------|------ |
 | 0x6c   | 0x00      | 0x0f   | Must be writable |
 | 0x6c   | 0x01      | 0x00   | Must be writable |
 | 0x6c   | 0x02      | 0x18   | Must be writable |
@@ -75,10 +75,10 @@ Emulate amplifier registers:
 | 0x6c   | 0x04      | 0x00   | Must be writable |
 | 0x6c   | 0x05      | 0x01   | Must be writable |
 
-###FDA801
+### FDA801
 
-| Slave: | Register: | Value: | Note:            |
-| ---------------------------------------------- |
+| Slave: | Register: | Value: | Note: |
+| -------|-----------|--------|------ |
 | 0x6e   | 0x00      | 0x5c   | Must be writable |
 | 0x6e   | 0x01      | 0x07   | Must be writable |
 | 0x6e   | 0x02      | 0x0f   | Must be writable |
