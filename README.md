@@ -2,9 +2,9 @@ Tesla Model 3 Premium Amp reverse engineering and A2B demo for EVAL-AD2410WDZ or
 
 ## Status for ADAU1452:
 - Analog audio input to the DSP works via the onboard ADAU1761 codec.
-- ADI surround algorithm and HPF/LPF provide rear, subwoofer, and tweeter outputs
+- Custom algorithms provide rear, subwoofer, and tweeter outputs
 - ~~The TDA7802 (channels 4-7) still does not play any audio. More reverse engineering will be required to fix this.~~ Fixed
-- For now, only rear, tweeter and subwoofer channels play audio. Front and center channels need work.
+- ~~For now, only rear, tweeter and subwoofer channels play audio. Front and center channels need work.~~ All channels now work, but front channels are really attenuated.
 - Crackling on channels 2 and 3 has been fixed.
 
 # Status for Jetson Nano:
@@ -13,13 +13,13 @@ Tesla Model 3 Premium Amp reverse engineering and A2B demo for EVAL-AD2410WDZ or
 - Crackling on channels 2 and 3 has been fixed.
 
 ## Plans:
-- Get all 8 audio channels playing audio.
+- ~~Get all 8 audio channels playing audio.~~ Done
 - SPDIF input
 - Auto source selection
 - I2S input and configuration from an audio host (i.e. Raspberry Pi)
 - Volume control
 - EQ
-- Optimization for automotive environments
+- Optimization for automotive environments (Partially done)
 
 ### bin:
 - a2bapp-linux (When ran, this will set up the A2B bus when the Jetson nano, A2B master, and Tesla amp are connected.)
@@ -50,7 +50,10 @@ Tesla Model 3 Premium Amp reverse engineering and A2B demo for EVAL-AD2410WDZ or
 - Raw I2C2 bus captures from Elon's brain
 
 ### sigma-studio-files:
-- SigmaStudio project and register files for both Jetson nano and ADAU1452
+- ADAU1452 with ADI surround
+- ADAU1452 with custom component channel algorithms
+- ADAU1452 with Tesla mic array as slave 0, and amp as slave 1 (Model 3 configuration).
+- Jetson nano raw 8 channels
 
 ### Amplifier pinout:
 ![Amp connectors](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/master/images/amp-pinout.png?raw=true)

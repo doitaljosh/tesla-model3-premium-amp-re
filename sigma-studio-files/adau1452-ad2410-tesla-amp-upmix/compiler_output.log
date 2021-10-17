@@ -1,0 +1,60 @@
+ADAU145X Assembler, Analog Devices Inc.
+Version: 4.6.0,1809  (built 12/23/2020)
+
+##### Compile Started: Sunday, October 17, 2021 2:25:47 PM #####
+ADAU145X Assembler, Analog Devices Inc.
+Version: 4.6.0,1809  (built 12/23/2020)
+
+##### Compile Started: Sunday, October 17, 2021 2:25:47 PM #####
+##### Compile succeeded:  0 errors, 0 warnings #####
+
+##### Summary #####
+DM0 RAM used:       00286    (of 20480)
+DM1 RAM used:       01621    (of 20480)
+PM  RAM used(Data): 00000    (of 8192)
+PM  RAM used(Inst): 00873    (of 8192) 582 instructions (32bit: 291  64bit: 291)
+Total PM used:      00873    (of 8192)
+
+--------------------------------------------------------------------------------------
+STREAM                        Inst      Inst      DM0     DM1     PM
+Instance                      (cycles)  (size)    
+--------------------------------------------------------------------------------------
+STACK                          -         -        16      0       0       
+Crossover1                    52        88        34      38      0
+Compressor1_3                 53        63        61      2       0
+Compressor1_2                 53        63        61      2       0
+MasterVolume                  25        44        3       8       0
+FRAMEWORK                     62        43        16      7       0
+Gen Filter1_7                 20        34        6       11      0
+Gen Filter1_9                 20        34        6       11      0
+Gen Filter1                   20        34        6       8       0
+Gen Filter1_12                20        34        6       8       0
+Gen Filter1_11                20        34        6       8       0
+Gen Filter1_10                20        34        6       8       0
+Gen Filter1_5                 20        34        6       8       0
+Gen Filter1_6                 20        34        6       8       0
+Gen Filter1_2                 20        34        6       8       0
+Gen Filter1_8                 20        34        6       8       0
+Gen Filter1_3                 20        34        6       8       0
+Gen Filter1_4                 20        34        6       8       0
+Param EQ1                     14        26        11      14      0
+Single 1                      8         12        3       0       0
+Single 1_2                    8         12        3       0       0
+Delay1_2                      7         9         1       721     0
+Delay1                        7         9         1       721     0
+Add2                          4         7         0       1       0
+Add1                          4         7         0       1       0
+ADAU1452 IN3                  4         4         0       0       0
+RearLeft                      2         3         0       0       0
+FrontLeft                     2         3         0       0       0
+FrontRight                    2         3         0       0       0
+Center                        2         3         0       0       0
+LFE                           2         3         0       0       0
+LeftTwt                       2         3         0       0       0
+RightTwt                      2         3         0       0       0
+RearRight                     2         3         0       0       0
+--------------------------------------------------------------------------------------
+Total                         557       819       282     1617    0
+--------------------------------------------------------------------------------------
+(% Fs=48.0kHz)                10%       10%       2%      8%      0%
+
