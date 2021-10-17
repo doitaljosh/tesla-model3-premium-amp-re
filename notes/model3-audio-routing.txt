@@ -1,0 +1,19 @@
+Tesla Model 3 audio channel mapping:
+
+Channel #:  Component type:   Name:                 
+0           lf_t              left front tweeter
+1           rf_t              right front tweeter
+2           lf_m              left front IP
+3           rf_m              right front IP
+4           lf_w              left front door
+5           rf_w              right front door
+6           lrd               left rear door
+7           rrd               right rear door
+8           lrs               left parcel
+9           rrs               right parcel
+10          lfh               left headliner
+11          rfh               right headliner
+12          cf                center IP
+13          sub1              subwoofer VC1
+14          sub2              subwoofer VC2
+15          ext               pedestrian warning
