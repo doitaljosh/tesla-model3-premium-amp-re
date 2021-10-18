@@ -74,3 +74,6 @@ Source:  [ Tesla Model 3 Stereo - Part 9: Summary and Lessons Learned](https://w
 
 ### Top of board:
 ![Top view](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/experimental/images/top.jpg?raw=true)
+
+### Video of it in action
+[![Video](https://img.youtube.com/vi/0QqQH-jE5aw/0.jpg)](https://www.youtube.com/watch?v=0QqQH-jE5aw "Model 3 Amp Test with Better DSP Algorithms (Wear headphones)")
