@@ -24,13 +24,13 @@ PCA9538 GPIO expander pins:
 
 Debug connector (J18):
 
-1.	A2B IO5	          8.	A2B IO0
-2.	GPIOExpInt	      9.	BoostTempInt
-3.	AmpsTempInt	      10.	GPIOExpResetn
-4.	GND		            11.	GND
-5.	GND		            12.	GND
-6.	A2B IO6	          13.	Class AB enable
-7.	Class D MuteHW    14.	Class AB HWMute
+1.	A2B IO5	8.	A2B IO0
+2.	GPIOExpInt 9.	BoostTempInt
+3.	AmpsTempInt	10.	GPIOExpResetn
+4.	GND 11.	GND
+5.	GND	12.	GND
+6.	A2B IO6 13.	Class AB enable
+7.	Class D MuteHW 14.	Class AB HWMute
 
 Aardvark connector (J13):
 
