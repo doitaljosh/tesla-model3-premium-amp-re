@@ -1,60 +1,60 @@
 ADAU145X Assembler, Analog Devices Inc.
 Version: 4.6.0,1809  (built 12/23/2020)
 
-##### Compile Started: Sunday, October 17, 2021 2:25:47 PM #####
+##### Compile Started: Saturday, October 23, 2021 11:58:58 AM #####
 ADAU145X Assembler, Analog Devices Inc.
 Version: 4.6.0,1809  (built 12/23/2020)
 
-##### Compile Started: Sunday, October 17, 2021 2:25:47 PM #####
+##### Compile Started: Saturday, October 23, 2021 11:58:58 AM #####
 ##### Compile succeeded:  0 errors, 0 warnings #####
 
 ##### Summary #####
-DM0 RAM used:       00286    (of 20480)
-DM1 RAM used:       01621    (of 20480)
+DM0 RAM used:       00347    (of 20480)
+DM1 RAM used:       01142    (of 20480)
 PM  RAM used(Data): 00000    (of 8192)
-PM  RAM used(Inst): 00873    (of 8192) 582 instructions (32bit: 291  64bit: 291)
-Total PM used:      00873    (of 8192)
+PM  RAM used(Inst): 00929    (of 8192) 631 instructions (32bit: 333  64bit: 298)
+Total PM used:      00929    (of 8192)
 
 --------------------------------------------------------------------------------------
 STREAM                        Inst      Inst      DM0     DM1     PM
 Instance                      (cycles)  (size)    
 --------------------------------------------------------------------------------------
 STACK                          -         -        16      0       0       
-Crossover1                    52        88        34      38      0
-Compressor1_3                 53        63        61      2       0
-Compressor1_2                 53        63        61      2       0
+TwtLfeCsv                     52        88        34      38      0
+ComprRear                     53        63        61      2       0
+ComprFront                    53        63        61      2       0
+ComprTwt                      53        63        61      2       0
 MasterVolume                  25        44        3       8       0
 FRAMEWORK                     62        43        16      7       0
-Gen Filter1_7                 20        34        6       11      0
-Gen Filter1_9                 20        34        6       11      0
-Gen Filter1                   20        34        6       8       0
-Gen Filter1_12                20        34        6       8       0
-Gen Filter1_11                20        34        6       8       0
-Gen Filter1_10                20        34        6       8       0
-Gen Filter1_5                 20        34        6       8       0
-Gen Filter1_6                 20        34        6       8       0
-Gen Filter1_2                 20        34        6       8       0
-Gen Filter1_8                 20        34        6       8       0
-Gen Filter1_3                 20        34        6       8       0
-Gen Filter1_4                 20        34        6       8       0
-Param EQ1                     14        26        11      14      0
-Single 1                      8         12        3       0       0
-Single 1_2                    8         12        3       0       0
-Delay1_2                      7         9         1       721     0
-Delay1                        7         9         1       721     0
-Add2                          4         7         0       1       0
-Add1                          4         7         0       1       0
+LpfRearRight                  20        34        6       11      0
+LpfRearLeft                   20        34        6       11      0
+PeqRearRight                  20        34        6       8       0
+PeqRearLeft                   20        34        6       8       0
+HpfRearRight                  20        34        6       8       0
+HpfRearLeft                   20        34        6       8       0
+PeqFrontLeft                  20        34        6       8       0
+PeqFrontRight                 20        34        6       8       0
+HpfFrontRight                 20        34        6       8       0
+HpfFrontLeft                  20        34        6       8       0
+LpfFrontLeft                  20        34        6       8       0
+LpfFrontRight                 20        34        6       8       0
+EqMain                        14        26        11      14      0
+RInVol                        8         12        3       0       0
+LInVol                        8         12        3       0       0
+DelayRearRight                7         9         1       481     0
+DelayRearLeft                 7         9         1       481     0
+LFELRMixer                    4         7         0       1       0
 ADAU1452 IN3                  4         4         0       0       0
 RearLeft                      2         3         0       0       0
 FrontLeft                     2         3         0       0       0
 FrontRight                    2         3         0       0       0
-Center                        2         3         0       0       0
-LFE                           2         3         0       0       0
+SubVC1                        2         3         0       0       0
+SubVC2                        2         3         0       0       0
 LeftTwt                       2         3         0       0       0
 RightTwt                      2         3         0       0       0
 RearRight                     2         3         0       0       0
 --------------------------------------------------------------------------------------
-Total                         557       819       282     1617    0
+Total                         606       875       343     1138    0
 --------------------------------------------------------------------------------------
-(% Fs=48.0kHz)                10%       10%       2%      8%      0%
+(% Fs=48.0kHz)                10%       11%       2%      6%      0%
 
