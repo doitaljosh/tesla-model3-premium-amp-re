@@ -1,7 +1,7 @@
 /*
- * File:           C:\Users\doita\OneDrive\Documents\Analog Devices\SigmaStudio 4.6\Projects\tesla-model3-premium-amp-re\sigma-studio-files\adau1452-ad2410-tesla-amp-upmix\adau1452-ad2410-tesla-amp-upmix_IC_3_PARAM.h
+ * File:           C:\Users\doita\OneDrive\Documents\tesla-model3-premium-amp-re\sigma-studio-files\adau1452-ad2410-tesla-amp-upmix\adau1452-ad2410-tesla-amp-upmix_IC_3_PARAM.h
  *
- * Created:        Saturday, October 23, 2021 11:56:53 AM
+ * Created:        Saturday, October 23, 2021 5:49:22 PM
  * Description:    adau1452-ad2410-tesla-amp-upmix:IC 3 parameter RAM definitions.
  *
  * This software is distributed in the hope that it will be useful,

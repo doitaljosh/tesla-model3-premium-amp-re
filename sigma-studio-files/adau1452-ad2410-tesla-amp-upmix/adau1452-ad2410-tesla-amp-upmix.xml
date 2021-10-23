@@ -1872,13 +1872,6 @@
             <Data>0x00, 0x00, 0x10, 0x00, </Data>
         </Register>
         <Register>
-            <Name>IC 3.DSP Run Register</Name>
-            <Address>16630</Address>
-            <AddrIncr>0</AddrIncr>
-            <Size>1</Size>
-            <Data>0x00, </Data>
-        </Register>
-        <Register>
             <Name>IC 3.Clock Control Register</Name>
             <Address>16384</Address>
             <AddrIncr>0</AddrIncr>

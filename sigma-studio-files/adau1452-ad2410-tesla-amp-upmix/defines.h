@@ -1,7 +1,7 @@
 /*
  * File:           defines.h
  *
- * Created:        Saturday, October 23, 2021 11:56:53 AM
+ * Created:        Saturday, October 23, 2021 5:49:22 PM
  * Description:    adau1452-ad2410-tesla-amp-upmix IC default download data definitions.
  *
  * This software is distributed in the hope that it will be useful,
@@ -22,8 +22,8 @@
 #define BufferSize_IC_1     	9970
 #define NumTransactions_IC_1	68
 
-#define BufferSize_IC_3     	410
-#define NumTransactions_IC_3	32
+#define BufferSize_IC_3     	407
+#define NumTransactions_IC_3	31
 
 #define BufferSize_IC_2     	0
 #define NumTransactions_IC_2	0
