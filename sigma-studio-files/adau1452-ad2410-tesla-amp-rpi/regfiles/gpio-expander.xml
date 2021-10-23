@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="no"?>
+<ROM>
+  <page modetype="Pre-init">
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="1" i2caddr="112" AddrIncr="1" ParamName="PCA9538_Data_Reg">14</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="3" i2caddr="112" AddrIncr="1" ParamName="PCA9538_Config_Reg">88</action>
+    <action instr="delay" ParamName="Delay">01 64</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="1" i2caddr="112" AddrIncr="1" ParamName="PCA9538_Data_Reg">16</action>
+    <action instr="delay" ParamName="Delay">01 64</action>
+  </page>
+</ROM>
