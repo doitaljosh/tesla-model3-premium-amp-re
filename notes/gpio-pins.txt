@@ -5,32 +5,32 @@ AD2410 pins:
 IO0 - Unused
 IO1 - GPIO expander reset
 IO2 - Va2b5v5 enable
-IO3 - DTX0
-IO4 - Unused
+IO3 - Class D amp data (ch0-3)
+IO4 - Class AB amp data (ch4-7)
 IO5 - GPIO expander interrupt
 IO6 - Used (unknown)
 IO7 - Unused
 
 PCA9538 GPIO expander pins:
 
-0 - FDA2100 MuteHW (active high)
-1 - Amps en (active high)
-2 - TDA7802 MuteHW (active low)
-3 - BoostTempInt (active high, boost converter over-temp interrupt)
-4 - Orange indicator LED
-5 - FDA2100/25v0 boost en (active high)
+0 - Class D HWMute (active high)
+1 - Class AB amp enable (active high)
+2 - Class AB HWMute (active low)
+3 - BoostTempInt (active high, boost over-temp interrupt)
+4 - Status LED
+5 - Class D amp enable (active high)
 6 - Unused (tied to Va2b3v3)
 7 - AmpsTempInt (active high, amplifier over-temp interrupt)
 
 Debug connector (J18):
 
-1.	A2B_RX0/IO5	8.	A2B_IRQ/IO0
-2.	GPIOExpInt	9.	BoostTempInt
-3.	AmpsTempInt	10.	GPIOExpResetn
-4.	GND		11.	GND
-5.	GND		12.	GND
-6.	A2B_RX1/IO6	13.	TDA7802_En
-7.	FDA2100_UnMuteHW14.	TDA7802_UnMuteHW
+1. A2B IO5        8. A2B IO0
+2. GPIOExpInt     9. BoostTempInt
+3. AmpsTempInt    10. GPIOExpResetn
+4. GND            11. GND
+5. GND            12. GND
+6. A2B IO6        13. Class AB enable
+7. Class D MuteHW 14. Class AB HWMute
 
 Aardvark connector (J13):
 
