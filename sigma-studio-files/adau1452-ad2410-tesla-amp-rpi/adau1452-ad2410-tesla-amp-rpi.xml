@@ -159,6 +159,13 @@
             <Data>0x00, 0x1F, </Data>
         </Register>
         <Register>
+            <Name>IC 1.MP7_MODE</Name>
+            <Address>62743</Address>
+            <AddrIncr>0</AddrIncr>
+            <Size>2</Size>
+            <Data>0x00, 0x05, </Data>
+        </Register>
+        <Register>
             <Name>IC 1.SCLK_SCL_M_PIN</Name>
             <Address>63389</Address>
             <AddrIncr>0</AddrIncr>
@@ -1872,6 +1879,13 @@
             <Data>0x00, 0x00, 0x10, 0x00, </Data>
         </Register>
         <Register>
+            <Name>IC 3.DSP Run Register</Name>
+            <Address>16630</Address>
+            <AddrIncr>0</AddrIncr>
+            <Size>1</Size>
+            <Data>0x00, </Data>
+        </Register>
+        <Register>
             <Name>IC 3.Clock Control Register</Name>
             <Address>16384</Address>
             <AddrIncr>0</AddrIncr>
@@ -2088,5 +2102,11 @@
             <Size>1</Size>
             <Data>0x03, </Data>
         </Register>
+    </IC>
+    <IC>
+        <Name>IC 2</Name>
+    </IC>
+    <IC>
+        <Name>IC 4</Name>
     </IC>
 </Schematic>

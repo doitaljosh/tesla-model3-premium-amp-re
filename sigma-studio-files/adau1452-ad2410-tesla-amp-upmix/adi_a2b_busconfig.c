@@ -6,7 +6,7 @@ and its licensors.
 * @file: adi_a2b_busconfig.c
 * @brief: This file contains A2B Schematic information
 * @version: $Revision$
-* @date: Saturday, October 23, 2021-5:49:01 PM
+* @date: Monday, October 25, 2021-12:13:13 AM
 * BCF Version - 1.0.0
 * A2B DLL version- 19.3.0
 * A2B Stack DLL version- 19.3.0.0
@@ -31,6 +31,8 @@ static ADI_A2B_MASTER_SLAVE_CONFIG sChainConfig0;
 static ADI_A2B_MASTER_NCD sMasterNode0;
 static ADI_A2B_SLAVE_NCD sChain0_SlaveNode0;
 static A2B_PERIPHERAL_DEVICE_CONFIG  Target_PeriConfig0;
+static A2B_PERIPHERAL_DEVICE_CONFIG  Target_PeriConfig1;
+static ADI_A2B_PERI_CONFIG_UNIT  gaPeriCfg_FF_39_Unit[32];
 static A2B_PERIPHERAL_DEVICE_CONFIG  sChain0_Slave0_PeriConfig0;
 static A2B_PERIPHERAL_DEVICE_CONFIG  sChain0_Slave0_PeriConfig1;
 static ADI_A2B_PERI_CONFIG_UNIT  gaPeriCfg_0_70_Unit[5];
@@ -76,10 +78,10 @@ ADI_A2B_BCD sBusDescription =
 		.nRediscInterval = 50,
 
 		/*! Number of peripheral devices connected to Target */
-		.nNumPeriDevice = 1,
+		.nNumPeriDevice = 2,
 
 		/*! Array of peripheral configuration pointers */
- 		.apPeriConfig = { 	&Target_PeriConfig0, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR }
+ 		.apPeriConfig = { 	&Target_PeriConfig0, &Target_PeriConfig1, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR, NULL_PTR }
  	}, 
 
  };
@@ -954,6 +956,50 @@ static A2B_PERIPHERAL_DEVICE_CONFIG  Target_PeriConfig0=
 	.paPeriConfigUnit = NULL_PTR 
  };
 
+/* Peripheral - 1*/
+
+ADI_A2B_MEM_BCF_DATA
+static A2B_PERIPHERAL_DEVICE_CONFIG  Target_PeriConfig1=
+{
+ /*! I2C interface status  */ 
+	 .bI2CInterfaceUse = ENABLED, 
+
+	/*7 bit I2C address */ 
+	.nI2Caddr = 0x39, 
+
+	/* Device type -audio source/sink/host  */ 
+	.eDeviceType = A2B_GENERIC_I2C_DEVICE, 
+
+	/* Tx0 Pin in use */
+	.bUseTx0 = DISABLED, 
+
+	/* Rx0 Pin in use */
+	.bUseRx0 = DISABLED, 
+
+	/* Tx1 Pin in use */
+	.bUseTx1 = DISABLED, 
+
+	/* Rx1 Pin in use */
+	.bUseRx1 = DISABLED, 
+
+	/* No of Tx0 channels  */ 
+	.nChTx0 = 0, 
+
+	/* No of Rx0 channels  */ 
+	.nChRx0 = 0, 
+
+	/* No of Tx1 channels  */ 
+	.nChTx1 = 0, 
+
+	/* No of Rx1 channels  */ 
+	.nChRx1 = 0, 
+
+	/* Number of configuration units  */ 
+	.nNumPeriConfigUnit = 32, 
+
+	.paPeriConfigUnit =  &gaPeriCfg_FF_39_Unit[0] 
+ };
+
 /************************************************** END OF PERIPHERALS CONNECTED TO TARGET PROCESSOR  ********************************************************************************  */
 
 /************************************************** START OF CHAIN 0 SLAVE0 PERIPHERAL DESCRIPTION ********************************************************************************  */
@@ -1140,6 +1186,262 @@ static A2B_PERIPHERAL_DEVICE_CONFIG  sChain0_Slave0_PeriConfig3=
 
 /************************************************** END OF CHAIN 0 SLAVE0 PERIPHERAL DESCRIPTION ********************************************************************************  */
 
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_0_Data[1] =
+{
+	0x0u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_1_Data[1] =
+{
+	0xFu	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_2_Data[6] =
+{
+	0x0u,	0x1u,	0x0u,	0x0u,	0x20u,	0x3u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_3_Data[4] =
+{
+	0x64u,	0x0u,	0x0u,	0x0u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_4_Data[2] =
+{
+	0x0u,	0x0u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_5_Data[4] =
+{
+	0xF8u,	0x3Bu,	0x68u,	0x31u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_6_Data[1] =
+{
+	0x1u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_7_Data[8] =
+{
+	0x0u,	0x1u,	0x5u,	0x1u,	0x5u,	0x6Eu,	0x6Eu,	0x0u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_8_Data[3] =
+{
+	0x33u,	0x0u,	0x0u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_9_Data[14] =
+{
+	0x1u,	0x0u,	0x1u,	0x0u,	0x3u,	0x9u,	0x1u,	0xE5u,	0xE5u,	0xE6u,	
+	0xE6u,	0xE7u,	0x0u,	0x3u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_10_Data[2] =
+{
+	0x0u,	0x0u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_11_Data[3] =
+{
+	0x3u,	0x0u,	0x0u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_12_Data[1] =
+{
+	0xAAu	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_13_Data[2] =
+{
+	0xAAu,	0x1u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_14_Data[1] =
+{
+	0x8u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_15_Data[1] =
+{
+	0x1u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_16_Data[5] =
+{
+	0x6Du,	0x8u,	0x24u,	0x7Fu,	0x0u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_17_Data[4] =
+{
+	0x0u,	0x0u,	0x0u,	0x0u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_18_Data[2] =
+{
+	0x10u,	0x0u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_19_Data[5] =
+{
+	0x0u,	0x0u,	0x0u,	0x0u,	0x0u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_20_Data[1] =
+{
+	0x7Fu	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_21_Data[1] =
+{
+	0x0u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_22_Data[1] =
+{
+	0x0u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_23_Data[1] =
+{
+	0x0u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_24_Data[1] =
+{
+	0x0u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_25_Data[1] =
+{
+	0x0u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_26_Data[2] =
+{
+	0x0u,	0x0u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_27_Data[235] =
+{
+	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0xFEu,	0xE0u,	0x0u,	0x0u,	0x0u,	
+	0xFFu,	0x34u,	0x0u,	0x0u,	0x0u,	0xFFu,	0x2Cu,	0x0u,	0x0u,	0x0u,	
+	0xFFu,	0x54u,	0x0u,	0x0u,	0x0u,	0xFFu,	0x5Cu,	0x0u,	0x0u,	0x0u,	
+	0xFFu,	0xF5u,	0x8u,	0x20u,	0x0u,	0xFFu,	0x38u,	0x0u,	0x0u,	0x0u,	
+	0xFFu,	0x80u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	
+	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0xFEu,	0xE8u,	0xCu,	0x0u,	0x0u,	
+	0xFEu,	0x30u,	0x0u,	0xE2u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	
+	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	
+	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	
+	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0xFFu,	0xE8u,	0x7u,	0x20u,	0x8u,	
+	0x0u,	0x0u,	0x6u,	0xA0u,	0x0u,	0xFFu,	0xE0u,	0x0u,	0xC0u,	0x0u,	
+	0xFFu,	0x80u,	0x7u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	
+	0xFFu,	0x0u,	0x0u,	0x0u,	0x0u,	0xFEu,	0xC0u,	0x22u,	0x0u,	0x27u,	
+	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0xFEu,	0xE8u,	0x1Eu,	0x0u,	0x0u,	
+	0xFFu,	0xE8u,	0x1u,	0x20u,	0x0u,	0xFFu,	0xD8u,	0x1u,	0x3u,	0x0u,	
+	0x0u,	0x7u,	0xC6u,	0x0u,	0x0u,	0xFFu,	0x8u,	0x0u,	0x0u,	0x0u,	
+	0xFFu,	0xF4u,	0x0u,	0x20u,	0x0u,	0xFFu,	0xD8u,	0x7u,	0x2u,	0x0u,	
+	0xFDu,	0xA5u,	0x8u,	0x20u,	0x0u,	0x0u,	0x0u,	0x0u,	0xE2u,	0x0u,	
+	0xFDu,	0xADu,	0x8u,	0x20u,	0x0u,	0x0u,	0x8u,	0x0u,	0xE2u,	0x0u,	
+	0x0u,	0x5u,	0x8u,	0x20u,	0x0u,	0xFDu,	0x60u,	0x0u,	0xE2u,	0x0u,	
+	0x0u,	0xDu,	0x8u,	0x20u,	0x0u,	0xFDu,	0x68u,	0x0u,	0xE2u,	0x0u,	
+	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0xFEu,	0x30u,	0x0u,	0x0u,	0x0u,	
+	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0xFEu,	0xC0u,	0xFu,	0x0u,	0x0u,	
+	0x0u,	0x0u,	0x0u,	0x0u,	0x0u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_28_Data[32] =
+{
+	0x0u,	0x0u,	0x10u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	
+	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	
+	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	0x0u,	
+	0x0u,	0x0u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_29_Data[1] =
+{
+	0x1u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_30_Data[1] =
+{
+	0x0u	
+};
+
+ ADI_A2B_MEM_PERI_CONFIG_DATA 
+static	uint8 gaPeriCfg_FF_39_31_Data[1] =
+{
+	0x3u	
+};
+
+ADI_A2B_MEM_PERI_CONFIG_UNIT
+static	ADI_A2B_PERI_CONFIG_UNIT gaPeriCfg_FF_39_Unit[32] =
+{
+	{A2B_WRITE_OP,	0x2u,	0x40F6u,	0x1u,	0x1u,	&gaPeriCfg_FF_39_0_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x4000u,	0x1u,	0x1u,	&gaPeriCfg_FF_39_1_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x4002u,	0x1u,	0x6u,	&gaPeriCfg_FF_39_2_Data[0]},
+	{A2B_DEALY_OP,	0x0u,	0x0u,	0x1u,	0x4u,	&gaPeriCfg_FF_39_3_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x4015u,	0x1u,	0x2u,	&gaPeriCfg_FF_39_4_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x4011u,	0x1u,	0x4u,	&gaPeriCfg_FF_39_5_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x4008u,	0x1u,	0x1u,	&gaPeriCfg_FF_39_6_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x4009u,	0x1u,	0x8u,	&gaPeriCfg_FF_39_7_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x4019u,	0x1u,	0x3u,	&gaPeriCfg_FF_39_8_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x401Cu,	0x1u,	0xEu,	&gaPeriCfg_FF_39_9_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x4017u,	0x1u,	0x2u,	&gaPeriCfg_FF_39_10_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x402Au,	0x1u,	0x3u,	&gaPeriCfg_FF_39_11_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x402Du,	0x1u,	0x1u,	&gaPeriCfg_FF_39_12_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x402Fu,	0x1u,	0x2u,	&gaPeriCfg_FF_39_13_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x4031u,	0x1u,	0x1u,	&gaPeriCfg_FF_39_14_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x40F5u,	0x1u,	0x1u,	&gaPeriCfg_FF_39_15_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x40C0u,	0x1u,	0x5u,	&gaPeriCfg_FF_39_16_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x40C6u,	0x1u,	0x4u,	&gaPeriCfg_FF_39_17_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x40E9u,	0x1u,	0x2u,	&gaPeriCfg_FF_39_18_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x40D0u,	0x1u,	0x5u,	&gaPeriCfg_FF_39_19_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x40EBu,	0x1u,	0x1u,	&gaPeriCfg_FF_39_20_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x40F2u,	0x1u,	0x1u,	&gaPeriCfg_FF_39_21_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x40F3u,	0x1u,	0x1u,	&gaPeriCfg_FF_39_22_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x40F4u,	0x1u,	0x1u,	&gaPeriCfg_FF_39_23_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x40F7u,	0x1u,	0x1u,	&gaPeriCfg_FF_39_24_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x40F8u,	0x1u,	0x1u,	&gaPeriCfg_FF_39_25_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x40F9u,	0x1u,	0x2u,	&gaPeriCfg_FF_39_26_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x8000u,	0x1u,	0xEBu,	&gaPeriCfg_FF_39_27_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x0u,	0x1u,	0x20u,	&gaPeriCfg_FF_39_28_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x40F6u,	0x1u,	0x1u,	&gaPeriCfg_FF_39_29_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x4036u,	0x1u,	0x1u,	&gaPeriCfg_FF_39_30_Data[0]},
+	{A2B_WRITE_OP,	0x2u,	0x4036u,	0x1u,	0x1u,	&gaPeriCfg_FF_39_31_Data[0]}
+};
 
  ADI_A2B_MEM_PERI_CONFIG_DATA 
 static	uint8 gaPeriCfg_0_70_0_Data[1] =

@@ -1,7 +1,7 @@
 /*
  * File:           C:\Users\doita\OneDrive\Documents\tesla-model3-premium-amp-re\sigma-studio-files\adau1452-ad2410-tesla-amp-rpi\adau1452-ad2410-tesla-amp-rpi_IC_2.h
  *
- * Created:        Saturday, October 23, 2021 5:43:08 PM
+ * Created:        Saturday, October 23, 2021 7:29:41 PM
  * Description:    adau1452-ad2410-tesla-amp-rpi:IC 2 program data.
  *
  * This software is distributed in the hope that it will be useful,
@@ -33,5 +33,13 @@ ADI_REG_TYPE Param_Data_IC_2[PARAM_SIZE_IC_2] = {
 };
 
 
+
+/*
+ * Default Download
+ */
+#define DEFAULT_DOWNLOAD_SIZE_IC_2 0
+
+void default_download_IC_2() {
+}
 
 #endif

@@ -1,7 +1,7 @@
 /*
  * File:           C:\Users\doita\OneDrive\Documents\tesla-model3-premium-amp-re\sigma-studio-files\adau1452-ad2410-tesla-amp-rpi\adau1452-ad2410-tesla-amp-rpi_IC_1_REG.h
  *
- * Created:        Saturday, October 23, 2021 5:43:08 PM
+ * Created:        Saturday, October 23, 2021 7:29:41 PM
  * Description:    adau1452-ad2410-tesla-amp-rpi:IC 1 control register definitions.
  *
  * This software is distributed in the hope that it will be useful,
@@ -1033,7 +1033,7 @@
 /* HIBERNATE  - Registers (IC 1) */
 #define REG_HIBERNATE_IC_1_ADDR                   0xF400
 #define REG_HIBERNATE_IC_1_BYTE                   2
-#define REG_HIBERNATE_IC_1_VALUE                  0x1
+#define REG_HIBERNATE_IC_1_VALUE                  0x0
 
 /* START_PULSE  - Registers (IC 1) */
 #define REG_START_PULSE_IC_1_ADDR                 0xF401
@@ -1048,7 +1048,7 @@
 /* KILL_CORE  - Registers (IC 1) */
 #define REG_KILL_CORE_IC_1_ADDR                   0xF403
 #define REG_KILL_CORE_IC_1_BYTE                   2
-#define REG_KILL_CORE_IC_1_VALUE                  0x1
+#define REG_KILL_CORE_IC_1_VALUE                  0x0
 
 /* START_ADDRESS  - Registers (IC 1) */
 #define REG_START_ADDRESS_IC_1_ADDR               0xF404
@@ -1258,7 +1258,7 @@
 /* MP7_MODE  - Registers (IC 1) */
 #define REG_MP7_MODE_IC_1_ADDR                    0xF517
 #define REG_MP7_MODE_IC_1_BYTE                    2
-#define REG_MP7_MODE_IC_1_VALUE                   0x0
+#define REG_MP7_MODE_IC_1_VALUE                   0x5
 
 /* MP8_MODE  - Registers (IC 1) */
 #define REG_MP8_MODE_IC_1_ADDR                    0xF518
@@ -5640,7 +5640,7 @@
 #define R201_FTDM_OUT63_SLOT_ENABLE_OUT_IC_1_SHIFT 7
 
 /* HIBERNATE (IC 1) */
-#define R202_HIBERNATE_HIBERNATE_IC_1             0x1    /* 1b	[0] */
+#define R202_HIBERNATE_HIBERNATE_IC_1             0x0    /* 0b	[0] */
 #define R202_HIBERNATE_HIBERNATE_IC_1_MASK        0x1
 #define R202_HIBERNATE_HIBERNATE_IC_1_SHIFT       0
 
@@ -5655,7 +5655,7 @@
 #define R204_START_CORE_START_CORE_IC_1_SHIFT     0
 
 /* KILL_CORE (IC 1) */
-#define R205_KILL_CORE_KILL_CORE_IC_1             0x1    /* 1b	[0] */
+#define R205_KILL_CORE_KILL_CORE_IC_1             0x0    /* 0b	[0] */
 #define R205_KILL_CORE_KILL_CORE_IC_1_MASK        0x1
 #define R205_KILL_CORE_KILL_CORE_IC_1_SHIFT       0
 
@@ -6006,8 +6006,8 @@
 #define R246_MP6_MODE_SS_SELECT_IC_1_SHIFT        8
 
 /* MP7_MODE (IC 1) */
-#define R247_MP7_MODE_MP_ENABLE_IC_1              0x0    /* 0b	[0] */
-#define R247_MP7_MODE_MP_MODE_IC_1                0x0    /* 000b	[3:1] */
+#define R247_MP7_MODE_MP_ENABLE_IC_1              0x1    /* 1b	[0] */
+#define R247_MP7_MODE_MP_MODE_IC_1                0x2    /* 010b	[3:1] */
 #define R247_MP7_MODE_DEBOUNCE_VALUE_IC_1         0x0    /* 0000b	[7:4] */
 #define R247_MP7_MODE_SS_SELECT_IC_1              0x0    /* 000b	[10:8] */
 #define R247_MP7_MODE_MP_ENABLE_IC_1_MASK         0x1

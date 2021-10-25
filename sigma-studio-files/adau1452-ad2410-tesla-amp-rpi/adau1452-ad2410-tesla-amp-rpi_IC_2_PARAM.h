@@ -1,7 +1,7 @@
 /*
  * File:           C:\Users\doita\OneDrive\Documents\tesla-model3-premium-amp-re\sigma-studio-files\adau1452-ad2410-tesla-amp-rpi\adau1452-ad2410-tesla-amp-rpi_IC_2_PARAM.h
  *
- * Created:        Saturday, October 23, 2021 5:43:08 PM
+ * Created:        Saturday, October 23, 2021 7:29:41 PM
  * Description:    adau1452-ad2410-tesla-amp-rpi:IC 2 parameter RAM definitions.
  *
  * This software is distributed in the hope that it will be useful,
