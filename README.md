@@ -1,4 +1,4 @@
-Tesla Model 3 Premium Amp reverse engineering and A2B demo for EVAL-AD2410WDZ or ADAU1452
+Tesla Model 3 Premium Amp reverse engineering and A2B demo for EVAL-AD2410WDZ or ADAU1452. Useful for integration of the Tesla amp into a DIY car audio project.
 
 ## Status for ADAU1452:
 - Analog audio input to the DSP works via the onboard ADAU1761 codec.
