@@ -2,31 +2,33 @@ Tesla Model 3 Premium Amp reverse engineering and A2B demo for EVAL-AD2410WDZ or
 
 ## Status for ADAU1452:
 - Analog audio input to the DSP works via the onboard ADAU1761 codec.
-- Custom algorithms provide rear, subwoofer, and tweeter outputs
-- ~~The TDA7802 (channels 4-7) still does not play any audio. More reverse engineering will be required to fix this.~~ Fixed
+- Custom filters and limiters provide rear, subwoofer, and tweeter outputs
+- ~~The class AB amp (channels 4-7) still does not play any audio. More reverse engineering will be required to fix this.~~ Fixed
 - ~~For now, only rear, tweeter and subwoofer channels play audio. Front and center channels need work.~~ All channels now work, but front channels are really attenuated.
-- Crackling on channels 2 and 3 has been fixed.
+- ~~Crackling on channels 2 and 3.~~ Fixed
 
 # Status for Jetson Nano:
 - The A2B bus will drop as soon as the audio interface goes to sleep. DAPM needs to be disabled since the bus needs a constant clock.
-- ~~The TDA7802 (channels 4-7) still does not play any audio. More reverse engineering will be required to fix this.~~ Fixed
-- Crackling on channels 2 and 3 has been fixed.
+- ~~The class AB amp (channels 4-7) still does not play any audio. More reverse engineering will be required to fix this.~~ Fixed
+- ~~Crackling on channels 2 and 3.~~ Fixed
 
 ## Plans:
 - ~~Get all 8 audio channels playing audio.~~ Done
 - SPDIF input
 - Auto source selection
-- I2S input and configuration from an audio host (i.e. Raspberry Pi)
-- Volume control
-- EQ
-- Optimization for automotive environments (Partially done)
+- I2S input and configuration from an audio host (e.g. Jetson Nano)
+- Digital volume control
+- Bass, treble adjustment
+- Manual EQ and presets
+- Dynamic EQ
+- Linux codec driver
 
 ### bin:
 - a2bapp-linux (When ran, this will set up the A2B bus when the Jetson nano, A2B master, and Tesla amp are connected.)
 - run.sh (Sets up ALSA codecs and TDM interface, then runs a2bapp-linux)
 
 ### config:
-- asound.conf (Janky workaround to play audio on all channels without DSP upmixing.)
+- asound.conf (Janky workaround to play stereo audio on all channels without DSP upmixing.)
 
 ### datasheets:
 - AD2428W A2B transceiver (Register and pin compatible with AD2410)
@@ -38,7 +40,7 @@ Tesla Model 3 Premium Amp reverse engineering and A2B demo for EVAL-AD2410WDZ or
 - 24C04K 4 Kbit I2C EEPROM
 
 ### i2c-logs:
-- Annotated I2C transactions between Elon's brain and base amp/A2B transceiver
+- Annotated I2C transactions between BMP and base amp/A2B transceiver
 
 ### notes:
 - Channel mapping
@@ -47,11 +49,11 @@ Tesla Model 3 Premium Amp reverse engineering and A2B demo for EVAL-AD2410WDZ or
 - External connector pinouts
 
 ### pulseview-captures:
-- Raw I2C2 bus captures from Elon's brain
+- Raw I2C2 bus captures from BMP
 
 ### sigma-studio-files:
 - ADAU1452 with ADI surround
-- ADAU1452 with custom component channel algorithms
+- ADAU1452 with custom filters
 ![DSP flow](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/experimental/images/sigmastudio_1.png?raw=true)
 ![A2B flow](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/experimental/images/sigmastudio_2.png?raw=true)
 - ADAU1452 with Tesla mic array as slave 0, and amp as slave 1 (Model 3 configuration).
@@ -63,8 +65,8 @@ Source:  [ Tesla Model 3 Stereo - Part 9: Summary and Lessons Learned](https://w
 
 ### Amp connector part numbers:
 - A2B: TE AMP Mini50 2177586-1
-- High wattage/power in: Sumitomo 6098-1714
-- Low wattage: Sumitomo 6098-5713
+- Class D channels/power in: Sumitomo 6098-1714
+- Class AB channels: Sumitomo 6098-5713
 
 ### A2B board <-> Jetson Nano wiring:
 ![Wiring](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/experimental/images/a2b-jetson-nano.png?raw=true)
