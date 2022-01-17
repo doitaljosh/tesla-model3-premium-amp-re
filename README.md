@@ -6,7 +6,7 @@ Tesla Model 3 Premium Amp reverse engineering and A2B demo for EVAL-AD2410WDZ or
 - Analog audio input to the DSP works via the onboard ADAU1761 codec.
 - Custom filters and limiters provide rear, subwoofer, and tweeter outputs
 - ~~The class AB amp (channels 4-7) still does not play any audio. More reverse engineering will be required to fix this.~~ Fixed
-- ~~For now, only rear, tweeter and subwoofer channels play audio. Front and center channels need work.~~ All channels now work, but front channels are really attenuated.
+- ~~For now, only rear, tweeter and subwoofer channels play audio. Front and center channels need work. All channels now work, but front channels are really attenuated.~~ Swapped front and rear channels as a temporary workaround.
 - ~~Crackling on channels 2 and 3.~~ Fixed
 
 ### Status for Jetson Nano:
