@@ -6,7 +6,7 @@ and its licensors.
 * @file: adi_a2b_masternode_config.c
 * @brief: This file contains A2B node information
 * @version: $Revision$
-* @date: Monday, October 25, 2021-12:11:39 AM
+* @date: Monday, October 25, 2021-12:11:03 AM
 * NCF Version - 
 * A2B DLL version - 19.3.0
 * A2B Stack DLL version - 19.3.0.0

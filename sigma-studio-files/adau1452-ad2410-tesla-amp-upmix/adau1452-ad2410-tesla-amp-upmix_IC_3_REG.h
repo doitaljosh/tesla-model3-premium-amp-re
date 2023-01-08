@@ -1,7 +1,7 @@
 /*
- * File:           C:\Users\doita\OneDrive\Documents\tesla-model3-premium-amp-re\sigma-studio-files\adau1452-ad2410-tesla-amp-upmix\adau1452-ad2410-tesla-amp-upmix_IC_3_REG.h
+ * File:           C:\Users\doita\OneDrive\Documents\Analog Devices\SigmaStudio 4.6\Projects\tesla-model3-premium-amp-re\sigma-studio-files\adau1452-ad2410-tesla-amp-upmix\adau1452-ad2410-tesla-amp-upmix_IC_3_REG.h
  *
- * Created:        Saturday, October 23, 2021 5:49:22 PM
+ * Created:        Sunday, January 8, 2023 1:00:52 PM
  * Description:    adau1452-ad2410-tesla-amp-upmix:IC 3 control register definitions.
  *
  * This software is distributed in the hope that it will be useful,
@@ -14,7 +14,7 @@
  * are intended for resale to audio product end users. This software
  * may not be distributed whole or in any part to third parties.
  *
- * Copyright ©2021 Analog Devices, Inc. All rights reserved.
+ * Copyright ©2023 Analog Devices, Inc. All rights reserved.
  */
 #ifndef __ADAU1452_AD2410_TESLA_AMP_UPMIX_IC_3_REG_H__
 #define __ADAU1452_AD2410_TESLA_AMP_UPMIX_IC_3_REG_H__
@@ -33,12 +33,12 @@
 /* PLLCrlRegister  - Registers (IC 3) */
 #define REG_PLLCRLREGISTER_IC_3_ADDR              0x4002
 #define REG_PLLCRLREGISTER_IC_3_BYTE              6
-#define REG_PLLCRLREGISTER_IC_3_VALUE             0x000100002003
+#define REG_PLLCRLREGISTER_IC_3_VALUE             0x00FD000C2001
 
 /* MicCtrlRegister  - Registers (IC 3) */
 #define REG_MICCTRLREGISTER_IC_3_ADDR             0x4008
 #define REG_MICCTRLREGISTER_IC_3_BYTE             1
-#define REG_MICCTRLREGISTER_IC_3_VALUE            0x1
+#define REG_MICCTRLREGISTER_IC_3_VALUE            0x0
 
 /* Record Pwr Management  - Registers (IC 3) */
 #define REG_RECORD_PWR_MANAGEMENT_IC_3_ADDR       0x4009
@@ -68,12 +68,12 @@
 /* Record Volume Ctrl Left  - Registers (IC 3) */
 #define REG_RECORD_VOLUME_CTRL_LEFT_IC_3_ADDR     0x400E
 #define REG_RECORD_VOLUME_CTRL_LEFT_IC_3_BYTE     1
-#define REG_RECORD_VOLUME_CTRL_LEFT_IC_3_VALUE    0x6E
+#define REG_RECORD_VOLUME_CTRL_LEFT_IC_3_VALUE    0x0
 
 /* Record Volume Ctrl Right  - Registers (IC 3) */
 #define REG_RECORD_VOLUME_CTRL_RIGHT_IC_3_ADDR    0x400F
 #define REG_RECORD_VOLUME_CTRL_RIGHT_IC_3_BYTE    1
-#define REG_RECORD_VOLUME_CTRL_RIGHT_IC_3_VALUE   0x6E
+#define REG_RECORD_VOLUME_CTRL_RIGHT_IC_3_VALUE   0x0
 
 /* Record Mic Bias Control  - Registers (IC 3) */
 #define REG_RECORD_MIC_BIAS_CONTROL_IC_3_ADDR     0x4010
@@ -83,22 +83,22 @@
 /* ALC Control 0  - Registers (IC 3) */
 #define REG_ALC_CONTROL_0_IC_3_ADDR               0x4011
 #define REG_ALC_CONTROL_0_IC_3_BYTE               1
-#define REG_ALC_CONTROL_0_IC_3_VALUE              0xF8
+#define REG_ALC_CONTROL_0_IC_3_VALUE              0x0
 
 /* ALC Control 1  - Registers (IC 3) */
 #define REG_ALC_CONTROL_1_IC_3_ADDR               0x4012
 #define REG_ALC_CONTROL_1_IC_3_BYTE               1
-#define REG_ALC_CONTROL_1_IC_3_VALUE              0x3B
+#define REG_ALC_CONTROL_1_IC_3_VALUE              0x0
 
 /* ALC Control 2  - Registers (IC 3) */
 #define REG_ALC_CONTROL_2_IC_3_ADDR               0x4013
 #define REG_ALC_CONTROL_2_IC_3_BYTE               1
-#define REG_ALC_CONTROL_2_IC_3_VALUE              0x68
+#define REG_ALC_CONTROL_2_IC_3_VALUE              0x0
 
 /* ALC Control 3  - Registers (IC 3) */
 #define REG_ALC_CONTROL_3_IC_3_ADDR               0x4014
 #define REG_ALC_CONTROL_3_IC_3_BYTE               1
-#define REG_ALC_CONTROL_3_IC_3_VALUE              0x31
+#define REG_ALC_CONTROL_3_IC_3_VALUE              0x0
 
 /* Serial Port Control 0  - Registers (IC 3) */
 #define REG_SERIAL_PORT_CONTROL_0_IC_3_ADDR       0x4015
@@ -123,7 +123,7 @@
 /* ADC Control 0  - Registers (IC 3) */
 #define REG_ADC_CONTROL_0_IC_3_ADDR               0x4019
 #define REG_ADC_CONTROL_0_IC_3_BYTE               1
-#define REG_ADC_CONTROL_0_IC_3_VALUE              0x33
+#define REG_ADC_CONTROL_0_IC_3_VALUE              0x13
 
 /* ADC Control 1  - Registers (IC 3) */
 #define REG_ADC_CONTROL_1_IC_3_ADDR               0x401A
@@ -138,7 +138,7 @@
 /* Playback Mixer Left Control 0  - Registers (IC 3) */
 #define REG_PLAYBACK_MIXER_LEFT_CONTROL_0_IC_3_ADDR 0x401C
 #define REG_PLAYBACK_MIXER_LEFT_CONTROL_0_IC_3_BYTE 1
-#define REG_PLAYBACK_MIXER_LEFT_CONTROL_0_IC_3_VALUE 0x1
+#define REG_PLAYBACK_MIXER_LEFT_CONTROL_0_IC_3_VALUE 0x21
 
 /* Plaback Mixer Left Control 1  - Registers (IC 3) */
 #define REG_PLABACK_MIXER_LEFT_CONTROL_1_IC_3_ADDR 0x401D
@@ -148,7 +148,7 @@
 /* Plaback Mixer Right Control 0  - Registers (IC 3) */
 #define REG_PLABACK_MIXER_RIGHT_CONTROL_0_IC_3_ADDR 0x401E
 #define REG_PLABACK_MIXER_RIGHT_CONTROL_0_IC_3_BYTE 1
-#define REG_PLABACK_MIXER_RIGHT_CONTROL_0_IC_3_VALUE 0x1
+#define REG_PLABACK_MIXER_RIGHT_CONTROL_0_IC_3_VALUE 0x41
 
 /* Playback Mixer Right Control 1  - Registers (IC 3) */
 #define REG_PLAYBACK_MIXER_RIGHT_CONTROL_1_IC_3_ADDR 0x401F
@@ -158,12 +158,12 @@
 /* Playback LR Left  - Registers (IC 3) */
 #define REG_PLAYBACK_LR_LEFT_IC_3_ADDR            0x4020
 #define REG_PLAYBACK_LR_LEFT_IC_3_BYTE            1
-#define REG_PLAYBACK_LR_LEFT_IC_3_VALUE           0x3
+#define REG_PLAYBACK_LR_LEFT_IC_3_VALUE           0x0
 
 /* Playback LR Right  - Registers (IC 3) */
 #define REG_PLAYBACK_LR_RIGHT_IC_3_ADDR           0x4021
 #define REG_PLAYBACK_LR_RIGHT_IC_3_BYTE           1
-#define REG_PLAYBACK_LR_RIGHT_IC_3_VALUE          0x9
+#define REG_PLAYBACK_LR_RIGHT_IC_3_VALUE          0x0
 
 /* Playback LR Mono Ctrl  - Registers (IC 3) */
 #define REG_PLAYBACK_LR_MONO_CTRL_IC_3_ADDR       0x4022
@@ -173,27 +173,27 @@
 /* Playback Headphone Left  - Registers (IC 3) */
 #define REG_PLAYBACK_HEADPHONE_LEFT_IC_3_ADDR     0x4023
 #define REG_PLAYBACK_HEADPHONE_LEFT_IC_3_BYTE     1
-#define REG_PLAYBACK_HEADPHONE_LEFT_IC_3_VALUE    0xE5
+#define REG_PLAYBACK_HEADPHONE_LEFT_IC_3_VALUE    0xE7
 
 /* Playback Headphone Right  - Registers (IC 3) */
 #define REG_PLAYBACK_HEADPHONE_RIGHT_IC_3_ADDR    0x4024
 #define REG_PLAYBACK_HEADPHONE_RIGHT_IC_3_BYTE    1
-#define REG_PLAYBACK_HEADPHONE_RIGHT_IC_3_VALUE   0xE5
+#define REG_PLAYBACK_HEADPHONE_RIGHT_IC_3_VALUE   0xE7
 
 /* Playback Line Out Left  - Registers (IC 3) */
 #define REG_PLAYBACK_LINE_OUT_LEFT_IC_3_ADDR      0x4025
 #define REG_PLAYBACK_LINE_OUT_LEFT_IC_3_BYTE      1
-#define REG_PLAYBACK_LINE_OUT_LEFT_IC_3_VALUE     0xE6
+#define REG_PLAYBACK_LINE_OUT_LEFT_IC_3_VALUE     0x0
 
 /* Playback Line Out Right  - Registers (IC 3) */
 #define REG_PLAYBACK_LINE_OUT_RIGHT_IC_3_ADDR     0x4026
 #define REG_PLAYBACK_LINE_OUT_RIGHT_IC_3_BYTE     1
-#define REG_PLAYBACK_LINE_OUT_RIGHT_IC_3_VALUE    0xE6
+#define REG_PLAYBACK_LINE_OUT_RIGHT_IC_3_VALUE    0x0
 
 /* Playback Line Out Mono  - Registers (IC 3) */
 #define REG_PLAYBACK_LINE_OUT_MONO_IC_3_ADDR      0x4027
 #define REG_PLAYBACK_LINE_OUT_MONO_IC_3_BYTE      1
-#define REG_PLAYBACK_LINE_OUT_MONO_IC_3_VALUE     0xE7
+#define REG_PLAYBACK_LINE_OUT_MONO_IC_3_VALUE     0xE5
 
 /* Playback Control  - Registers (IC 3) */
 #define REG_PLAYBACK_CONTROL_IC_3_ADDR            0x4028
@@ -233,7 +233,7 @@
 /* Comm Port Pad Ctrl 1  - Registers (IC 3) */
 #define REG_COMM_PORT_PAD_CTRL_1_IC_3_ADDR        0x4030
 #define REG_COMM_PORT_PAD_CTRL_1_IC_3_BYTE        1
-#define REG_COMM_PORT_PAD_CTRL_1_IC_3_VALUE       0x1
+#define REG_COMM_PORT_PAD_CTRL_1_IC_3_VALUE       0x0
 
 /* JackRegister  - Registers (IC 3) */
 #define REG_JACKREGISTER_IC_3_ADDR                0x4031
@@ -353,7 +353,7 @@
 /* DSP Run Register  - Registers (IC 3) */
 #define REG_DSP_RUN_REGISTER_IC_3_ADDR            0x40F6
 #define REG_DSP_RUN_REGISTER_IC_3_BYTE            1
-#define REG_DSP_RUN_REGISTER_IC_3_VALUE           0x0
+#define REG_DSP_RUN_REGISTER_IC_3_VALUE           0x1
 
 /* DSP Slew Modes  - Registers (IC 3) */
 #define REG_DSP_SLEW_MODES_IC_3_ADDR              0x40F7
@@ -400,12 +400,12 @@
 
 /* PLLCrlRegister (IC 3) */
 #define R2_PLL_POWER_DOWN_IC_3                    0x1    /* 1b	[0] */
-#define R2_PLL_LOCK_IC_3                          0x1    /* 1b	[1] */
+#define R2_PLL_LOCK_IC_3                          0x0    /* 0b	[1] */
 #define R2_PLL_TYPE_IC_3                          0x0    /* 0b	[8] */
 #define R2_INPUT_DIVIDER_IC_3                     0x0    /* 00b	[10:9] */
 #define R2_R_FEEDBACK_IC_3                        0x4    /* 0100b	[14:11] */
-#define R2_N_NUMERATOR_IC_3                       0x0000 /* 0000000000000000b	[31:16] */
-#define R2_M_DENOMINATOR_IC_3                     0x0001 /* 0000000000000001b	[47:32] */
+#define R2_N_NUMERATOR_IC_3                       0x000C /* 0000000000001100b	[31:16] */
+#define R2_M_DENOMINATOR_IC_3                     0x00FD /* 0000000011111101b	[47:32] */
 #define R2_PLL_POWER_DOWN_IC_3_MASK               0x1
 #define R2_PLL_POWER_DOWN_IC_3_SHIFT              0
 #define R2_PLL_LOCK_IC_3_MASK                     0x2
@@ -422,7 +422,7 @@
 #define R2_M_DENOMINATOR_IC_3_SHIFT               32
 
 /* MicCtrlRegister (IC 3) */
-#define R3_JACK_POLARITY_IC_3                     0x1    /* 1b	[0] */
+#define R3_JACK_POLARITY_IC_3                     0x0    /* 0b	[0] */
 #define R3_JACK_DETECT_MIC_IN_IC_3                0x0    /* 00b	[5:4] */
 #define R3_JACK_DEBOUNCE_TIME_IC_3                0x0    /* 00b	[7:6] */
 #define R3_JACK_POLARITY_IC_3_MASK                0x1
@@ -483,8 +483,8 @@
 
 /* Record Volume Ctrl Left (IC 3) */
 #define R9_REC_VOL_CTRL_LFT_DIFPATH_IC_3          0x0    /* 0b	[0] */
-#define R9_REC_VOL_CTRL_LFT_MUTE_IC_3             0x1    /* 1b	[1] */
-#define R9_REC_VOL_CTRL_LFT_IC_3                  0x1B   /* 011011b	[7:2] */
+#define R9_REC_VOL_CTRL_LFT_MUTE_IC_3             0x0    /* 0b	[1] */
+#define R9_REC_VOL_CTRL_LFT_IC_3                  0x0    /* 000000b	[7:2] */
 #define R9_REC_VOL_CTRL_LFT_DIFPATH_IC_3_MASK     0x1
 #define R9_REC_VOL_CTRL_LFT_DIFPATH_IC_3_SHIFT    0
 #define R9_REC_VOL_CTRL_LFT_MUTE_IC_3_MASK        0x2
@@ -494,8 +494,8 @@
 
 /* Record Volume Ctrl Right (IC 3) */
 #define R10_REC_VOL_CTRL_RGT_DIFPATH_IC_3         0x0    /* 0b	[0] */
-#define R10_REC_VOL_CTRL_RGT_MUTE_IC_3            0x1    /* 1b	[1] */
-#define R10_REC_VOL_CTRL_RGT_IC_3                 0x1B   /* 011011b	[7:2] */
+#define R10_REC_VOL_CTRL_RGT_MUTE_IC_3            0x0    /* 0b	[1] */
+#define R10_REC_VOL_CTRL_RGT_IC_3                 0x0    /* 000000b	[7:2] */
 #define R10_REC_VOL_CTRL_RGT_DIFPATH_IC_3_MASK    0x1
 #define R10_REC_VOL_CTRL_RGT_DIFPATH_IC_3_SHIFT   0
 #define R10_REC_VOL_CTRL_RGT_MUTE_IC_3_MASK       0x2
@@ -516,8 +516,8 @@
 
 /* ALC Control 0 (IC 3) */
 #define R12_ALC_SELECT_IC_3                       0x0    /* 000b	[2:0] */
-#define R12_MAX_ALC_VOLUME_GAIN_IC_3              0x7    /* 111b	[5:3] */
-#define R12_ALC_VOLUME_SLEW_TIME_IC_3             0x3    /* 11b	[7:6] */
+#define R12_MAX_ALC_VOLUME_GAIN_IC_3              0x0    /* 000b	[5:3] */
+#define R12_ALC_VOLUME_SLEW_TIME_IC_3             0x0    /* 00b	[7:6] */
 #define R12_ALC_SELECT_IC_3_MASK                  0x7
 #define R12_ALC_SELECT_IC_3_SHIFT                 0
 #define R12_MAX_ALC_VOLUME_GAIN_IC_3_MASK         0x38
@@ -526,24 +526,24 @@
 #define R12_ALC_VOLUME_SLEW_TIME_IC_3_SHIFT       6
 
 /* ALC Control 1 (IC 3) */
-#define R13_ALC_TARGET_IC_3                       0xB    /* 1011b	[3:0] */
-#define R13_ALC_COMPRESSOR_HOLD_TIME_IC_3         0x3    /* 0011b	[7:4] */
+#define R13_ALC_TARGET_IC_3                       0x0    /* 0000b	[3:0] */
+#define R13_ALC_COMPRESSOR_HOLD_TIME_IC_3         0x0    /* 0000b	[7:4] */
 #define R13_ALC_TARGET_IC_3_MASK                  0xF
 #define R13_ALC_TARGET_IC_3_SHIFT                 0
 #define R13_ALC_COMPRESSOR_HOLD_TIME_IC_3_MASK    0xF0
 #define R13_ALC_COMPRESSOR_HOLD_TIME_IC_3_SHIFT   4
 
 /* ALC Control 2 (IC 3) */
-#define R14_ALC_DECAY_TIME_IC_3                   0x8    /* 1000b	[3:0] */
-#define R14_ALC_COMPRESSOR_ATTACK_TIME_IC_3       0x6    /* 0110b	[7:4] */
+#define R14_ALC_DECAY_TIME_IC_3                   0x0    /* 0000b	[3:0] */
+#define R14_ALC_COMPRESSOR_ATTACK_TIME_IC_3       0x0    /* 0000b	[7:4] */
 #define R14_ALC_DECAY_TIME_IC_3_MASK              0xF
 #define R14_ALC_DECAY_TIME_IC_3_SHIFT             0
 #define R14_ALC_COMPRESSOR_ATTACK_TIME_IC_3_MASK  0xF0
 #define R14_ALC_COMPRESSOR_ATTACK_TIME_IC_3_SHIFT 4
 
 /* ALC Control 3 (IC 3) */
-#define R15_NOISE_GATE_THRESHOLD_IC_3             0x11   /* 10001b	[4:0] */
-#define R15_NOISE_GATE_FUNCTION_IC_3              0x1    /* 1b	[5] */
+#define R15_NOISE_GATE_THRESHOLD_IC_3             0x0    /* 00000b	[4:0] */
+#define R15_NOISE_GATE_FUNCTION_IC_3              0x0    /* 0b	[5] */
 #define R15_NOISE_GATE_TYPE_IC_3                  0x0    /* 00b	[7:6] */
 #define R15_NOISE_GATE_THRESHOLD_IC_3_MASK        0x1F
 #define R15_NOISE_GATE_THRESHOLD_IC_3_SHIFT       0
@@ -613,7 +613,7 @@
 #define R20_DIGITAL_MIC_INPUT_IC_3                0x0    /* 0b	[2] */
 #define R20_DIGITAL_MIC_SWAP_IC_3                 0x0    /* 0b	[3] */
 #define R20_DIGITAL_MIC_POLARITY_IC_3             0x1    /* 1b	[4] */
-#define R20_HIGH_PASS_SELECT_IC_3                 0x1    /* 1b	[5] */
+#define R20_HIGH_PASS_SELECT_IC_3                 0x0    /* 0b	[5] */
 #define R20_INVERT_IN_POLARITY_IC_3               0x0    /* 0b	[6] */
 #define R20_ADC_ENABLE_IC_3_MASK                  0x3
 #define R20_ADC_ENABLE_IC_3_SHIFT                 0
@@ -641,7 +641,7 @@
 /* Playback Mixer Left Control 0 (IC 3) */
 #define R23_PBC0_MIX_ENABLE_IC_3                  0x1    /* 1b	[0] */
 #define R23_PBC0_AUX_OUT_GAIN_IC_3                0x0    /* 0000b	[4:1] */
-#define R23_PBC0_LEFT_DAC_MUTE_IC_3               0x0    /* 0b	[5] */
+#define R23_PBC0_LEFT_DAC_MUTE_IC_3               0x1    /* 1b	[5] */
 #define R23_PBC0_RIGHT_DAC_MUTE_IC_3              0x0    /* 0b	[6] */
 #define R23_PBC0_MIX_ENABLE_IC_3_MASK             0x1
 #define R23_PBC0_MIX_ENABLE_IC_3_SHIFT            0
@@ -664,7 +664,7 @@
 #define R25_PBMRC0_ENABLE_IC_3                    0x1    /* 1b	[0] */
 #define R25_PBMRC0_AUX_GAIN_IC_3                  0x0    /* 0000b	[4:1] */
 #define R25_PBMRC0_L_DAC_MUTE_IC_3                0x0    /* 0b	[5] */
-#define R25_PBMRC0_R_DAC_MUTE_IC_3                0x0    /* 0b	[6] */
+#define R25_PBMRC0_R_DAC_MUTE_IC_3                0x1    /* 1b	[6] */
 #define R25_PBMRC0_ENABLE_IC_3_MASK               0x1
 #define R25_PBMRC0_ENABLE_IC_3_SHIFT              0
 #define R25_PBMRC0_AUX_GAIN_IC_3_MASK             0x1E
@@ -683,8 +683,8 @@
 #define R26_PBMRC1_R_PGA_OUT_GAIN_IC_3_SHIFT      4
 
 /* Playback LR Left (IC 3) */
-#define R27_PBLR_LEFT_MIX_ENABLE_IC_3             0x1    /* 1b	[0] */
-#define R27_PBLR_LEFT_LEFT_MIXER_IC_3             0x1    /* 01b	[2:1] */
+#define R27_PBLR_LEFT_MIX_ENABLE_IC_3             0x0    /* 0b	[0] */
+#define R27_PBLR_LEFT_LEFT_MIXER_IC_3             0x0    /* 00b	[2:1] */
 #define R27_PBLR_LEFT_RIGHT_MIXER_IC_3            0x0    /* 00b	[4:3] */
 #define R27_PBLR_LEFT_MIX_ENABLE_IC_3_MASK        0x1
 #define R27_PBLR_LEFT_MIX_ENABLE_IC_3_SHIFT       0
@@ -694,9 +694,9 @@
 #define R27_PBLR_LEFT_RIGHT_MIXER_IC_3_SHIFT      3
 
 /* Playback LR Right (IC 3) */
-#define R28_PBLR_RIGHT_MIX_ENABLE_IC_3            0x1    /* 1b	[0] */
+#define R28_PBLR_RIGHT_MIX_ENABLE_IC_3            0x0    /* 0b	[0] */
 #define R28_PBLR_RIGHT_LEFT_MIXER_IC_3            0x0    /* 00b	[2:1] */
-#define R28_PBLR_RIGHT_RIGHT_MIXER_IC_3           0x1    /* 01b	[4:3] */
+#define R28_PBLR_RIGHT_RIGHT_MIXER_IC_3           0x0    /* 00b	[4:3] */
 #define R28_PBLR_RIGHT_MIX_ENABLE_IC_3_MASK       0x1
 #define R28_PBLR_RIGHT_MIX_ENABLE_IC_3_SHIFT      0
 #define R28_PBLR_RIGHT_LEFT_MIXER_IC_3_MASK       0x6
@@ -714,7 +714,7 @@
 
 /* Playback Headphone Left (IC 3) */
 #define R30_PB_HEADPHONE_LEFT_PWRUP_IC_3          0x1    /* 1b	[0] */
-#define R30_PB_HEADPHONE_LEFT_MUTE_IC_3           0x0    /* 0b	[1] */
+#define R30_PB_HEADPHONE_LEFT_MUTE_IC_3           0x1    /* 1b	[1] */
 #define R30_PB_HEADPHONE_LEFT_VOL_IC_3            0x39   /* 111001b	[7:2] */
 #define R30_PB_HEADPHONE_LEFT_PWRUP_IC_3_MASK     0x1
 #define R30_PB_HEADPHONE_LEFT_PWRUP_IC_3_SHIFT    0
@@ -725,7 +725,7 @@
 
 /* Playback Headphone Right (IC 3) */
 #define R31_PB_HEADPHONE_RIGHT_PWRUP_IC_3         0x1    /* 1b	[0] */
-#define R31_PB_HEADPHONE_RIGHT_MUTE_IC_3          0x0    /* 0b	[1] */
+#define R31_PB_HEADPHONE_RIGHT_MUTE_IC_3          0x1    /* 1b	[1] */
 #define R31_PB_HEADPHONE_RIGHT_VOL_IC_3           0x39   /* 111001b	[7:2] */
 #define R31_PB_HEADPHONE_RIGHT_PWRUP_IC_3_MASK    0x1
 #define R31_PB_HEADPHONE_RIGHT_PWRUP_IC_3_SHIFT   0
@@ -736,8 +736,8 @@
 
 /* Playback Line Out Left (IC 3) */
 #define R32_PB_LEFT_PWRUP_IC_3                    0x0    /* 0b	[0] */
-#define R32_PB_LEFT_MUTE_IC_3                     0x1    /* 1b	[1] */
-#define R32_PB_LEFT_VOL_IC_3                      0x39   /* 111001b	[7:2] */
+#define R32_PB_LEFT_MUTE_IC_3                     0x0    /* 0b	[1] */
+#define R32_PB_LEFT_VOL_IC_3                      0x0    /* 000000b	[7:2] */
 #define R32_PB_LEFT_PWRUP_IC_3_MASK               0x1
 #define R32_PB_LEFT_PWRUP_IC_3_SHIFT              0
 #define R32_PB_LEFT_MUTE_IC_3_MASK                0x2
@@ -747,8 +747,8 @@
 
 /* Playback Line Out Right (IC 3) */
 #define R33_PB_RIGHT_PWRUP_IC_3                   0x0    /* 0b	[0] */
-#define R33_PB_RIGHT_MUTE_IC_3                    0x1    /* 1b	[1] */
-#define R33_PB_RIGHT_VOL_IC_3                     0x39   /* 111001b	[7:2] */
+#define R33_PB_RIGHT_MUTE_IC_3                    0x0    /* 0b	[1] */
+#define R33_PB_RIGHT_VOL_IC_3                     0x0    /* 000000b	[7:2] */
 #define R33_PB_RIGHT_PWRUP_IC_3_MASK              0x1
 #define R33_PB_RIGHT_PWRUP_IC_3_SHIFT             0
 #define R33_PB_RIGHT_MUTE_IC_3_MASK               0x2
@@ -758,7 +758,7 @@
 
 /* Playback Line Out Mono (IC 3) */
 #define R34_PB_MONO_PWRUP_IC_3                    0x1    /* 1b	[0] */
-#define R34_PB_MONO_MUTE_IC_3                     0x1    /* 1b	[1] */
+#define R34_PB_MONO_MUTE_IC_3                     0x0    /* 0b	[1] */
 #define R34_PB_MONO_VOL_IC_3                      0x39   /* 111001b	[7:2] */
 #define R34_PB_MONO_PWRUP_IC_3_MASK               0x1
 #define R34_PB_MONO_PWRUP_IC_3_SHIFT              0
@@ -857,7 +857,7 @@
 #define R41_CDATA_PULL_UP_DOWN_IC_3_SHIFT         6
 
 /* Comm Port Pad Ctrl 1 (IC 3) */
-#define R42_CPPC1_SDACOUT_IC_3                    0x1    /* 1b	[0] */
+#define R42_CPPC1_SDACOUT_IC_3                    0x0    /* 0b	[0] */
 #define R42_CPPC1_SDACOUT_IC_3_MASK               0x1
 #define R42_CPPC1_SDACOUT_IC_3_SHIFT              0
 
@@ -989,7 +989,7 @@
 #define R65_DSP_ENABLE_IC_3_SHIFT                 0
 
 /* DSP Run Register (IC 3) */
-#define R66_DSP_RUN_IC_3                          0x0    /* 0b	[0] */
+#define R66_DSP_RUN_IC_3                          0x1    /* 1b	[0] */
 #define R66_DSP_RUN_IC_3_MASK                     0x1
 #define R66_DSP_RUN_IC_3_SHIFT                    0
 

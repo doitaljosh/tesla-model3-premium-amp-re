@@ -1,7 +1,7 @@
 /*
- * File:           C:\Users\doita\OneDrive\Documents\tesla-model3-premium-amp-re\sigma-studio-files\adau1452-ad2410-tesla-amp-upmix\adau1452-ad2410-tesla-amp-upmix_IC_1_REG.h
+ * File:           C:\Users\doita\OneDrive\Documents\Analog Devices\SigmaStudio 4.6\Projects\tesla-model3-premium-amp-re\sigma-studio-files\adau1452-ad2410-tesla-amp-upmix\adau1452-ad2410-tesla-amp-upmix_IC_1_REG.h
  *
- * Created:        Saturday, October 23, 2021 5:49:22 PM
+ * Created:        Sunday, January 8, 2023 1:00:52 PM
  * Description:    adau1452-ad2410-tesla-amp-upmix:IC 1 control register definitions.
  *
  * This software is distributed in the hope that it will be useful,
@@ -14,7 +14,7 @@
  * are intended for resale to audio product end users. This software
  * may not be distributed whole or in any part to third parties.
  *
- * Copyright ©2021 Analog Devices, Inc. All rights reserved.
+ * Copyright ©2023 Analog Devices, Inc. All rights reserved.
  */
 #ifndef __ADAU1452_AD2410_TESLA_AMP_UPMIX_IC_1_REG_H__
 #define __ADAU1452_AD2410_TESLA_AMP_UPMIX_IC_1_REG_H__
@@ -1033,7 +1033,7 @@
 /* HIBERNATE  - Registers (IC 1) */
 #define REG_HIBERNATE_IC_1_ADDR                   0xF400
 #define REG_HIBERNATE_IC_1_BYTE                   2
-#define REG_HIBERNATE_IC_1_VALUE                  0x1
+#define REG_HIBERNATE_IC_1_VALUE                  0x0
 
 /* START_PULSE  - Registers (IC 1) */
 #define REG_START_PULSE_IC_1_ADDR                 0xF401
@@ -1048,7 +1048,7 @@
 /* KILL_CORE  - Registers (IC 1) */
 #define REG_KILL_CORE_IC_1_ADDR                   0xF403
 #define REG_KILL_CORE_IC_1_BYTE                   2
-#define REG_KILL_CORE_IC_1_VALUE                  0x1
+#define REG_KILL_CORE_IC_1_VALUE                  0x0
 
 /* START_ADDRESS  - Registers (IC 1) */
 #define REG_START_ADDRESS_IC_1_ADDR               0xF404
@@ -5640,7 +5640,7 @@
 #define R201_FTDM_OUT63_SLOT_ENABLE_OUT_IC_1_SHIFT 7
 
 /* HIBERNATE (IC 1) */
-#define R202_HIBERNATE_HIBERNATE_IC_1             0x1    /* 1b	[0] */
+#define R202_HIBERNATE_HIBERNATE_IC_1             0x0    /* 0b	[0] */
 #define R202_HIBERNATE_HIBERNATE_IC_1_MASK        0x1
 #define R202_HIBERNATE_HIBERNATE_IC_1_SHIFT       0
 
@@ -5655,7 +5655,7 @@
 #define R204_START_CORE_START_CORE_IC_1_SHIFT     0
 
 /* KILL_CORE (IC 1) */
-#define R205_KILL_CORE_KILL_CORE_IC_1             0x1    /* 1b	[0] */
+#define R205_KILL_CORE_KILL_CORE_IC_1             0x0    /* 0b	[0] */
 #define R205_KILL_CORE_KILL_CORE_IC_1_MASK        0x1
 #define R205_KILL_CORE_KILL_CORE_IC_1_SHIFT       0
 

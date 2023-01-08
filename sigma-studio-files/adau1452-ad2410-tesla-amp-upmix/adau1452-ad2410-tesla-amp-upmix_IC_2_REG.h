@@ -1,7 +1,7 @@
 /*
- * File:           C:\Users\doita\OneDrive\Documents\tesla-model3-premium-amp-re\sigma-studio-files\adau1452-ad2410-tesla-amp-upmix\adau1452-ad2410-tesla-amp-upmix_IC_2_REG.h
+ * File:           C:\Users\doita\OneDrive\Documents\Analog Devices\SigmaStudio 4.6\Projects\tesla-model3-premium-amp-re\sigma-studio-files\adau1452-ad2410-tesla-amp-upmix\adau1452-ad2410-tesla-amp-upmix_IC_2_REG.h
  *
- * Created:        Saturday, October 23, 2021 5:49:22 PM
+ * Created:        Sunday, January 8, 2023 1:00:52 PM
  * Description:    adau1452-ad2410-tesla-amp-upmix:IC 2 control register definitions.
  *
  * This software is distributed in the hope that it will be useful,
@@ -14,7 +14,7 @@
  * are intended for resale to audio product end users. This software
  * may not be distributed whole or in any part to third parties.
  *
- * Copyright ©2021 Analog Devices, Inc. All rights reserved.
+ * Copyright ©2023 Analog Devices, Inc. All rights reserved.
  */
 #ifndef __ADAU1452_AD2410_TESLA_AMP_UPMIX_IC_2_REG_H__
 #define __ADAU1452_AD2410_TESLA_AMP_UPMIX_IC_2_REG_H__
