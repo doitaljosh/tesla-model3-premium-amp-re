@@ -72,6 +72,9 @@ Source:  [ Tesla Model 3 Stereo - Part 9: Summary and Lessons Learned](https://w
 - Class D channels/power in: Sumitomo 6098-1714
 - Class AB channels: Sumitomo 6098-5713
 
+### Block diagram:
+![Block Diagram](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/experimental/images/block-diagram.png?raw=true)
+
 ### A2B board <-> Jetson Nano wiring:
 ![Wiring](https://github.com/doitaljosh/tesla-model3-premium-amp-re/blob/experimental/images/a2b-jetson-nano.png?raw=true)
 
