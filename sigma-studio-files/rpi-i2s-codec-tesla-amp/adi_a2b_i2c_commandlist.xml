@@ -1,0 +1,82 @@
+<?xml version="1.0" standalone="no"?>
+<ROM>
+  <Version_Info>
+    <A2BDLL_Version Version="19.3.0" />
+    <A2BStackDLL_Version Version="19.3.0.0" />
+    <SigmaStudio_Version Version="4.06.000.1812" />
+  </Version_Info>
+  <page modetype="Mode 0">
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="18" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="CONTROL">84</action>
+    <action instr="delay" CellName="AD242x Master Node0" ParamName="A2B_Delay">19</action>
+    <action instr="read" addr_width="1" data_width="1" len="2" addr="23" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="INTTYPE" />
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="27" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="INTMSK0">10</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="29" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="INTMSK2">09</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="15" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="RESPCYCS">9E</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="18" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="CONTROL">01</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="65" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="I2SGCFG">02</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="9" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="SWCTL">01</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="19" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="DISCVRY">9E</action>
+    <action instr="delay" CellName="AD242x Master Node0" ParamName="A2B_Delay">32</action>
+    <action instr="read" addr_width="1" data_width="1" len="2" addr="26" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="INTPND2" />
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="26" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="INTPND2">01</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="1" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="NODEADR">00</action>
+    <action instr="read" addr_width="1" data_width="1" len="2" addr="2" i2caddr="105" AddrIncr="0" CellName="AD241x Slave Node0" ParamName="VENDOR" />
+    <action instr="read" addr_width="1" data_width="1" len="2" addr="3" i2caddr="105" AddrIncr="0" CellName="AD241x Slave Node0" ParamName="PRODUCT" />
+    <action instr="read" addr_width="1" data_width="1" len="2" addr="4" i2caddr="105" AddrIncr="0" CellName="AD241x Slave Node0" ParamName="VERSION" />
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="9" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="SWCTL">21</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="1" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="NODEADR">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="11" i2caddr="105" AddrIncr="0" CellName="AD241x Slave Node0" ParamName="LDNSLOTS">08</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="63" i2caddr="105" AddrIncr="0" CellName="AD241x Slave Node0" ParamName="I2CCFG">01</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="65" i2caddr="105" AddrIncr="0" CellName="AD241x Slave Node0" ParamName="I2SGCFG">01</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="66" i2caddr="105" AddrIncr="0" CellName="AD241x Slave Node0" ParamName="I2SCFG">03</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="74" i2caddr="105" AddrIncr="0" CellName="AD241x Slave Node0" ParamName="GPIODAT">44</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="77" i2caddr="105" AddrIncr="0" CellName="AD241x Slave Node0" ParamName="GPIOOEN">47</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="27" i2caddr="105" AddrIncr="0" CellName="AD241x Slave Node0" ParamName="INTMSK0">10</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="30" i2caddr="105" AddrIncr="0" CellName="AD241x Slave Node0" ParamName="BECCTL">EF</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="1" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="NODEADR - Set the node address">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="0" i2caddr="105" AddrIncr="0" CellName="AD241x Slave Node0" ParamName="CHIP - Set the chip address">70</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="1" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="NODEADR - Enable PERI">20</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="1" i2caddr="105" AddrIncr="1" CellName="GPIO Expander" ParamName="PCA9538_Data_Reg">14</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="3" i2caddr="105" AddrIncr="1" CellName="GPIO Expander" ParamName="PCA9538_Config_Reg">88</action>
+    <action instr="delay" CellName="GPIO Expander" ParamName="Delay">01 64</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="1" i2caddr="105" AddrIncr="1" CellName="GPIO Expander" ParamName="PCA9538_Data_Reg">16</action>
+    <action instr="delay" CellName="GPIO Expander" ParamName="Delay">01 64</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="1" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="NODEADR - Disable PERI">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="0" i2caddr="105" AddrIncr="0" CellName="AD241x Slave Node0" ParamName="CHIP - Set the chip address">6C</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="1" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="NODEADR - Enable PERI">20</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="0" i2caddr="105" AddrIncr="1" CellName="TDA7802" ParamName="TDA7802_IB0">0F</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="1" i2caddr="105" AddrIncr="1" CellName="TDA7802" ParamName="TDA7802_IB1">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="2" i2caddr="105" AddrIncr="1" CellName="TDA7802" ParamName="TDA7802_IB2">18</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="3" i2caddr="105" AddrIncr="1" CellName="TDA7802" ParamName="TDA7802_IB3">49</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="4" i2caddr="105" AddrIncr="1" CellName="TDA7802" ParamName="TDA7802_IB4">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="5" i2caddr="105" AddrIncr="1" CellName="TDA7802" ParamName="TDA7802_IB5">01</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="1" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="NODEADR - Disable PERI">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="0" i2caddr="105" AddrIncr="0" CellName="AD241x Slave Node0" ParamName="CHIP - Set the chip address">6E</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="1" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="NODEADR - Enable PERI">20</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="0" i2caddr="105" AddrIncr="1" CellName="FDA2100" ParamName="FDA2100_IB0">5C</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="1" i2caddr="105" AddrIncr="1" CellName="FDA2100" ParamName="FDA2100_IB1">07</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="2" i2caddr="105" AddrIncr="1" CellName="FDA2100" ParamName="FDA2100_IB2">0F</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="3" i2caddr="105" AddrIncr="1" CellName="FDA2100" ParamName="FDA2100_IB3">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="4" i2caddr="105" AddrIncr="1" CellName="FDA2100" ParamName="FDA2100_IB4">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="5" i2caddr="105" AddrIncr="1" CellName="FDA2100" ParamName="FDA2100_IB5">11</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="6" i2caddr="105" AddrIncr="1" CellName="FDA2100" ParamName="FDA2100_IB6">11</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="7" i2caddr="105" AddrIncr="1" CellName="FDA2100" ParamName="FDA2100_IB7">11</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="8" i2caddr="105" AddrIncr="1" CellName="FDA2100" ParamName="FDA2100_IB8">11</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="9" i2caddr="105" AddrIncr="1" CellName="FDA2100" ParamName="FDA2100_IB9">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="10" i2caddr="105" AddrIncr="1" CellName="FDA2100" ParamName="FDA2100_IB10">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="11" i2caddr="105" AddrIncr="1" CellName="FDA2100" ParamName="FDA2100_IB11">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="12" i2caddr="105" AddrIncr="1" CellName="FDA2100" ParamName="FDA2100_IB12">40</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="13" i2caddr="105" AddrIncr="1" CellName="FDA2100" ParamName="FDA2100_IB13">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="14" i2caddr="105" AddrIncr="1" CellName="FDA2100" ParamName="FDA2100_IB14">03</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="1" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="NODEADR - Disable PERI">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="66" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="I2SCFG">10</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="30" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="BECCTL">EF</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="13" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="DNSLOTS">08</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="9" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="SWCTL">01</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="1" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="NODEADR">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="16" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="SLOTFMT">66</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="17" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="DATCTL">03</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="86" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="I2SRRATE">00</action>
+    <action instr="writeXbytes" addr_width="1" data_width="1" len="2" addr="18" i2caddr="104" AddrIncr="0" CellName="AD242x Master Node0" ParamName="CONTROL">01</action>
+  </page>
+</ROM>

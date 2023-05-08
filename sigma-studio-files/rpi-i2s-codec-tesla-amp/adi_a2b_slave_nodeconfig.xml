@@ -1,0 +1,163 @@
+<?xml version="1.0" standalone="no"?>
+<Node_Configuration>
+  <Version_Info>
+    <A2BDLL_Version Version="19.3.0" />
+    <A2BStackDLL_Version Version="19.3.0.0" />
+    <SigmaStudio_Version Version="4.06.000.1812" />
+  </Version_Info>
+  <Node Version="" Type="Slave" ID="0x0" Source_ID="0x0" Part_number="ADI_A2B_AD2410">
+    <Authentication_Settings>
+      <Register_Field Vendor="0xAD" />
+      <Register_Field Version="0x21" />
+      <Register_Field Product="0x10" />
+      <Register_Field Capability="0x1" />
+    </Authentication_Settings>
+    <I2S_Settings>
+      <Register_Field TDM_mode="TDM4" />
+      <Register_Field I2S_sampling_rate="SFF x 1" />
+      <Register_Field TDM_channel_size="32-bit" />
+      <Register_Field Sync_Mode="Pulse" />
+      <Register_Field Sync_polarity="Rising Edge" />
+      <Register_Field Early_frame_sync_status="Disabled" />
+      <Register_Field Sync_Offset_with_Super_frame="0x0" />
+      <Register_Field Transmit_Bit_clock_polarity="Rising Edge" />
+      <Register_Field Receive_Bit_clock_polarity="Rising Edge" />
+      <Register_Field TX_interleave_slots="Disabled" />
+      <Register_Field RX_interleave_slots="Disabled" />
+      <Register_Field Reduce_Retransmit="Disabled" />
+      <Register_Field Codec_clock_rate="12.288 MHz" />
+    </I2S_Settings>
+    <Basic_Configuration_and_Control>
+      <Register_Field Response_cycles="0x9E" />
+      <Register_Field Pass_Up_Slots="0x0" />
+      <Register_Field Pass_Down_Slots="0x0" />
+      <Register_Field I2C_Interface_Frequency="400 kHz" />
+      <Register_Field Super_Frame_Rate="48.0 kHz" />
+      <Register_Field Broadcast_Slots="0x0" />
+      <Register_Field Local_Down_Slots="0x8" />
+      <Register_Field Local_Up_Slots="0x0" />
+      <Register_Field A_Side_CableLen="4.00" />
+    </Basic_Configuration_and_Control>
+    <GPIO_Settings>
+      <Register_Field GPIO_0_Pin_multiplexing="OUTPUT" Value="Low" />
+      <Register_Field GPIO_1_Pin_multiplexing="OUTPUT" Value="Low" />
+      <Register_Field GPIO_2_Pin_multiplexing="OUTPUT" Value="High" />
+      <Register_Field GPIO_3_Pin_multiplexing="DTX0" />
+      <Register_Field GPIO_4_Pin_multiplexing="DTX1" />
+      <Register_Field GPIO_5_Pin_multiplexing="DISABLE" />
+      <Register_Field GPIO_6_Pin_multiplexing="OUTPUT" Value="High" />
+      <Register_Field Digital_Pin_Drive_Strength="High" />
+    </GPIO_Settings>
+    <PDM_Settings>
+      <Register_Field Number_of_PDM0_slots="1-Slot" />
+      <Register_Field Number_of_PDM1_slots="1-Slot" />
+      <Register_Field Use_High_Pass_Filter="Disabled" />
+      <Register_Field High_Pass_Filter_Cut_Off="59.9 Hz" />
+    </PDM_Settings>
+    <Interrupt_Configuration>
+      <Register_Field Header_count_error="Do Not Report" />
+      <Register_Field Data_decoding_error="Do Not Report" />
+      <Register_Field Data_CRC_error="Do Not Report" />
+      <Register_Field Data_parity_error="Do Not Report" />
+      <Register_Field Data_bus_power_error="Report" />
+      <Register_Field Bit_error_count_overflow_error="Do Not Report" />
+      <Register_Field SRF_miss_error="Do Not Report" />
+      <Register_Field GPIO_0_Interrupt="Do Not Report" />
+      <Register_Field GPIO_1_Interrupt="Do Not Report" />
+      <Register_Field GPIO_2_Interrupt="Do Not Report" />
+      <Register_Field GPIO_3_Interrupt="Do Not Report" />
+      <Register_Field GPIO_4_Interrupt="Do Not Report" />
+      <Register_Field GPIO_5_Interrupt="Do Not Report" />
+      <Register_Field GPIO_6_Interrupt="Do Not Report" />
+    </Interrupt_Configuration>
+    <Register_Settings>
+      <Register_Field SWCTL_Register="0x0" />
+      <Register_Field TESTMODE_Register="0x0" />
+      <Register_Field BECCTL_Register="0xEF" />
+      <Register_Field ERRMGMT_Register="0x0" />
+      <Register_Field PLLCTL_Register="0x0" />
+      <Register_Field I2STEST_Register="0x0" />
+      <Register_Field GENERR_Register="0x0" />
+      <Register_Field RAISE_Register="0x0" />
+    </Register_Settings>
+    <Peripheral_Config Number_of_Peripherals="0x4">
+      <Peripheral_0_Config>
+        <Property I2C_interface_status="True" />
+        <Property I2C_Address="0x56" />
+        <Property Device_Type="GenericI2CDevice" />
+        <Property Tx0_Pin_Use="False" />
+        <Property Rx0_Pin_Use="False" />
+        <Property Tx1_Pin_Use="False" />
+        <Property Rx1_Pin_Use="False" />
+        <Property No_of_Tx0_Channels="0x0" />
+        <Property No_of_Rx0_Channels="0x0" />
+        <Property No_of_Tx1_Channels="0x0" />
+        <Property No_of_Rx1_Channels="0x0" />
+        <Property Enable_Program_During_Discovery="True" />
+        <Property Config_XML_File="C:\Users\doita\OneDrive\Documents\tesla-model3-premium-amp-re\sigma-studio-files\adau1452-ad2410-tesla-amp-rpi\adau1761.xml" />
+      </Peripheral_0_Config>
+      <Peripheral_1_Config>
+        <Property I2C_interface_status="True" />
+        <Property I2C_Address="0x70" />
+        <Property Device_Type="GenericI2CDevice" />
+        <Property Tx0_Pin_Use="False" />
+        <Property Rx0_Pin_Use="False" />
+        <Property Tx1_Pin_Use="False" />
+        <Property Rx1_Pin_Use="False" />
+        <Property No_of_Tx0_Channels="0x0" />
+        <Property No_of_Rx0_Channels="0x0" />
+        <Property No_of_Tx1_Channels="0x0" />
+        <Property No_of_Rx1_Channels="0x0" />
+        <Property Enable_Program_During_Discovery="True" />
+        <Property Config_XML_File="regfiles\gpio-expander.xml" />
+      </Peripheral_1_Config>
+      <Peripheral_2_Config>
+        <Property I2C_interface_status="True" />
+        <Property I2C_Address="0x6C" />
+        <Property Device_Type="Sink" />
+        <Property Tx0_Pin_Use="False" />
+        <Property Rx0_Pin_Use="False" />
+        <Property Tx1_Pin_Use="False" />
+        <Property Rx1_Pin_Use="True" />
+        <Property No_of_Tx0_Channels="0x0" />
+        <Property No_of_Rx0_Channels="0x0" />
+        <Property No_of_Tx1_Channels="0x0" />
+        <Property No_of_Rx1_Channels="0x4" />
+        <Property Enable_Program_During_Discovery="True" />
+        <Property Config_XML_File="regfiles\tda7802.xml" />
+      </Peripheral_2_Config>
+      <Peripheral_3_Config>
+        <Property I2C_interface_status="True" />
+        <Property I2C_Address="0x6E" />
+        <Property Device_Type="Sink" />
+        <Property Tx0_Pin_Use="False" />
+        <Property Rx0_Pin_Use="True" />
+        <Property Tx1_Pin_Use="False" />
+        <Property Rx1_Pin_Use="False" />
+        <Property No_of_Tx0_Channels="0x0" />
+        <Property No_of_Rx0_Channels="0x4" />
+        <Property No_of_Tx1_Channels="0x0" />
+        <Property No_of_Rx1_Channels="0x0" />
+        <Property Enable_Program_During_Discovery="True" />
+        <Property Config_XML_File="regfiles\fda2100.xml" />
+      </Peripheral_3_Config>
+    </Peripheral_Config>
+  </Node>
+  <TimeStamp>
+    <Time_Stamp Project_Name="rpi-i2s-codec-tesla-amp.dspproj" Date-Time="5/8/2023 5:42:35 PM" />
+  </TimeStamp>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>3fKrM5TJ+rpXh71FCVynOZRllGw=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>O03NyQEZ1+zAkB8jKUvkbLiO5QXQgr7uZp2Fr6S92cGz+0Zm02KKgg14CxVH4n3yRwwl+2nxCG755JBieyEAC+jRGrgwzP2D3zPjqOdP51thWcvbq9YtnGQlPtdOCGTyRPYv64kzIv5s7LjcSV+sDxXG3/QU/2VCzf//Xm5/Tao=</SignatureValue>
+  </Signature>
+</Node_Configuration>

@@ -1,19 +1,19 @@
 ADAU145X Assembler, Analog Devices Inc.
 Version: 4.6.0,1809  (built 12/23/2020)
 
-##### Compile Started: Sunday, April 23, 2023 6:14:36 PM #####
+##### Compile Started: Monday, May 8, 2023 5:52:38 PM #####
 ADAU145X Assembler, Analog Devices Inc.
 Version: 4.6.0,1809  (built 12/23/2020)
 
-##### Compile Started: Sunday, April 23, 2023 6:14:36 PM #####
+##### Compile Started: Monday, May 8, 2023 5:52:38 PM #####
 ##### Compile succeeded:  0 errors, 0 warnings #####
 
 ##### Summary #####
 DM0 RAM used:       00496    (of 20480)
-DM1 RAM used:       06273    (of 20480)
+DM1 RAM used:       06275    (of 20480)
 PM  RAM used(Data): 00000    (of 8192)
-PM  RAM used(Inst): 01603    (of 8192) 1113 instructions (32bit: 623  64bit: 490)
-Total PM used:      01603    (of 8192)
+PM  RAM used(Inst): 01615    (of 8192) 1125 instructions (32bit: 635  64bit: 490)
+Total PM used:      01615    (of 8192)
 
 --------------------------------------------------------------------------------------
 STREAM                        Inst      Inst      DM0     DM1     PM
@@ -28,39 +28,44 @@ ComprFront                    53        63        61      0       0
 Bass Boost1                   38        48        54      7       0
 MasterVolume                  25        44        3       8       0
 FRAMEWORK                     58        39        12      7       0
-LpfRearLeft                   20        34        6       11      0
 LpfRearRight                  20        34        6       11      0
-PeqRearRight                  20        34        6       8       0
+LpfRearLeft                   20        34        6       11      0
+PeqFrontLeft                  20        34        6       8       0
 PeqRearLeft                   20        34        6       8       0
+HpfRearLeft                   20        34        6       8       0
+HpfFrontLeft                  20        34        6       8       0
+HpfFrontRight                 20        34        6       8       0
+PeqRearRight                  20        34        6       8       0
 PeqFrontRight                 20        34        6       8       0
 HpfRearRight                  20        34        6       8       0
-HpfRearLeft                   20        34        6       8       0
-PeqFrontLeft                  20        34        6       8       0
-HpfFrontRight                 20        34        6       8       0
 LpfFrontLeft                  20        34        6       8       0
 LpfFrontRight                 20        34        6       8       0
-HpfFrontLeft                  20        34        6       8       0
 PeqRR                         9         17        5       10      0
 PeqRL                         9         17        5       10      0
-PeqFR                         9         17        5       10      0
 PeqFL                         9         17        5       10      0
+PeqFR                         9         17        5       10      0
 ReverbBypass                  8         14        1       0       0
 LInVol                        8         12        3       0       0
 RInVol                        8         12        3       0       0
 DelayRearLeft                 7         9         1       481     0
 DelayRearRight                7         9         1       481     0
 LFELRMixer                    4         7         0       1       0
-ADAU1452 IN3                  4         4         0       2       0
+I2S3                          4         4         0       2       0
+I2S2                          4         4         0       2       0
 RearLeft                      2         3         0       0       0
+RightTwt                      2         3         0       0       0
+LeftTwt                       2         3         0       0       0
+SubVC2                        2         3         0       0       0
+SubVC1                        2         3         0       0       0
+RearRight                     2         3         0       0       0
 FrontLeft                     2         3         0       0       0
 FrontRight                    2         3         0       0       0
-SubVC1                        2         3         0       0       0
-SubVC2                        2         3         0       0       0
-LeftTwt                       2         3         0       0       0
-RightTwt                      2         3         0       0       0
-RearRight                     2         3         0       0       0
+AuxOut_Right                  2         2         0       0       0
+AuxIn_Left                    2         2         0       0       0
+AuxIn_Right                   2         2         0       0       0
+AuxOut_Left                   2         2         0       0       0
 --------------------------------------------------------------------------------------
-Total                         1125      1553      492     6269    0
+Total                         1137      1565      492     6271    0
 --------------------------------------------------------------------------------------
-(% Fs=48.0kHz)                19%       19%       3%      31%     0%
+(% Fs=48.0kHz)                19%       20%       3%      31%     0%
 

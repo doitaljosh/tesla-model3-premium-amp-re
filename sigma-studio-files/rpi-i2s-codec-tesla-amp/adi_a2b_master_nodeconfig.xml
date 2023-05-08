@@ -1,0 +1,170 @@
+<?xml version="1.0" standalone="no"?>
+<Node_Configuration>
+  <Version_Info>
+    <A2BDLL_Version Version="19.3.0" />
+    <A2BStackDLL_Version Version="19.3.0.0" />
+    <SigmaStudio_Version Version="4.06.000.1812" />
+  </Version_Info>
+  <Node Version="" Type="Master" ID="0x0" Source_ID="0xFF" Part_number="ADI_A2B_AD2425">
+    <Authentication_Settings>
+      <Register_Field Vendor="0xAD" />
+      <Register_Field Version="0x2" />
+      <Register_Field Product="0x25" />
+      <Register_Field Capability="0x1" />
+    </Authentication_Settings>
+    <Custom_Node_Id_Settings>
+      <Custom_Node_Id_Field Custom_Node_Id_Authentication="DISABLED" />
+    </Custom_Node_Id_Settings>
+    <I2S_Settings>
+      <Register_Field TDM_mode="TDM8" />
+      <Register_Field TDM_channel_size="32-bit" />
+      <Register_Field Sync_Mode="Pulse" />
+      <Register_Field Sync_polarity="Rising Edge" />
+      <Register_Field Early_frame_sync_status="Disabled" />
+      <Register_Field Transmit_Bit_clock_polarity="Rising Edge" />
+      <Register_Field Receive_Bit_clock_polarity="Rising Edge" />
+      <Register_Field TX_interleave_slots="Disabled" />
+      <Register_Field RX_interleave_slots="Disabled" />
+      <Register_Field Transmit_data_offset_in_TDM="0x0" />
+      <Register_Field Receive_data_offset_in_TDM="0x0" />
+      <Register_Field TxPin_TriState_before_driving_TDM_slots="Disabled" />
+      <Register_Field TxPin_TriState_after_driving_TDM_slots="Disabled" />
+      <Rate_Settings>
+        <Reduced_Rate_Valid_Bits>
+          <Register_Field LSB="DISABLED" />
+          <Register_Field Extra_Bit="DISABLED" />
+          <Register_Field Extra_Channel="DISABLED" />
+        </Reduced_Rate_Valid_Bits>
+        <Register_Field Strobe_in_IO1="DISABLED" />
+        <Register_Field Strobe_Direction="DISABLED" />
+      </Rate_Settings>
+    </I2S_Settings>
+    <Basic_Configuration_and_Control>
+      <Register_Field Response_cycles="0x9E" />
+      <Register_Field Slot_Fmt="0x66" />
+      <Register_Field Pass_Up_Slots="0x0" />
+      <Register_Field Pass_Down_Slots="0x8" />
+      <Register_Field Early_acknowledge_for_I2C="Disabled" />
+      <Register_Field Data_control="0x3" />
+    </Basic_Configuration_and_Control>
+    <GPIO_Settings>
+      <Register_Field GPIO_1_Pin_multiplexing="DISABLE" />
+      <Register_Field GPIO_2_Pin_multiplexing="DISABLE" />
+      <Register_Field GPIO_3_Pin_multiplexing="DISABLE" />
+      <Register_Field GPIO_4_Pin_multiplexing="DISABLE" />
+      <Register_Field GPIO_5_Pin_multiplexing="DRX0" />
+      <Register_Field GPIO_6_Pin_multiplexing="DISABLE" />
+      <Register_Field GPIO_7_Pin_multiplexing="DISABLE" />
+      <Register_Field Digital_Pin_Drive_Strength="High" />
+      <Register_Field IRQ_Edge="Rising Edge" />
+      <Register_Field IRQ_Tristate="DISABLE" />
+    </GPIO_Settings>
+    <Interrupt_Configuration>
+      <Register_Field Header_count_error="Do Not Report" />
+      <Register_Field Data_decoding_error="Do Not Report" />
+      <Register_Field Data_CRC_error="Do Not Report" />
+      <Register_Field Data_parity_error="Do Not Report" />
+      <Register_Field Data_bus_power_error="Report" />
+      <Register_Field Bit_error_count_overflow_error="Do Not Report" />
+      <Register_Field SRF_miss_error="Do Not Report" />
+      <Register_Field GPIO_1_Interrupt="Do Not Report" />
+      <Register_Field GPIO_2_Interrupt="Do Not Report" />
+      <Register_Field GPIO_3_Interrupt="Do Not Report" />
+      <Register_Field GPIO_4_Interrupt="Do Not Report" />
+      <Register_Field GPIO_5_Interrupt="Do Not Report" />
+      <Register_Field GPIO_6_Interrupt="Do Not Report" />
+      <Register_Field GPIO_7_Interrupt="Do Not Report" />
+      <Register_Field I2C_failure_error="Do Not Report" />
+      <Register_Field Discovery_completion="Report" />
+      <Register_Field Interrupt_frame_error="Do Not Report" />
+      <Register_Field Slave_Interrupt_Request="Report" />
+    </Interrupt_Configuration>
+    <GPIO_Over_Distance_Settings>
+      <GPIOD_1_Config>
+        <Register_Field GPIOD_1="DISABLE" />
+        <Register_Field GPIOD_1_Signal_Invert="DISABLE" />
+        <GPIOD1_MASK>
+          <Register_Field GPIO1_Flag0="Mask" GPIO1_Flag1="Mask" GPIO1_Flag2="Mask" GPIO1_Flag3="Mask" GPIO1_Flag4="Mask" GPIO1_Flag5="Mask" GPIO1_Flag6="Mask" GPIO1_Flag7="Mask" />
+        </GPIOD1_MASK>
+      </GPIOD_1_Config>
+      <GPIOD_2_Config>
+        <Register_Field GPIOD_2="DISABLE" />
+        <Register_Field GPIOD_2_Signal_Invert="DISABLE" />
+        <GPIOD2_MASK>
+          <Register_Field GPIO2_Flag0="Mask" GPIO2_Flag1="Mask" GPIO2_Flag2="Mask" GPIO2_Flag3="Mask" GPIO2_Flag4="Mask" GPIO2_Flag5="Mask" GPIO2_Flag6="Mask" GPIO2_Flag7="Mask" />
+        </GPIOD2_MASK>
+      </GPIOD_2_Config>
+      <GPIOD_3_Config>
+        <Register_Field GPIOD_3="DISABLE" />
+        <Register_Field GPIOD_3_Signal_Invert="DISABLE" />
+        <GPIOD3_MASK>
+          <Register_Field GPIO3_Flag0="Mask" GPIO3_Flag1="Mask" GPIO3_Flag2="Mask" GPIO3_Flag3="Mask" GPIO3_Flag4="Mask" GPIO3_Flag5="Mask" GPIO3_Flag6="Mask" GPIO3_Flag7="Mask" />
+        </GPIOD3_MASK>
+      </GPIOD_3_Config>
+      <GPIOD_4_Config>
+        <Register_Field GPIOD_4="DISABLE" />
+        <Register_Field GPIOD_4_Signal_Invert="DISABLE" />
+        <GPIOD4_MASK>
+          <Register_Field GPIO4_Flag0="Mask" GPIO4_Flag1="Mask" GPIO4_Flag2="Mask" GPIO4_Flag3="Mask" GPIO4_Flag4="Mask" GPIO4_Flag5="Mask" GPIO4_Flag6="Mask" GPIO4_Flag7="Mask" />
+        </GPIOD4_MASK>
+      </GPIOD_4_Config>
+      <GPIOD_5_Config>
+        <Register_Field GPIOD_5="DISABLE" />
+        <Register_Field GPIOD_5_Signal_Invert="DISABLE" />
+        <GPIOD5_MASK>
+          <Register_Field GPIO5_Flag0="Mask" GPIO5_Flag1="Mask" GPIO5_Flag2="Mask" GPIO5_Flag3="Mask" GPIO5_Flag4="Mask" GPIO5_Flag5="Mask" GPIO5_Flag6="Mask" GPIO5_Flag7="Mask" />
+        </GPIOD5_MASK>
+      </GPIOD_5_Config>
+      <GPIOD_6_Config>
+        <Register_Field GPIOD_6="DISABLE" />
+        <Register_Field GPIOD_6_Signal_Invert="DISABLE" />
+        <GPIOD6_MASK>
+          <Register_Field GPIO6_Flag0="Mask" GPIO6_Flag1="Mask" GPIO6_Flag2="Mask" GPIO6_Flag3="Mask" GPIO6_Flag4="Mask" GPIO6_Flag5="Mask" GPIO6_Flag6="Mask" GPIO6_Flag7="Mask" />
+        </GPIOD6_MASK>
+      </GPIOD_6_Config>
+      <GPIOD_7_Config>
+        <Register_Field GPIOD_7="DISABLE" />
+        <Register_Field GPIOD_7_Signal_Invert="DISABLE" />
+        <GPIOD7_MASK>
+          <Register_Field GPIO7_Flag0="Mask" GPIO7_Flag1="Mask" GPIO7_Flag2="Mask" GPIO7_Flag3="Mask" GPIO7_Flag4="Mask" GPIO7_Flag5="Mask" GPIO7_Flag6="Mask" GPIO7_Flag7="Mask" />
+        </GPIOD7_MASK>
+      </GPIOD_7_Config>
+    </GPIO_Over_Distance_Settings>
+    <Clock_Output_Settings>
+      <Register_Field Pre_Div_Factor1="2" />
+      <Register_Field Post_Div_Factor1="2" />
+      <Register_Field Clk1_Invert="Disabled" />
+      <Register_Field Pre_Div_Factor2="2" />
+      <Register_Field Post_Div_Factor2="2" />
+      <Register_Field Clk2_Invert="Disabled" />
+    </Clock_Output_Settings>
+    <Register_Settings>
+      <Register_Field SWCTL_Register="0x1" />
+      <Register_Field PDMCTL_Register="0x0" />
+      <Register_Field TESTMODE_Register="0x0" />
+      <Register_Field BECCTL_Register="0xEF" />
+      <Register_Field ERRMGMT_Register="0x0" />
+      <Register_Field I2STEST_Register="0x0" />
+      <Register_Field GENERR_Register="0x0" />
+      <Register_Field RAISE_Register="0x0" />
+      <Register_Field BMMCFG_Register="0x0" />
+    </Register_Settings>
+  </Node>
+  <TimeStamp>
+    <Time_Stamp Project_Name="rpi-i2s-codec-tesla-amp.dspproj" Date-Time="5/8/2023 5:42:22 PM" />
+  </TimeStamp>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>S6FJYh5thKZls8tUbBjFDkXeTeU=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>K3s7LQCapUVHwkRmgMNvWbYlyXTP3/d4ZZmqCjsLkqOstWW+pCD2faSspxVurQHvovQxJC7zyPgsaYDvVyXntoZX59CbL5HUtuNuBCH1KvnBpCjGCEfrh0ubZywaOeMZ3gEYBTAQ3KdskG7hxV8xCVEsLML98kpq/sU6PV3KCOQ=</SignatureValue>
+  </Signature>
+</Node_Configuration>
